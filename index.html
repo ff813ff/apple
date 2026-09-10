@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#ffffff">
     <title>GlobalTech Wholesale - Official B2B Catalog</title>
-    
-    <!-- Google Analytics (GA4) 已填入 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GWJSZWQ6S"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,89 +12,59 @@
       gtag('js', new Date());
       gtag('config', 'G-3GWJSZWQ6S');
     </script>
-
     <style>
-        :root {
-            --bg-color: #f5f5f7;
-            --card-bg: #ffffff;
-            --text-main: #1d1d1f;
-            --text-secondary: #86868b;
-            --accent-blue: #0071e3;
-            --whatsapp-green: #25D366;
-            --whatsapp-hover: #1EBE54;
-            --border-color: #d2d2d7;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-tap-highlight-color: transparent; }
-
-        body { background-color: var(--bg-color); color: var(--text-main); padding-bottom: 90px; }
-
-        header { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); }
-        .logo { font-size: 18px; font-weight: 800; letter-spacing: -0.5px; }
-        .logo span { color: var(--accent-blue); }
-
-        .lang-switcher { display: flex; gap: 6px; }
-        .lang-btn { padding: 6px 12px; border: 1px solid var(--border-color); border-radius: 14px; background: transparent; font-size: 12px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; }
-        .lang-btn.active { background: var(--text-main); color: white; border-color: var(--text-main); }
-
-        .currency-bar { display: flex; gap: 6px; padding: 10px 20px; overflow-x: auto; scrollbar-width: none; background: var(--bg-color); max-width: 1400px; margin: 0 auto; }
-        .currency-bar::-webkit-scrollbar { display: none; }
-        .currency-btn { background: white; border: 1px solid var(--border-color); padding: 6px 14px; border-radius: 14px; font-size: 12px; font-weight: 600; white-space: nowrap; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; }
-        .currency-btn.active { background: var(--text-main); color: white; border-color: var(--text-main); }
-
-        .banner { background: linear-gradient(180deg, #ffffff 0%, #f5f5f7 100%); padding: 30px 20px 20px 20px; text-align: center; }
-        .banner-title { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
-        .banner-title span { color: var(--accent-blue); }
-        .banner-sub { font-size: 14px; color: var(--text-secondary); }
-
-        .filters { display: flex; gap: 8px; padding: 15px 20px; overflow-x: auto; scrollbar-width: none; background: var(--bg-color); max-width: 1400px; margin: 0 auto; }
-        .filters::-webkit-scrollbar { display: none; }
-        .filter-btn { background: white; border: 1px solid var(--border-color); padding: 8px 18px; border-radius: 20px; font-size: 14px; font-weight: 500; white-space: nowrap; color: var(--text-main); cursor: pointer; transition: all 0.2s; }
-        .filter-btn.active { background: var(--text-main); color: white; border-color: var(--text-main); }
-
-        .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 0 15px 30px 15px; max-width: 1400px; margin: 0 auto; }
-        @media (min-width: 600px) { .product-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 0 20px 30px 20px; } }
-        @media (min-width: 1024px) { .product-grid { grid-template-columns: repeat(4, 1fr); } }
-
-        .product-card { background: var(--card-bg); border-radius: 16px; padding: 15px 10px; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04); transition: transform 0.3s, box-shadow 0.3s; }
-        .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08); }
-
-        .img-box { width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; background: #ffffff; border-radius: 10px; overflow: hidden; position: relative; }
-        @media (min-width: 600px) { .img-box { height: 160px; } }
-
-        .product-img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.3s; }
-        .product-card:hover .product-img { transform: scale(1.05); }
-
-        .img-fallback {
-            display: none; width: 100%; height: 100%; background: #ffffff; color: #1d1d1f; 
-            font-weight: 700; font-size: 14px; text-align: center; padding: 10px;
-            align-items: center; justify-content: center;
-        }
-
-        .product-model { font-size: 14px; font-weight: 700; line-height: 1.3; margin-bottom: 4px; min-height: 36px; display: flex; align-items: center; justify-content: center; }
-        @media (min-width: 600px) { .product-model { font-size: 16px; } }
-
-        .product-price { font-size: 20px; font-weight: 800; color: var(--text-main); line-height: 1; margin-bottom: 4px; }
-        .product-price-secondary { font-size: 11px; color: var(--text-secondary); margin-bottom: 12px; }
-
-        .variant-selector { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; margin-bottom: 12px; width: 100%; }
-        .variant-btn { background: #f5f5f7; border: 1px solid transparent; padding: 5px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; }
-        @media (min-width: 600px) { .variant-btn { padding: 6px 12px; font-size: 12px; border-radius: 10px; } }
-        .variant-btn.active { background: white; border-color: var(--text-main); color: var(--text-main); }
-
-        .btn-inquire { margin-top: auto; width: 100%; background: var(--whatsapp-green); color: white; border: none; border-radius: 10px; padding: 10px 5px; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; text-decoration: none; transition: background 0.2s; }
-        @media (min-width: 600px) { .btn-inquire { padding: 12px 10px; font-size: 13px; border-radius: 14px; } }
-        .btn-inquire:active { background: var(--whatsapp-hover); }
-        .btn-inquire svg { width: 14px; height: 14px; }
-
-        .terms { padding: 30px 20px; background: white; margin-top: 20px; font-size: 12px; color: var(--text-secondary); line-height: 1.8; text-align: center; max-width: 1400px; margin: 20px auto 0 auto; border-radius: 18px; }
-        .terms h3 { font-size: 16px; color: var(--text-main); margin-bottom: 15px; font-weight: 700; }
-        .terms p { margin-bottom: 8px; }
-        .terms strong { color: var(--text-main); }
-
-        .float-wa { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 12px 20px; border-top: 1px solid var(--border-color); z-index: 1000; display: flex; justify-content: center; }
-        .float-wa-btn { background: var(--whatsapp-green); color: white; text-decoration: none; width: 100%; max-width: 500px; padding: 16px; border-radius: 30px; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3); }
-        .float-wa-btn:active { background: var(--whatsapp-hover); }
+        :root { --bg-color:#f5f5f7; --card-bg:#ffffff; --text-main:#1d1d1f; --text-secondary:#86868b; --accent-blue:#0071e3; --whatsapp-green:#25D366; --whatsapp-hover:#1EBE54; --border-color:#d2d2d7; --price-tag-color:#ff3b30; }
+        * { margin:0; padding:0; box-sizing:border-box; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; -webkit-tap-highlight-color:transparent; }
+        body { background-color:var(--bg-color); color:var(--text-main); padding-bottom:90px; }
+        header { background:rgba(255,255,255,0.9); backdrop-filter:blur(20px); position:sticky; top:0; z-index:100; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); }
+        .logo { font-size:18px; font-weight:800; letter-spacing:-0.5px; }
+        .logo span { color:var(--accent-blue); }
+        .lang-switcher { display:flex; gap:6px; }
+        .lang-btn { padding:6px 12px; border:1px solid var(--border-color); border-radius:14px; background:transparent; font-size:12px; font-weight:600; color:var(--text-secondary); cursor:pointer; transition:all 0.2s; }
+        .lang-btn.active { background:var(--text-main); color:white; border-color:var(--text-main); }
+        .currency-bar { display:flex; gap:6px; padding:10px 20px; overflow-x:auto; scrollbar-width:none; background:var(--bg-color); max-width:1400px; margin:0 auto; }
+        .currency-bar::-webkit-scrollbar { display:none; }
+        .currency-btn { background:white; border:1px solid var(--border-color); padding:6px 14px; border-radius:14px; font-size:12px; font-weight:600; white-space:nowrap; color:var(--text-secondary); cursor:pointer; transition:all 0.2s; }
+        .currency-btn.active { background:var(--text-main); color:white; border-color:var(--text-main); }
+        .banner { background:linear-gradient(180deg,#ffffff 0%,#f5f5f7 100%); padding:30px 20px 20px 20px; text-align:center; }
+        .banner-title { font-size:28px; font-weight:800; letter-spacing:-0.5px; margin-bottom:8px; }
+        .banner-title span { color:var(--accent-blue); }
+        .banner-sub { font-size:14px; color:var(--text-secondary); }
+        .filters { display:flex; gap:8px; padding:15px 20px; overflow-x:auto; scrollbar-width:none; background:var(--bg-color); max-width:1400px; margin:0 auto; }
+        .filters::-webkit-scrollbar { display:none; }
+        .filter-btn { background:white; border:1px solid var(--border-color); padding:8px 18px; border-radius:20px; font-size:14px; font-weight:500; white-space:nowrap; color:var(--text-main); cursor:pointer; transition:all 0.2s; }
+        .filter-btn.active { background:var(--text-main); color:white; border-color:var(--text-main); }
+        .product-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; padding:0 15px 30px 15px; max-width:1400px; margin:0 auto; }
+        @media (min-width:600px) { .product-grid { grid-template-columns:repeat(3,1fr); gap:16px; padding:0 20px 30px 20px; } }
+        @media (min-width:1024px) { .product-grid { grid-template-columns:repeat(4,1fr); } }
+        .product-card { background:var(--card-bg); border-radius:16px; padding:15px 10px; display:flex; flex-direction:column; align-items:center; text-align:center; position:relative; box-shadow:0 2px 15px rgba(0,0,0,0.04); transition:transform 0.3s,box-shadow 0.3s; }
+        .product-card:hover { transform:translateY(-4px); box-shadow:0 8px 30px rgba(0,0,0,0.08); }
+        .img-box { width:100%; height:120px; display:flex; align-items:center; justify-content:center; margin-bottom:12px; background:#ffffff; border-radius:10px; overflow:hidden; position:relative; }
+        @media (min-width:600px) { .img-box { height:160px; } }
+        .product-img { max-width:100%; max-height:100%; object-fit:contain; object-position:center; background:#ffffff; padding:4px; transition:transform 0.3s; }
+        .product-card:hover .product-img { transform:scale(1.05); }
+        .product-model { font-size:14px; font-weight:700; line-height:1.3; margin-bottom:4px; min-height:36px; display:flex; align-items:center; justify-content:center; }
+        @media (min-width:600px) { .product-model { font-size:16px; } }
+        .price-label { font-size:10px; color:var(--price-tag-color); font-weight:700; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:2px; }
+        .product-price { font-size:20px; font-weight:800; color:var(--text-main); line-height:1; margin-bottom:4px; }
+        .product-price-secondary { font-size:11px; color:var(--text-secondary); margin-bottom:12px; }
+        .selector-group { display:flex; flex-wrap:wrap; gap:4px; justify-content:center; margin-bottom:6px; width:100%; }
+        .selector-group:empty { display:none; }
+        .selector-group:last-of-type { margin-bottom:12px; }
+        .variant-btn { background:#f5f5f7; border:1px solid transparent; padding:5px 8px; border-radius:8px; font-size:11px; font-weight:600; color:var(--text-secondary); cursor:pointer; transition:all 0.2s; }
+        @media (min-width:600px) { .variant-btn { padding:6px 12px; font-size:12px; border-radius:10px; } }
+        .variant-btn.active { background:white; border-color:var(--text-main); color:var(--text-main); }
+        .btn-inquire { margin-top:auto; width:100%; background:var(--whatsapp-green); color:white; border:none; border-radius:10px; padding:10px 5px; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; gap:4px; text-decoration:none; transition:background 0.2s; }
+        @media (min-width:600px) { .btn-inquire { padding:12px 10px; font-size:13px; border-radius:14px; } }
+        .btn-inquire:active { background:var(--whatsapp-hover); }
+        .btn-inquire svg { width:14px; height:14px; }
+        .terms { padding:30px 20px; background:white; margin-top:20px; font-size:12px; color:var(--text-secondary); line-height:1.8; text-align:center; max-width:1400px; margin:20px auto 0 auto; border-radius:18px; }
+        .terms h3 { font-size:16px; color:var(--text-main); margin-bottom:15px; font-weight:700; }
+        .terms p { margin-bottom:8px; }
+        .terms strong { color:var(--text-main); }
+        .float-wa { position:fixed; bottom:0; left:0; width:100%; background:rgba(255,255,255,0.95); backdrop-filter:blur(10px); padding:12px 20px; border-top:1px solid var(--border-color); z-index:1000; display:flex; justify-content:center; }
+        .float-wa-btn { background:var(--whatsapp-green); color:white; text-decoration:none; width:100%; max-width:500px; padding:16px; border-radius:30px; font-size:16px; font-weight:800; display:flex; align-items:center; justify-content:center; gap:10px; box-shadow:0 4px 20px rgba(37,211,102,0.3); }
+        .float-wa-btn:active { background:var(--whatsapp-hover); }
     </style>
 </head>
 <body>
@@ -122,7 +90,7 @@
 
     <div class="banner">
         <div class="banner-title" id="bannerTitle">Official <span>B2B Catalog</span></div>
-        <div class="banner-sub" id="bannerSub">Factory Direct Prices · Global Shipping · 1-Year Warranty</div>
+        <div class="banner-sub" id="bannerSub">Wholesale Factory Prices · Global Shipping · 1-Year Warranty</div>
     </div>
 
     <div class="filters" id="filterContainer">
@@ -132,8 +100,14 @@
         <button class="filter-btn" data-filter="iPad">iPad</button>
         <button class="filter-btn" data-filter="Watch">Watch</button>
         <button class="filter-btn" data-filter="AirPods">AirPods</button>
+        <button class="filter-btn" data-filter="Ray-Ban">Ray-Ban</button>
+        <button class="filter-btn" data-filter="PS5">PS5</button>
         <button class="filter-btn" data-filter="DJI">DJI</button>
-        <button class="filter-btn" data-filter="EZVIZ">EZVIZ</button>
+        <button class="filter-btn" data-filter="Logitech">Logitech</button>
+        <button class="filter-btn" data-filter="Nintendo">Nintendo</button>
+        <button class="filter-btn" data-filter="GPU">GPU</button>
+        <button class="filter-btn" data-filter="Dyson">Dyson</button>
+        <button class="filter-btn" data-filter="Insta360">Insta360</button>
     </div>
 
     <div class="product-grid" id="productGrid"></div>
@@ -142,7 +116,7 @@
         <h3 id="termsTitle">Commercial Terms & Notes</h3>
         <p><strong id="termsLabel1">Price Term:</strong> <span id="termsText1">FOB Shenzhen / Hong Kong (Depending on final agreement)</span></p>
         <p><strong id="termsLabel2">Warranty:</strong> <span id="termsText2">1-Year International Warranty</span></p>
-        <p><strong id="termsLabel3">Payment:</strong> <span id="termsText3">Wise / Paysend / Revolut / Crypto (USDT/BTC)</span></p>
+        <p><strong id="termsLabel3">Payment:</strong> <span id="termsText3">Payment Methods Available Upon Order Confirmation</span></p>
         <p><strong id="termsLabel4">Currency:</strong> <span id="termsText4">Prices in USD. Live exchange rates auto-applied.</span></p>
         <p style="margin-top:15px; font-size:11px; opacity:0.7;" id="termsNote">* Prices are subject to change based on market availability. Bulk discounts available.</p>
     </div>
@@ -155,112 +129,313 @@
     </div>
 
     <script>
-        // ==========================================
-        // ⚠️ 唯一需要修改的地方：WhatsApp 号码
-        // ==========================================
-        const WHATSAPP_NUMBER = "85264851768"; 
+        const WHATSAPP_NUMBER = "85264851768";
 
         const translations = {
-            en: { bannerTitle: 'Official <span>B2B Catalog</span>', bannerSub: 'Factory Direct Prices · Global Shipping · 1-Year Warranty', filterAll: 'All Products', floatWaText: 'Chat on WhatsApp for Bulk Quote', termsTitle: 'Commercial Terms & Notes', termsLabel1: 'Price Term:', termsText1: 'FOB Shenzhen / Hong Kong (Depending on final agreement)', termsLabel2: 'Warranty:', termsText2: '1-Year International Warranty', termsLabel3: 'Payment:', termsText3: 'Wise / Paysend / Revolut / Crypto (USDT/BTC)', termsLabel4: 'Currency:', termsText4: 'Prices in USD. Live exchange rates auto-applied.', termsNote: '* Prices are subject to change based on market availability. Bulk discounts available.', inquire: 'Inquire on WhatsApp', greeting: 'Hi my friend, please send me your product catalog and price list.' },
-            fr: { bannerTitle: 'Catalogue <span>B2B Officiel</span>', bannerSub: 'Prix directs d\'usine · Livraison mondiale · Garantie 1 an', filterAll: 'Tous les produits', floatWaText: 'Discuter sur WhatsApp pour un devis', termsTitle: 'Conditions Commerciales', termsLabel1: 'Terme de prix :', termsText1: 'FOB Shenzhen / Hong Kong (Selon accord final)', termsLabel2: 'Garantie :', termsText2: 'Garantie internationale de 1 an', termsLabel3: 'Paiement :', termsText3: 'Wise / Paysend / Revolut / Crypto (USDT/BTC)', termsLabel4: 'Devise :', termsText4: 'Prix en USD. Taux de change en direct appliqués automatiquement.', termsNote: '* Les prix sont susceptibles de changer. Remises sur gros volumes disponibles.', inquire: 'Demander sur WhatsApp', greeting: 'Bonjour mon ami, veuillez m\'envoyer votre catalogue de produits et votre liste de prix.' },
-            es: { bannerTitle: 'Catálogo <span>B2B Oficial</span>', bannerSub: 'Precios directos de fábrica · Envío global · Garantía 1 año', filterAll: 'Todos los productos', floatWaText: 'Chatear por WhatsApp para cotización', termsTitle: 'Términos Comerciales', termsLabel1: 'Término de precio:', termsText1: 'FOB Shenzhen / Hong Kong (Según acuerdo final)', termsLabel2: 'Garantía:', termsText2: 'Garantía internacional de 1 año', termsLabel3: 'Pago:', termsText3: 'Wise / Paysend / Revolut / Crypto (USDT/BTC)', termsLabel4: 'Moneda:', termsText4: 'Precios en USD. Tipos de cambio en vivo aplicados automáticamente.', termsNote: '* Los precios están sujetos a cambios. Descuentos por volumen disponibles.', inquire: 'Consultar por WhatsApp', greeting: 'Hola amigo, por favor envíeme su catálogo de productos y lista de precios.' }
+            en: { bannerTitle:'Official <span>B2B Catalog</span>', bannerSub:'Wholesale Factory Prices · Global Shipping · 1-Year Warranty', filterAll:'All Products', floatWaText:'Chat on WhatsApp for Bulk Quote', termsTitle:'Commercial Terms & Notes', termsLabel1:'Price Term:', termsText1:'FOB Shenzhen / Hong Kong (Depending on final agreement)', termsLabel2:'Warranty:', termsText2:'1-Year International Warranty', termsLabel3:'Payment:', termsText3:'Payment Methods Available Upon Order Confirmation', termsLabel4:'Currency:', termsText4:'Prices in USD. Live exchange rates auto-applied.', termsNote:'* Prices are subject to change based on market availability. Bulk discounts available.', inquire:'Inquire on WhatsApp', greeting:'Hi my friend, please send me your product catalog and price list.', priceLabel:'Wholesale Factory Price' },
+            fr: { bannerTitle:'Catalogue <span>B2B Officiel</span>', bannerSub:'Prix d\'usine en gros · Livraison mondiale · Garantie 1 an', filterAll:'Tous les produits', floatWaText:'Discuter sur WhatsApp pour un devis', termsTitle:'Conditions Commerciales', termsLabel1:'Terme de prix :', termsText1:'FOB Shenzhen / Hong Kong (Selon accord final)', termsLabel2:'Garantie :', termsText2:'Garantie internationale de 1 an', termsLabel3:'Paiement :', termsText3:'Modes de paiement disponibles à la confirmation de la commande', termsLabel4:'Devise :', termsText4:'Prix en USD. Taux de change en direct appliqués automatiquement.', termsNote:'* Les prix sont susceptibles de changer. Remises sur gros volumes disponibles.', inquire:'Demander sur WhatsApp', greeting:'Bonjour mon ami, veuillez m\'envoyer votre catalogue de produits et votre liste de prix.', priceLabel:'Prix d\'usine en gros' },
+            es: { bannerTitle:'Catálogo <span>B2B Oficial</span>', bannerSub:'Precios de fábrica al por mayor · Envío global · Garantía 1 año', filterAll:'Todos los productos', floatWaText:'Chatear por WhatsApp para cotización', termsTitle:'Términos Comerciales', termsLabel1:'Término de precio:', termsText1:'FOB Shenzhen / Hong Kong (Según acuerdo final)', termsLabel2:'Garantía:', termsText2:'Garantía internacional de 1 año', termsLabel3:'Pago:', termsText3:'Métodos de pago disponibles al confirmar el pedido', termsLabel4:'Moneda:', termsText4:'Precios en USD. Tipos de cambio en vivo aplicados automáticamente.', termsNote:'* Los precios están sujetos a cambios. Descuentos por volumen disponibles.', inquire:'Consultar por WhatsApp', greeting:'Hola amigo, por favor envíeme su catálogo de productos y lista de precios.', priceLabel:'Precio de fábrica al por mayor' }
         };
 
-        // ==========================================
-        // 强制构建带有完整参数的苹果官方 CDN 链接
-        // ==========================================
-        const appleCdn = (code) => `https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/${code}?wid=400&hei=400&fmt=png-alpha`;
+        // 更新后的 Apple CDN（兼容新旧路径）
+        const appleCdn = (code) => `https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/${code}?wid=400&hei=400&fmt=png-alpha`;
+        // 兼容旧 4982 路径的备用
+        const appleCdnOld = (code) => `https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/${code}?wid=400&hei=400&fmt=png-alpha`;
 
-        // ==========================================
-        // 产品数据（价格对齐你的批发底价）
-        // ==========================================
+        function makePlaceholderSvg(name) {
+            const safe = name.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><rect width="100%" height="100%" fill="#ffffff"/><rect x="50" y="150" width="300" height="100" rx="12" fill="#f5f5f7"/><text x="200" y="200" font-family="-apple-system,sans-serif" font-size="18" font-weight="700" fill="#1d1d1f" text-anchor="middle" dominant-baseline="middle">${safe}</text><text x="200" y="230" font-family="-apple-system,sans-serif" font-size="11" fill="#86868b" text-anchor="middle" dominant-baseline="middle">Wholesale Catalog</text></svg>`;
+            return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+        }
+
         const productsData = [
-            // ==================== iPhone 18 系列 ====================
-            { model: "iPhone 18 Fold", category: "iPhone", img: appleCdn("iphone-16-pro-finish-select-202409-6-9inch-deserttitanium"), variants: [{ capacity: "256GB", priceUsd: 500, priceEur: 462 }, { capacity: "512GB", priceUsd: 550, priceEur: 509 }, { capacity: "1TB", priceUsd: 600, priceEur: 555 }] },
-            { model: "iPhone 18 Pro Max", category: "iPhone", img: appleCdn("iphone-16-pro-finish-select-202409-6-9inch-deserttitanium"), variants: [{ capacity: "256GB", priceUsd: 400, priceEur: 370 }, { capacity: "512GB", priceUsd: 450, priceEur: 416 }, { capacity: "1TB", priceUsd: 500, priceEur: 462 }] },
-            { model: "iPhone 18 Pro", category: "iPhone", img: appleCdn("iphone-16-pro-finish-select-202409-6-3inch-deserttitanium"), variants: [{ capacity: "256GB", priceUsd: 350, priceEur: 324 }, { capacity: "512GB", priceUsd: 400, priceEur: 370 }] },
-            { model: "iPhone 18", category: "iPhone", img: appleCdn("iphone-16-finish-select-202409-6-1inch-ultramarine"), variants: [{ capacity: "256GB", priceUsd: 250, priceEur: 231 }, { capacity: "512GB", priceUsd: 300, priceEur: 277 }] },
-            
-            // ==================== iPhone 17 系列 ====================
-            { model: "iPhone 17 Pro Max", category: "iPhone", img: appleCdn("iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium"), variants: [{ capacity: "256GB", priceUsd: 300, priceEur: 277 }, { capacity: "512GB", priceUsd: 330, priceEur: 305 }, { capacity: "1TB", priceUsd: 380, priceEur: 351 }, { capacity: "2TB", priceUsd: 480, priceEur: 444 }] },
-            { model: "iPhone 17 Pro", category: "iPhone", img: appleCdn("iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium"), variants: [{ capacity: "256GB", priceUsd: 250, priceEur: 231 }, { capacity: "512GB", priceUsd: 280, priceEur: 259 }, { capacity: "1TB", priceUsd: 320, priceEur: 296 }] },
-            { model: "iPhone 17 Air", category: "iPhone", img: appleCdn("iphone-15-finish-select-202309-6-1inch-blue"), variants: [{ capacity: "256GB", priceUsd: 240, priceEur: 222 }, { capacity: "512GB", priceUsd: 270, priceEur: 250 }, { capacity: "1TB", priceUsd: 310, priceEur: 287 }] },
-            { model: "iPhone 17", category: "iPhone", img: appleCdn("iphone-15-finish-select-202309-6-1inch-blue"), variants: [{ capacity: "256GB", priceUsd: 188, priceEur: 174 }, { capacity: "512GB", priceUsd: 220, priceEur: 203 }] },
-
-            // ==================== iPhone 16 系列 ====================
-            { model: "iPhone 16 Pro Max", category: "iPhone", img: appleCdn("iphone-16-pro-finish-select-202409-6-9inch-deserttitanium"), variants: [{ capacity: "256GB", priceUsd: 230, priceEur: 213 }, { capacity: "512GB", priceUsd: 255, priceEur: 236 }, { capacity: "1TB", priceUsd: 285, priceEur: 264 }] },
-            { model: "iPhone 16 Pro", category: "iPhone", img: appleCdn("iphone-16-pro-finish-select-202409-6-3inch-deserttitanium"), variants: [{ capacity: "128GB", priceUsd: 170, priceEur: 157 }, { capacity: "256GB", priceUsd: 210, priceEur: 194 }, { capacity: "512GB", priceUsd: 235, priceEur: 217 }, { capacity: "1TB", priceUsd: 265, priceEur: 245 }] },
-            { model: "iPhone 16 Plus", category: "iPhone", img: appleCdn("iphone-16-finish-select-202409-6-7inch-ultramarine"), variants: [{ capacity: "128GB", priceUsd: 165, priceEur: 152 }, { capacity: "256GB", priceUsd: 185, priceEur: 171 }, { capacity: "512GB", priceUsd: 200, priceEur: 185 }] },
-            { model: "iPhone 16", category: "iPhone", img: appleCdn("iphone-16-finish-select-202409-6-1inch-ultramarine"), variants: [{ capacity: "128GB", priceUsd: 155, priceEur: 143 }, { capacity: "256GB", priceUsd: 175, priceEur: 162 }, { capacity: "512GB", priceUsd: 200, priceEur: 185 }] },
-
-            // ==================== iPhone 15 系列 ====================
-            { model: "iPhone 15 Pro Max", category: "iPhone", img: appleCdn("iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium"), variants: [{ capacity: "256GB", priceUsd: 195, priceEur: 180 }, { capacity: "512GB", priceUsd: 220, priceEur: 203 }, { capacity: "1TB", priceUsd: 250, priceEur: 231 }] },
-            { model: "iPhone 15 Pro", category: "iPhone", img: appleCdn("iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium"), variants: [{ capacity: "128GB", priceUsd: 135, priceEur: 125 }, { capacity: "256GB", priceUsd: 155, priceEur: 143 }, { capacity: "512GB", priceUsd: 195, priceEur: 180 }, { capacity: "1TB", priceUsd: 235, priceEur: 217 }] },
-            { model: "iPhone 15", category: "iPhone", img: appleCdn("iphone-15-finish-select-202309-6-1inch-blue"), variants: [{ capacity: "128GB", priceUsd: 115, priceEur: 106 }, { capacity: "256GB", priceUsd: 135, priceEur: 125 }, { capacity: "512GB", priceUsd: 160, priceEur: 148 }] },
-
+            // ==================== iPhone 18 ====================
+            { model:"iPhone 18 Fold", category:"iPhone", img:"", skus:[
+                { capacity:"256GB", version:"Standard", color:"Black", priceUsd:500, priceEur:462 },
+                { capacity:"512GB", version:"Standard", color:"Black", priceUsd:550, priceEur:509 },
+                { capacity:"1TB", version:"Standard", color:"Black", priceUsd:600, priceEur:555 }
+            ]},
+            { model:"iPhone 18 Pro Max", category:"iPhone", img:appleCdn("iphone-18-pro-finish-select-202609-6-9inch-burgundy"), skus:[
+                { capacity:"256GB", version:"Standard", color:"Desert Titanium", priceUsd:400, priceEur:370 },
+                { capacity:"512GB", version:"Standard", color:"Desert Titanium", priceUsd:450, priceEur:416 },
+                { capacity:"1TB", version:"Standard", color:"Desert Titanium", priceUsd:500, priceEur:462 }
+            ]},
+            { model:"iPhone 18 Pro", category:"iPhone", img:appleCdn("iphone-18-pro-finish-select-202609-6-3inch-burgundy"), skus:[
+                { capacity:"256GB", version:"Standard", color:"Natural Titanium", priceUsd:350, priceEur:324 },
+                { capacity:"512GB", version:"Standard", color:"Natural Titanium", priceUsd:400, priceEur:370 }
+            ]},
+            { model:"iPhone 18", category:"iPhone", img:"", skus:[
+                { capacity:"256GB", version:"Standard", color:"Ultramarine", priceUsd:250, priceEur:231 },
+                { capacity:"512GB", version:"Standard", color:"Ultramarine", priceUsd:300, priceEur:277 }
+            ]},
+            // ==================== iPhone 17 ====================
+            { model:"iPhone 17 Pro Max", category:"iPhone", img:appleCdn("iphone-17-pro-max-finish-select-silver-202509"), skus:[
+                { capacity:"256GB", version:"Standard", color:"Natural Titanium", priceUsd:300, priceEur:277 },
+                { capacity:"512GB", version:"Standard", color:"Blue Titanium", priceUsd:330, priceEur:305 },
+                { capacity:"1TB", version:"Standard", color:"Black Titanium", priceUsd:380, priceEur:351 },
+                { capacity:"2TB", version:"Standard", color:"White Titanium", priceUsd:480, priceEur:444 }
+            ]},
+            { model:"iPhone 17 Pro", category:"iPhone", img:appleCdn("iphone-17-pro-finish-select-202509-6-3inch-silver"), skus:[
+                { capacity:"256GB", version:"Standard", color:"Natural Titanium", priceUsd:250, priceEur:231 },
+                { capacity:"512GB", version:"Standard", color:"Blue Titanium", priceUsd:280, priceEur:259 },
+                { capacity:"1TB", version:"Standard", color:"Black Titanium", priceUsd:320, priceEur:296 }
+            ]},
+            { model:"iPhone 17 Air", category:"iPhone", img:appleCdn("iphone-air-finish-select-lightgold-202509"), skus:[
+                { capacity:"256GB", version:"Standard", color:"Blue", priceUsd:240, priceEur:222 },
+                { capacity:"512GB", version:"Standard", color:"Green", priceUsd:270, priceEur:250 },
+                { capacity:"1TB", version:"Standard", color:"Pink", priceUsd:310, priceEur:287 }
+            ]},
+            { model:"iPhone 17", category:"iPhone", img:appleCdn("iphone-17-finish-select-202509-mistblue"), skus:[
+                { capacity:"256GB", version:"Standard", color:"Blue", priceUsd:188, priceEur:174 },
+                { capacity:"512GB", version:"Standard", color:"Green", priceUsd:220, priceEur:203 }
+            ]},
+            // ==================== iPhone 16 ====================
+            { model:"iPhone 16 Pro Max", category:"iPhone", img:appleCdnOld("iphone-16-pro-finish-select-202409-6-9inch-deserttitanium"), skus:[
+                { capacity:"256GB", version:"Standard", color:"Desert Titanium", priceUsd:230, priceEur:213 },
+                { capacity:"256GB", version:"Standard", color:"Black Titanium", priceUsd:230, priceEur:213 },
+                { capacity:"512GB", version:"Standard", color:"Desert Titanium", priceUsd:255, priceEur:236 },
+                { capacity:"512GB", version:"Standard", color:"Black Titanium", priceUsd:255, priceEur:236 },
+                { capacity:"1TB", version:"Standard", color:"Desert Titanium", priceUsd:285, priceEur:264 },
+                { capacity:"1TB", version:"Standard", color:"Black Titanium", priceUsd:285, priceEur:264 }
+            ]},
+            { model:"iPhone 16 Pro", category:"iPhone", img:appleCdnOld("iphone-16-pro-finish-select-202409-6-3inch-deserttitanium"), skus:[
+                { capacity:"128GB", version:"Standard", color:"Desert Titanium", priceUsd:170, priceEur:157 },
+                { capacity:"128GB", version:"Standard", color:"Black Titanium", priceUsd:170, priceEur:157 },
+                { capacity:"256GB", version:"Standard", color:"Desert Titanium", priceUsd:210, priceEur:194 },
+                { capacity:"256GB", version:"Standard", color:"Black Titanium", priceUsd:210, priceEur:194 },
+                { capacity:"512GB", version:"Standard", color:"Desert Titanium", priceUsd:235, priceEur:217 },
+                { capacity:"512GB", version:"Standard", color:"Black Titanium", priceUsd:235, priceEur:217 },
+                { capacity:"1TB", version:"Standard", color:"Desert Titanium", priceUsd:265, priceEur:245 },
+                { capacity:"1TB", version:"Standard", color:"Black Titanium", priceUsd:265, priceEur:245 }
+            ]},
+            { model:"iPhone 16 Plus", category:"iPhone", img:appleCdnOld("iphone-16-finish-select-202409-6-7inch-ultramarine"), skus:[
+                { capacity:"128GB", version:"Standard", color:"Ultramarine", priceUsd:165, priceEur:152 },
+                { capacity:"128GB", version:"Standard", color:"Teal", priceUsd:165, priceEur:152 },
+                { capacity:"256GB", version:"Standard", color:"Ultramarine", priceUsd:185, priceEur:171 },
+                { capacity:"256GB", version:"Standard", color:"Teal", priceUsd:185, priceEur:171 },
+                { capacity:"512GB", version:"Standard", color:"Ultramarine", priceUsd:200, priceEur:185 },
+                { capacity:"512GB", version:"Standard", color:"Pink", priceUsd:200, priceEur:185 }
+            ]},
+            { model:"iPhone 16", category:"iPhone", img:appleCdnOld("iphone-16-finish-select-202409-6-1inch-ultramarine"), skus:[
+                { capacity:"128GB", version:"Standard", color:"Ultramarine", priceUsd:155, priceEur:143 },
+                { capacity:"128GB", version:"Standard", color:"Teal", priceUsd:155, priceEur:143 },
+                { capacity:"256GB", version:"Standard", color:"Ultramarine", priceUsd:175, priceEur:162 },
+                { capacity:"256GB", version:"Standard", color:"Teal", priceUsd:175, priceEur:162 },
+                { capacity:"512GB", version:"Standard", color:"Ultramarine", priceUsd:200, priceEur:185 },
+                { capacity:"512GB", version:"Standard", color:"Pink", priceUsd:200, priceEur:185 }
+            ]},
+            // ==================== iPhone 15 ====================
+            { model:"iPhone 15 Pro Max", category:"iPhone", img:appleCdnOld("iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium"), skus:[
+                { capacity:"256GB", version:"Standard", color:"Natural Titanium", priceUsd:195, priceEur:180 },
+                { capacity:"256GB", version:"Standard", color:"Blue Titanium", priceUsd:195, priceEur:180 },
+                { capacity:"512GB", version:"Standard", color:"Natural Titanium", priceUsd:220, priceEur:203 },
+                { capacity:"512GB", version:"Standard", color:"Blue Titanium", priceUsd:220, priceEur:203 },
+                { capacity:"1TB", version:"Standard", color:"Natural Titanium", priceUsd:250, priceEur:231 },
+                { capacity:"1TB", version:"Standard", color:"Black Titanium", priceUsd:250, priceEur:231 }
+            ]},
+            { model:"iPhone 15 Pro", category:"iPhone", img:appleCdnOld("iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium"), skus:[
+                { capacity:"128GB", version:"Standard", color:"Natural Titanium", priceUsd:135, priceEur:125 },
+                { capacity:"128GB", version:"Standard", color:"Blue Titanium", priceUsd:135, priceEur:125 },
+                { capacity:"256GB", version:"Standard", color:"Natural Titanium", priceUsd:155, priceEur:143 },
+                { capacity:"256GB", version:"Standard", color:"Blue Titanium", priceUsd:155, priceEur:143 },
+                { capacity:"512GB", version:"Standard", color:"Natural Titanium", priceUsd:195, priceEur:180 },
+                { capacity:"512GB", version:"Standard", color:"Black Titanium", priceUsd:195, priceEur:180 },
+                { capacity:"1TB", version:"Standard", color:"Natural Titanium", priceUsd:235, priceEur:217 },
+                { capacity:"1TB", version:"Standard", color:"White Titanium", priceUsd:235, priceEur:217 }
+            ]},
+            { model:"iPhone 15", category:"iPhone", img:appleCdnOld("iphone-15-finish-select-202309-6-1inch-blue"), skus:[
+                { capacity:"128GB", version:"Standard", color:"Blue", priceUsd:115, priceEur:106 },
+                { capacity:"128GB", version:"Standard", color:"Green", priceUsd:115, priceEur:106 },
+                { capacity:"256GB", version:"Standard", color:"Blue", priceUsd:135, priceEur:125 },
+                { capacity:"256GB", version:"Standard", color:"Green", priceUsd:135, priceEur:125 },
+                { capacity:"512GB", version:"Standard", color:"Blue", priceUsd:160, priceEur:148 },
+                { capacity:"512GB", version:"Standard", color:"Pink", priceUsd:160, priceEur:148 }
+            ]},
             // ==================== MacBook ====================
-            { model: "MacBook Pro 16\" M4 Max", category: "MacBook", img: appleCdn("mbp16-spaceblack-select-202410"), variants: [{ capacity: "36GB/1TB", priceUsd: 1000, priceEur: 925 }, { capacity: "48GB/2TB", priceUsd: 1200, priceEur: 1111 }] },
-            { model: "MacBook Pro 14\" M4 Pro", category: "MacBook", img: appleCdn("mbp14-spaceblack-select-202410"), variants: [{ capacity: "24GB/512GB", priceUsd: 800, priceEur: 740 }, { capacity: "24GB/1TB", priceUsd: 950, priceEur: 879 }] },
-            { model: "MacBook Air 15\" M4", category: "MacBook", img: appleCdn("mba15-midnight-select-202403"), variants: [{ capacity: "16GB/256GB", priceUsd: 500, priceEur: 462 }, { capacity: "16GB/512GB", priceUsd: 600, priceEur: 555 }] },
-
+            { model:"MacBook Pro 16\" M4 Max", category:"MacBook", img:appleCdnOld("mbp16-spaceblack-select-202410"), skus:[
+                { capacity:"36GB/1TB", version:"Standard", color:"Space Black", priceUsd:1000, priceEur:925 },
+                { capacity:"48GB/2TB", version:"Standard", color:"Silver", priceUsd:1200, priceEur:1111 }
+            ]},
+            { model:"MacBook Pro 14\" M4 Pro", category:"MacBook", img:appleCdnOld("mbp14-spaceblack-select-202410"), skus:[
+                { capacity:"24GB/512GB", version:"Standard", color:"Space Black", priceUsd:800, priceEur:740 },
+                { capacity:"24GB/1TB", version:"Standard", color:"Silver", priceUsd:950, priceEur:879 }
+            ]},
+            { model:"MacBook Air 15\" M4", category:"MacBook", img:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png", skus:[
+                { capacity:"16GB/256GB", version:"Standard", color:"Midnight", priceUsd:500, priceEur:462 },
+                { capacity:"16GB/512GB", version:"Standard", color:"Starlight", priceUsd:600, priceEur:555 }
+            ]},
+            { model:"MacBook Air 13\" M4", category:"MacBook", img:"https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png", skus:[
+                { capacity:"16GB/256GB", version:"Standard", color:"Midnight", priceUsd:450, priceEur:416 },
+                { capacity:"16GB/512GB", version:"Standard", color:"Starlight", priceUsd:550, priceEur:509 }
+            ]},
             // ==================== iPad ====================
-            { model: "iPad Pro 13\" M4", category: "iPad", img: appleCdn("ipad-pro-13-select-202405-spacegray"), variants: [{ capacity: "256GB", priceUsd: 450, priceEur: 416 }, { capacity: "512GB", priceUsd: 550, priceEur: 509 }, { capacity: "1TB", priceUsd: 650, priceEur: 601 }] },
-            { model: "iPad Pro 11\" M4", category: "iPad", img: appleCdn("ipad-pro-11-select-202405-spacegray"), variants: [{ capacity: "256GB", priceUsd: 400, priceEur: 370 }, { capacity: "512GB", priceUsd: 500, priceEur: 462 }, { capacity: "1TB", priceUsd: 600, priceEur: 555 }] },
-            { model: "iPad Air M2 11\"", category: "iPad", img: appleCdn("ipad-air-select-202405-spacegray"), variants: [{ capacity: "128GB", priceUsd: 250, priceEur: 231 }, { capacity: "256GB", priceUsd: 300, priceEur: 277 }, { capacity: "512GB", priceUsd: 380, priceEur: 351 }] },
-            { model: "iPad Mini 6", category: "iPad", img: appleCdn("ipad-mini-select-202109-spacegray"), variants: [{ capacity: "64GB", priceUsd: 180, priceEur: 166 }, { capacity: "256GB", priceUsd: 250, priceEur: 231 }] },
-
+            { model:"iPad Pro 13\" M4", category:"iPad", img:appleCdnOld("ipad-pro-13-select-202405-spacegray"), skus:[
+                { capacity:"256GB", version:"Wi-Fi", color:"Space Gray", priceUsd:450, priceEur:416 },
+                { capacity:"512GB", version:"Wi-Fi", color:"Silver", priceUsd:550, priceEur:509 },
+                { capacity:"1TB", version:"Wi-Fi", color:"Space Gray", priceUsd:650, priceEur:601 }
+            ]},
+            { model:"iPad Pro 11\" M4", category:"iPad", img:appleCdnOld("ipad-pro-11-select-202405-spacegray"), skus:[
+                { capacity:"256GB", version:"Wi-Fi", color:"Space Gray", priceUsd:400, priceEur:370 },
+                { capacity:"512GB", version:"Wi-Fi", color:"Silver", priceUsd:500, priceEur:462 },
+                { capacity:"1TB", version:"Wi-Fi", color:"Space Gray", priceUsd:600, priceEur:555 }
+            ]},
+            { model:"iPad Air M2 11\"", category:"iPad", img:appleCdnOld("ipad-air-select-202405-spacegray"), skus:[
+                { capacity:"128GB", version:"Wi-Fi", color:"Space Gray", priceUsd:250, priceEur:231 },
+                { capacity:"256GB", version:"Wi-Fi", color:"Blue", priceUsd:300, priceEur:277 },
+                { capacity:"512GB", version:"Wi-Fi", color:"Purple", priceUsd:380, priceEur:351 }
+            ]},
+            { model:"iPad Mini 6", category:"iPad", img:appleCdnOld("ipad-mini-select-202109-spacegray"), skus:[
+                { capacity:"64GB", version:"Wi-Fi", color:"Space Gray", priceUsd:180, priceEur:166 },
+                { capacity:"256GB", version:"Wi-Fi", color:"Pink", priceUsd:250, priceEur:231 }
+            ]},
             // ==================== Watch ====================
-            { model: "Watch Ultra 2", category: "Watch", img: appleCdn("watch-ultra-2-49mm-titanium-natural-hermes-tan-single-tour-202409"), variants: [{ capacity: "49mm", priceUsd: 300, priceEur: 277 }] },
-            { model: "Watch Series 10", category: "Watch", img: appleCdn("watch-s10-42mm-jetblack-aluminum-jetblack-sport-band-202409"), variants: [{ capacity: "42mm", priceUsd: 150, priceEur: 138 }, { capacity: "46mm", priceUsd: 180, priceEur: 166 }] },
-
+            { model:"Watch Ultra 2", category:"Watch", img:appleCdnOld("watch-ultra-2-49mm-titanium-natural-hermes-tan-single-tour-202409"), skus:[
+                { capacity:"49mm", version:"GPS + Cellular", color:"Natural Titanium", priceUsd:300, priceEur:277 }
+            ]},
+            { model:"Watch Series 10", category:"Watch", img:appleCdnOld("watch-s10-42mm-jetblack-aluminum-jetblack-sport-band-202409"), skus:[
+                { capacity:"42mm", version:"GPS", color:"Jet Black", priceUsd:150, priceEur:138 },
+                { capacity:"46mm", version:"GPS", color:"Silver", priceUsd:180, priceEur:166 }
+            ]},
             // ==================== AirPods ====================
-            { model: "AirPods Pro 2", category: "AirPods", img: appleCdn("MQD83"), variants: [{ capacity: "USB-C", priceUsd: 80, priceEur: 74 }] },
-            { model: "AirPods Max", category: "AirPods", img: appleCdn("airpods-max-select-202409-midnight"), variants: [{ capacity: "USB-C", priceUsd: 200, priceEur: 185 }] },
-
+            { model:"AirPods Pro 2", category:"AirPods", img:appleCdnOld("MQD83"), skus:[
+                { capacity:"USB-C", version:"Standard", color:"White", priceUsd:80, priceEur:74 }
+            ]},
+            { model:"AirPods Max", category:"AirPods", img:appleCdnOld("airpods-max-select-202409-midnight"), skus:[
+                { capacity:"USB-C", version:"Standard", color:"Midnight", priceUsd:200, priceEur:185 }
+            ]},
+            // ==================== Ray-Ban Meta ====================
+            { model:"Ray-Ban Meta Wayfarer", category:"Ray-Ban", img:"https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/38df2eee-3b46-4c23-b015-b3a10041c8e9/0RW4012__601S1Z__P21__shad__al31.png?impolicy=RB_Product_clone&width=720&bgc=%23ffffff", skus:[
+                { capacity:"N/A", version:"Gen 2", color:"Matte Black", priceUsd:299, priceEur:277 },
+                { capacity:"N/A", version:"Gen 2", color:"Shiny Black", priceUsd:299, priceEur:277 }
+            ]},
+            { model:"Ray-Ban Meta Headliner", category:"Ray-Ban", img:"https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/11a794bd-ac28-4a03-8d90-b3a001677ca4/0RW4013__601_1M__P21__shad__al31.png?impolicy=RB_Product_clone&width=720&bgc=%23ffffff", skus:[
+                { capacity:"N/A", version:"Gen 2", color:"Black", priceUsd:299, priceEur:277 }
+            ]},
+            { model:"Ray-Ban Meta Skyler", category:"Ray-Ban", img:"https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/7745da06-28bc-47fd-b975-b3a001671d5f/0RW4014__601_1M__P21__shad__al31.png?impolicy=RB_Product_clone&width=720&bgc=%23ffffff", skus:[
+                { capacity:"N/A", version:"Gen 2", color:"Black", priceUsd:299, priceEur:277 }
+            ]},
+            // ==================== PS5 ====================
+            { model:"PS5 Slim", category:"PS5", img:"https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-product-thumbnail-01-en-14sep23?$facebook$", skus:[
+                { capacity:"N/A", version:"Digital", color:"White", priceUsd:450, priceEur:416 },
+                { capacity:"N/A", version:"Disc", color:"White", priceUsd:500, priceEur:462 }
+            ]},
+            { model:"PS5 Pro", category:"PS5", img:"https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-product-thumbnail-01-en-11sep24?$facebook$", skus:[
+                { capacity:"N/A", version:"Disc", color:"White", priceUsd:700, priceEur:648 }
+            ]},
             // ==================== DJI ====================
-            { model: "DJI Mavic 3 Pro", category: "DJI", img: "https://www-cdn.djiits.com/dps/3ef66158afa6718fbb7f14a29ac5367f.jpg", variants: [{ capacity: "RC", priceUsd: 800, priceEur: 740 }, { capacity: "RC Pro", priceUsd: 1000, priceEur: 925 }] },
-            { model: "DJI Mini 4 Pro", category: "DJI", img: "https://www-cdn.djiits.com/dps/3ef66158afa6718fbb7f14a29ac5367f.jpg", variants: [{ capacity: "RC-N2", priceUsd: 300, priceEur: 277 }, { capacity: "RC 2", priceUsd: 400, priceEur: 370 }] },
-
-            // ==================== EZVIZ ====================
-            { model: "EZVIZ C6 4MP", category: "EZVIZ", img: "https://cdn.tgdd.vn/Products/Images/4728/310494/camera-ip-360-do-1440p-ezviz-cs-c6-1.jpg", variants: [{ capacity: "2K", priceUsd: 15, priceEur: 13 }, { capacity: "4K", priceUsd: 25, priceEur: 23 }] },
-            { model: "EZVIZ C3W", category: "EZVIZ", img: "https://cf-images.dustin.eu/cdn-cgi/image/format=auto/content/70470/your-most-vigilant-guard.jpg", variants: [{ capacity: "1080P", priceUsd: 12, priceEur: 11 }, { capacity: "2K", priceUsd: 18, priceEur: 16 }] }
+            { model:"DJI Mavic 3 Pro", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/9b1bb4e6929cb9c5d0ea22bf33eedffd%40small.png", skus:[
+                { capacity:"N/A", version:"RC", color:"Gray", priceUsd:800, priceEur:740 },
+                { capacity:"N/A", version:"RC Pro", color:"Gray", priceUsd:1000, priceEur:925 }
+            ]},
+            { model:"DJI Mini 4 Pro", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/4ea419b081f38056785ae8665d473190%40small.png", skus:[
+                { capacity:"N/A", version:"RC-N2", color:"Gray", priceUsd:300, priceEur:277 },
+                { capacity:"N/A", version:"RC 2", color:"Gray", priceUsd:400, priceEur:370 }
+            ]},
+            { model:"DJI Mini 5 Pro", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/89bd715bc6795bc6f966bf4d18130e36%40small.png?format=webp", skus:[
+                { capacity:"N/A", version:"RC-N3", color:"Gray", priceUsd:500, priceEur:462 },
+                { capacity:"N/A", version:"RC 3", color:"Gray", priceUsd:650, priceEur:601 }
+            ]},
+            { model:"DJI Osmo Pocket 3", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/35d158a1f3d1a3a48ec4cf2220cfc426%40small.png", skus:[
+                { capacity:"N/A", version:"Standard", color:"Black", priceUsd:420, priceEur:388 },
+                { capacity:"N/A", version:"Creator Combo", color:"Black", priceUsd:530, priceEur:490 }
+            ]},
+            { model:"DJI Osmo Pocket 4", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/5408da2c69b56fbd2d80fdca847ad92d%40small.png?format=webp", skus:[
+                { capacity:"N/A", version:"Standard", color:"Black", priceUsd:520, priceEur:481 },
+                { capacity:"N/A", version:"All-in-One", color:"Black", priceUsd:650, priceEur:601 }
+            ]},
+            // ==================== Logitech ====================
+            { model:"Logitech G923", category:"Logitech", img:"https://resource.logitech.com/w_800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/gaming/g923/g923-gallery-1.png", skus:[
+                { capacity:"N/A", version:"PC/PS", color:"Black", priceUsd:150, priceEur:139 }
+            ]},
+            // ==================== Nintendo ====================
+            { model:"Nintendo Switch 2", category:"Nintendo", img:"https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_500/ncom/en_US/switch/site-switch-2/switch-2-hero", skus:[
+                { capacity:"N/A", version:"Standard", color:"Black", priceUsd:300, priceEur:278 }
+            ]},
+            // ==================== GPU ====================
+            { model:"RTX 5090", category:"GPU", img:"https://assets.nvidia.partners/images/5090_Front_.webp", skus:[{ capacity:"32GB", version:"Founders Edition", color:"Black", priceUsd:1200, priceEur:1111 }]},
+            { model:"RTX 5080", category:"GPU", img:"https://assets.nvidia.partners/images/png/5080-Front.png", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:800, priceEur:740 }]},
+            { model:"RTX 5070 Ti", category:"GPU", img:"https://assets.nvidia.partners/images/png/pny-rtx-5070-ti-slim-dual-fan-top.png", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:600, priceEur:555 }]},
+            { model:"RTX 5070", category:"GPU", img:"https://assets.nvidia.partners/images/png/5070-220x141.png", skus:[{ capacity:"12GB", version:"Founders Edition", color:"Black", priceUsd:450, priceEur:416 }]},
+            { model:"RTX 5060 Ti", category:"GPU", img:"https://assets.nvidia.partners/images/png/90YV0MH3-MVAA00.png", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:350, priceEur:324 }]},
+            { model:"RTX 5060", category:"GPU", img:"https://assets.nvidia.partners/images/png/3dlfm3-a-prime50608gboc.png", skus:[{ capacity:"8GB", version:"Founders Edition", color:"Black", priceUsd:250, priceEur:231 }]},
+            { model:"RTX 5050", category:"GPU", img:"https://assets.nvidia.partners/images/png/GeForce_RTX_5050_8G_VENTUS_2X_OC_boxcard.png", skus:[{ capacity:"8GB", version:"Founders Edition", color:"Black", priceUsd:180, priceEur:166 }]},
+            { model:"RTX 4090", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4090-product-gallery-full-d.jpg", skus:[{ capacity:"24GB", version:"Founders Edition", color:"Black", priceUsd:960, priceEur:889 }]},
+            { model:"RTX 4080 Super", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4080-super-product-gallery-full-d.jpg", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:650, priceEur:601 }]},
+            { model:"RTX 4070 Ti Super", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-ti-super-product-gallery-full-d.jpg", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:450, priceEur:416 }]},
+            { model:"RTX 4070 Super", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-super-product-gallery-full-d.jpg", skus:[{ capacity:"12GB", version:"Founders Edition", color:"Black", priceUsd:350, priceEur:324 }]},
+            { model:"RTX 4060 Ti", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-ti-product-gallery-full-d.jpg", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:250, priceEur:231 }]},
+            { model:"RTX 4060", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-product-gallery-full-d.jpg", skus:[{ capacity:"8GB", version:"Founders Edition", color:"Black", priceUsd:180, priceEur:166 }]},
+            { model:"RTX 4050", category:"GPU", img:"", skus:[{ capacity:"6GB", version:"Founders Edition", color:"Black", priceUsd:140, priceEur:130 }]},
+            { model:"RX 7900 XTX", category:"GPU", img:"https://www.amd.com/system/files/2022-11/amd-radeon-rx-7900xtx-gallery1-1260x709.png", skus:[{ capacity:"24GB", version:"Standard", color:"Black", priceUsd:700, priceEur:648 }]},
+            { model:"RX 7900 XT", category:"GPU", img:"https://www.amd.com/system/files/2022-11/amd-radeon-rx-7900xt-gallery1-1260x709.png", skus:[{ capacity:"20GB", version:"Standard", color:"Black", priceUsd:600, priceEur:555 }]},
+            { model:"RX 7800 XT", category:"GPU", img:"https://www.amd.com/system/files/2023-08/amd-radeon-rx-7800xt-gallery1-1260x709.png", skus:[{ capacity:"16GB", version:"Standard", color:"Black", priceUsd:400, priceEur:370 }]},
+            { model:"RX 7700 XT", category:"GPU", img:"https://www.amd.com/system/files/2023-08/amd-radeon-rx-7700xt-gallery1-1260x709.png", skus:[{ capacity:"12GB", version:"Standard", color:"Black", priceUsd:350, priceEur:324 }]},
+            { model:"RX 7600", category:"GPU", img:"https://www.amd.com/system/files/2023-05/amd-radeon-rx-7600-gallery1-1260x709.png", skus:[{ capacity:"8GB", version:"Standard", color:"Black", priceUsd:200, priceEur:185 }]},
+            // ==================== Dyson ====================
+            { model:"Dyson Supersonic HD08", category:"Dyson", img:"https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/369046-01.png", skus:[
+                { capacity:"N/A", version:"Standard", color:"Iron/Fuchsia", priceUsd:185, priceEur:171 },
+                { capacity:"N/A", version:"Standard", color:"Nickel/Copper", priceUsd:185, priceEur:171 }
+            ]},
+            { model:"Dyson Airwrap HS05", category:"Dyson", img:"https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/419138-01.png", skus:[
+                { capacity:"N/A", version:"Standard", color:"Nickel/Copper", priceUsd:230, priceEur:213 },
+                { capacity:"N/A", version:"Standard", color:"Fuchsia", priceUsd:230, priceEur:213 }
+            ]},
+            { model:"Dyson V15 Detect", category:"Dyson", img:"https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/391580-01.png", skus:[
+                { capacity:"N/A", version:"Absolute", color:"Gold", priceUsd:310, priceEur:287 }
+            ]},
+            { model:"Dyson V12 Detect Slim", category:"Dyson", img:"https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/391579-01.png", skus:[
+                { capacity:"N/A", version:"Standard", color:"Yellow", priceUsd:240, priceEur:222 }
+            ]},
+            // ==================== Insta360 ====================
+            { model:"Insta360 X5", category:"Insta360", img:"https://cdn.shopify.com/s/files/1/0611/1956/9600/files/x5-main.png", skus:[
+                { capacity:"N/A", version:"Standard", color:"Black", priceUsd:295, priceEur:273 },
+                { capacity:"N/A", version:"All-in-One", color:"Black", priceUsd:380, priceEur:352 }
+            ]},
+            { model:"Insta360 X4", category:"Insta360", img:"https://res.insta360.com/dynamic/store/0d86cfc9f88381d2898bfc40e003382e/2673_8fb459c1-a26c-485e-a0bb-3efde15357f2.png?x-oss-process=image%2Fauto-orient%2C1%2Fformat%2Cwebp", skus:[
+                { capacity:"N/A", version:"Standard", color:"Black", priceUsd:200, priceEur:185 }
+            ]},
+            { model:"Insta360 GO 3S", category:"Insta360", img:"https://res.insta360.com/static/bfec02fe6555311656486b867b2bd386/%E9%80%8F%E6%98%8E02.png?x-oss-process=image%2Fauto-orient%2C1%2Fformat%2Cwebp", skus:[
+                { capacity:"64GB", version:"Standard", color:"Black", priceUsd:130, priceEur:120 },
+                { capacity:"128GB", version:"Standard", color:"White", priceUsd:160, priceEur:148 }
+            ]},
+            { model:"Insta360 GO Ultra", category:"Insta360", img:"https://wassets.insta360.com/store/cbcfdf3f39ac413aaa78e35412c000aa/59712_38b1777c-1553-42c2-b3fe-941ce2f1a7dd.png?x-oss-process=image%2Fauto-orient%2C1%2Fformat%2Cwebp", skus:[
+                { capacity:"N/A", version:"Standard", color:"Black", priceUsd:175, priceEur:162 }
+            ]}
         ];
 
         let currentLang = 'en';
         let currentCurrency = 'USD';
         let currentFilter = 'all';
-        let exchangeRates = { USD: 1, EUR: 0.92, GBP: 0.79, JPY: 149.5, CNY: 7.24, CAD: 1.36, AUD: 1.52 };
+        let exchangeRates = { USD:1, EUR:0.92, GBP:0.79, JPY:149.5, CNY:7.24, CAD:1.36, AUD:1.52 };
 
         async function fetchExchangeRates() {
             try {
                 const res = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json');
                 if (!res.ok) throw new Error('API error');
                 const data = await res.json();
-                exchangeRates = { USD: 1, EUR: data.usd.eur || 0.92, GBP: data.usd.gbp || 0.79, JPY: data.usd.jpy || 149.5, CNY: data.usd.cny || 7.24, CAD: data.usd.cad || 1.36, AUD: data.usd.aud || 1.52 };
-            } catch (e) { console.warn('Using fallback rates'); }
+                exchangeRates = { USD:1, EUR:data.usd.eur||0.92, GBP:data.usd.gbp||0.79, JPY:data.usd.jpy||149.5, CNY:data.usd.cny||7.24, CAD:data.usd.cad||1.36, AUD:data.usd.aud||1.52 };
+            } catch(e) { console.warn('Using fallback rates'); }
         }
 
         function getCurrencySymbol(code) {
-            const symbols = { USD: '$', EUR: '€', GBP: '£', JPY: '¥', CNY: '¥', CAD: 'C$', AUD: 'A$' };
+            const symbols = { USD:'$', EUR:'€', GBP:'£', JPY:'¥', CNY:'¥', CAD:'C$', AUD:'A$' };
             return symbols[code] || code;
         }
 
         function convertPrice(usdPrice, targetCurrency) {
             return Math.round(usdPrice * (exchangeRates[targetCurrency] || 1));
         }
-
-        // ==========================================
-        // 图片双重保险机制
-        // ==========================================
         function createImageHtml(product) {
-            return `<img src="${product.img}" alt="${product.model}" class="product-img" referrerpolicy="no-referrer" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="img-fallback">${product.model}</div>`;
+            const fallback = makePlaceholderSvg(product.model);
+            if (!product.img || String(product.img).trim() === '') {
+                return `<img src="${fallback}" alt="${product.model}" class="product-img" loading="lazy" decoding="async">`;
+            }
+            return `<img src="${product.img}" alt="${product.model}" class="product-img" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}';">`;
         }
 
         function renderProducts() {
             const grid = document.getElementById('productGrid');
             grid.innerHTML = '';
-
             const filteredData = productsData.filter(p => currentFilter === 'all' || p.category === currentFilter);
             if (filteredData.length === 0) { grid.innerHTML = '<div class="empty-state">No products found.</div>'; return; }
 
@@ -268,25 +443,41 @@
             const fragment = document.createDocumentFragment();
 
             filteredData.forEach(product => {
-                const defaultVariant = product.variants[0];
-                const priceMain = getCurrencySymbol(currentCurrency) + convertPrice(defaultVariant.priceUsd, currentCurrency).toLocaleString();
-                
-                let variantHtml = '';
-                product.variants.forEach((v, index) => {
-                    variantHtml += `<button class="variant-btn ${index === 0 ? 'active' : ''}" data-capacity="${v.capacity}" data-price-usd="${v.priceUsd}">${v.capacity}</button>`;
-                });
+                const defaultSku = product.skus[0];
+                const priceMain = getCurrencySymbol(currentCurrency) + convertPrice(defaultSku.priceUsd, currentCurrency).toLocaleString();
 
-                const waMessage = encodeURIComponent(t.greeting + ' I am interested in ' + product.model + ' ' + defaultVariant.capacity + '.');
+                const capacities = [...new Set(product.skus.map(s => s.capacity))].filter(c => c !== "N/A");
+                const versions = [...new Set(product.skus.map(s => s.version))].filter(v => v !== "Standard");
+                const colors = [...new Set(product.skus.map(s => s.color))];
+
+                let capHtml = '';
+                capacities.forEach((cap, i) => {
+                    capHtml += `<button class="variant-btn ${i===0?'active':''}" data-type="capacity" data-value="${cap}">${cap}</button>`;
+                });
+                let verHtml = '';
+                versions.forEach((ver, i) => {
+                    verHtml += `<button class="variant-btn ${i===0?'active':''}" data-type="version" data-value="${ver}">${ver}</button>`;
+                });
+                let colHtml = '';
+                colors.forEach((col, i) => {
+                    colHtml += `<button class="variant-btn ${i===0?'active':''}" data-type="color" data-value="${col}">${col}</button>`;
+                });
 
                 const card = document.createElement('div');
                 card.className = 'product-card';
+                card.dataset.model = product.model;
+                card.dataset.skus = JSON.stringify(product.skus);
+
                 card.innerHTML = `
                     <div class="img-box">${createImageHtml(product)}</div>
                     <div class="product-model">${product.model}</div>
+                    <div class="price-label">${t.priceLabel}</div>
                     <div class="product-price">${priceMain}</div>
-                    <div class="product-price-secondary">$${defaultVariant.priceUsd.toLocaleString()}</div>
-                    <div class="variant-selector">${variantHtml}</div>
-                    <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}" target="_blank" class="btn-inquire">
+                    <div class="product-price-secondary">$${defaultSku.priceUsd.toLocaleString()}</div>
+                    <div class="selector-group" data-selector="capacity">${capHtml}</div>
+                    <div class="selector-group" data-selector="version">${verHtml}</div>
+                    <div class="selector-group" data-selector="color">${colHtml}</div>
+                    <a href="#" target="_blank" class="btn-inquire">
                         <svg viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2ZM17.11 16.43C16.9 17.02 15.99 17.55 15.24 17.62C14.49 17.7 13.66 17.66 12.35 17.12C10.24 16.26 8.86 14.11 8.76 13.98C8.66 13.85 7.77 12.68 7.77 11.47C7.77 10.26 8.38 9.67 8.59 9.44C8.81 9.22 9.06 9.15 9.28 9.15C9.5 9.15 9.72 9.15 9.9 9.16C10.09 9.17 10.35 9.13 10.6 9.73C10.85 10.34 11.49 11.73 11.57 11.89C11.65 12.05 11.7 12.24 11.59 12.45C11.48 12.66 11.38 12.79 11.24 12.96C11.11 13.12 10.96 13.32 10.85 13.44C10.74 13.56 10.62 13.69 10.76 13.93C10.9 14.17 11.46 15.08 12.28 15.81C13.33 16.75 14.19 17.06 14.44 17.18C14.69 17.3 14.85 17.28 15.01 17.11C15.18 16.94 15.73 16.29 15.92 16.04C16.11 15.79 16.3 15.84 16.56 15.94C16.82 16.04 18.2 16.72 18.48 16.86C18.76 17 18.95 17.07 19.02 17.18C19.08 17.29 19.08 17.85 18.87 18.42C18.66 18.99 17.32 19.84 17.11 16.43Z" fill="white"/></svg>
                         ${t.inquire}
                     </a>
@@ -294,29 +485,64 @@
                 fragment.appendChild(card);
             });
             grid.appendChild(fragment);
+
+            document.querySelectorAll('.product-card').forEach(card => updateCardLink(card));
+        }
+
+        function getSelectedSku(card) {
+            const skus = JSON.parse(card.dataset.skus);
+            const cap = card.querySelector('[data-selector="capacity"] .variant-btn.active')?.dataset.value || "";
+            const ver = card.querySelector('[data-selector="version"] .variant-btn.active')?.dataset.value || "";
+            const col = card.querySelector('[data-selector="color"] .variant-btn.active')?.dataset.value || "";
+
+            let matched = skus.find(s =>
+                (cap === "" || s.capacity === cap) &&
+                (ver === "" || s.version === ver) &&
+                (col === "" || s.color === col)
+            );
+            if (!matched && cap && col) matched = skus.find(s => s.capacity === cap && s.color === col);
+            if (!matched && cap) matched = skus.find(s => s.capacity === cap);
+            if (!matched && ver) matched = skus.find(s => s.version === ver);
+            if (!matched && col) matched = skus.find(s => s.color === col);
+            return matched || skus[0];
+        }
+
+        function updateCardLink(card) {
+            const sku = getSelectedSku(card);
+            const modelName = card.dataset.model;
+            const t = translations[currentLang];
+            const priceMain = getCurrencySymbol(currentCurrency) + convertPrice(sku.priceUsd, currentCurrency).toLocaleString();
+
+            card.querySelector('.product-price').textContent = priceMain;
+            card.querySelector('.product-price-secondary').textContent = '$' + sku.priceUsd.toLocaleString();
+
+            let detail = modelName;
+            if (sku.capacity && sku.capacity !== "N/A") detail += ' ' + sku.capacity;
+            if (sku.version && sku.version !== "Standard") detail += ' ' + sku.version;
+            if (sku.color) detail += ' ' + sku.color;
+
+            const waMessage = encodeURIComponent(t.greeting + ' I am interested in ' + detail + '.');
+            card.querySelector('.btn-inquire').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`;
         }
 
         document.addEventListener('click', function(e) {
-            const variantBtn = e.target.closest('.variant-btn');
-            if (variantBtn) {
+            const btn = e.target.closest('.variant-btn');
+            if (btn && btn.closest('.product-card')) {
                 e.preventDefault();
-                const selector = variantBtn.parentElement;
-                selector.querySelectorAll('.variant-btn').forEach(btn => btn.classList.remove('active'));
-                variantBtn.classList.add('active');
-                const card = variantBtn.closest('.product-card');
-                const capacity = variantBtn.getAttribute('data-capacity');
-                const priceUsd = parseInt(variantBtn.getAttribute('data-price-usd'));
-                const modelName = card.querySelector('.product-model').textContent;
-                card.querySelector('.product-price').textContent = getCurrencySymbol(currentCurrency) + convertPrice(priceUsd, currentCurrency).toLocaleString();
-                card.querySelector('.product-price-secondary').textContent = '$' + priceUsd.toLocaleString();
-                const t = translations[currentLang];
-                card.querySelector('.btn-inquire').href = `https://wa.me/${WHATSAPP_NUMBER}?text=` + encodeURIComponent(t.greeting + ' I am interested in ' + modelName + ' ' + capacity + '.');
+                const card = btn.closest('.product-card');
+                const type = btn.dataset.type;
+                const selector = card.querySelector(`[data-selector="${type}"]`);
+                if (selector) {
+                    selector.querySelectorAll('.variant-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    updateCardLink(card);
+                }
             }
 
             const currencyBtn = e.target.closest('.currency-btn');
             if (currencyBtn) {
                 currentCurrency = currencyBtn.getAttribute('data-currency');
-                document.querySelectorAll('.currency-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.currency-btn').forEach(b => b.classList.remove('active'));
                 currencyBtn.classList.add('active');
                 renderProducts();
             }
@@ -325,7 +551,7 @@
         function changeLang(lang) {
             currentLang = lang;
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent.trim() === lang.toUpperCase()));
-            const langCurrencyMap = { en: 'USD', fr: 'EUR', es: 'EUR' };
+            const langCurrencyMap = { en:'USD', fr:'EUR', es:'EUR' };
             currentCurrency = langCurrencyMap[lang] || 'USD';
             document.querySelectorAll('.currency-btn').forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-currency') === currentCurrency));
             const t = translations[lang];
