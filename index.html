@@ -39,8 +39,8 @@
         @media (min-width:1024px) { .product-grid { grid-template-columns:repeat(4,1fr); } }
         .product-card { background:var(--card-bg); border-radius:16px; padding:15px 10px; display:flex; flex-direction:column; align-items:center; text-align:center; position:relative; box-shadow:0 2px 15px rgba(0,0,0,0.04); transition:transform 0.3s,box-shadow 0.3s; }
         .product-card:hover { transform:translateY(-4px); box-shadow:0 8px 30px rgba(0,0,0,0.08); }
-        .img-box { width:100%; height:120px; display:flex; align-items:center; justify-content:center; margin-bottom:12px; background:#ffffff; border-radius:10px; overflow:hidden; position:relative; }
-        @media (min-width:600px) { .img-box { height:160px; } }
+        .img-box { width:100%; height:140px; display:flex; align-items:center; justify-content:center; margin-bottom:12px; background:#ffffff; border-radius:10px; overflow:hidden; position:relative; }
+        @media (min-width:600px) { .img-box { height:180px; } }
         .product-img { max-width:100%; max-height:100%; object-fit:contain; object-position:center; background:#ffffff; padding:4px; transition:transform 0.3s; }
         .product-card:hover .product-img { transform:scale(1.05); }
         .product-model { font-size:14px; font-weight:700; line-height:1.3; margin-bottom:4px; min-height:36px; display:flex; align-items:center; justify-content:center; }
@@ -101,6 +101,7 @@
         <button class="filter-btn" data-filter="Watch">Watch</button>
         <button class="filter-btn" data-filter="AirPods">AirPods</button>
         <button class="filter-btn" data-filter="Ray-Ban">Ray-Ban</button>
+        <button class="filter-btn" data-filter="Oakley">Oakley</button>
         <button class="filter-btn" data-filter="PS5">PS5</button>
         <button class="filter-btn" data-filter="DJI">DJI</button>
         <button class="filter-btn" data-filter="Logitech">Logitech</button>
@@ -150,23 +151,20 @@
 
         const productsData = [
             // ==================== iPhone 18 ====================
-            { model:"iPhone 18 Fold", category:"iPhone", img:"", skus:[
-                { capacity:"256GB", version:"Standard", color:"Black", priceUsd:500, priceEur:462 },
-                { capacity:"512GB", version:"Standard", color:"Black", priceUsd:550, priceEur:509 },
-                { capacity:"1TB", version:"Standard", color:"Black", priceUsd:600, priceEur:555 }
+            { model:"iPhone Duo", category:"iPhone", img:"https://www.apple.com/newsroom/images/2026/09/apple-unveils-iphone-duo/article/Apple-iPhone-Duo-colors-260909_big.jpg.large.jpg", skus:[
+                { capacity:"256GB", version:"Standard", color:"Night Sky", priceUsd:500, priceEur:462 },
+                { capacity:"512GB", version:"Standard", color:"Star White", priceUsd:550, priceEur:509 },
+                { capacity:"1TB", version:"Standard", color:"Night Sky", priceUsd:600, priceEur:555 },
+                { capacity:"2TB", version:"Standard", color:"Star White", priceUsd:700, priceEur:648 }
             ]},
-            { model:"iPhone 18 Pro Max", category:"iPhone", img:appleCdn("iphone-18-pro-finish-select-202609-6-9inch-burgundy"), skus:[
+            { model:"iPhone 18 Pro Max", category:"iPhone", img:"https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg", skus:[
                 { capacity:"256GB", version:"Standard", color:"Desert Titanium", priceUsd:400, priceEur:370 },
                 { capacity:"512GB", version:"Standard", color:"Desert Titanium", priceUsd:450, priceEur:416 },
                 { capacity:"1TB", version:"Standard", color:"Desert Titanium", priceUsd:500, priceEur:462 }
             ]},
-            { model:"iPhone 18 Pro", category:"iPhone", img:appleCdn("iphone-18-pro-finish-select-202609-6-3inch-burgundy"), skus:[
+            { model:"iPhone 18 Pro", category:"iPhone", img:"https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg", skus:[
                 { capacity:"256GB", version:"Standard", color:"Natural Titanium", priceUsd:350, priceEur:324 },
                 { capacity:"512GB", version:"Standard", color:"Natural Titanium", priceUsd:400, priceEur:370 }
-            ]},
-            { model:"iPhone 18", category:"iPhone", img:"", skus:[
-                { capacity:"256GB", version:"Standard", color:"Ultramarine", priceUsd:250, priceEur:231 },
-                { capacity:"512GB", version:"Standard", color:"Ultramarine", priceUsd:300, priceEur:277 }
             ]},
             // ==================== iPhone 17 ====================
             { model:"iPhone 17 Pro Max", category:"iPhone", img:appleCdn("iphone-17-pro-max-finish-select-silver-202509"), skus:[
@@ -304,14 +302,14 @@
                 { capacity:"USB-C", version:"Standard", color:"Midnight", priceUsd:200, priceEur:185 }
             ]},
             // ==================== Ray-Ban Meta ====================
-            { model:"Ray-Ban Meta Wayfarer", category:"Ray-Ban", img:"https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/38df2eee-3b46-4c23-b015-b3a10041c8e9/0RW4012__601S1Z__P21__shad__al31.png?impolicy=RB_Product_clone&width=720&bgc=%23ffffff", skus:[
+            { model:"Ray-Ban Meta Wayfarer", category:"Ray-Ban", img:"https://media.visio-net.com/oscommerce/images/viewerxxl_new/ray-ban-meta-WAYFARER-RW4012-601S1Z-50_3.jpg", skus:[
                 { capacity:"N/A", version:"Gen 2", color:"Matte Black", priceUsd:299, priceEur:277 },
                 { capacity:"N/A", version:"Gen 2", color:"Shiny Black", priceUsd:299, priceEur:277 }
             ]},
-            { model:"Ray-Ban Meta Headliner", category:"Ray-Ban", img:"https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/11a794bd-ac28-4a03-8d90-b3a001677ca4/0RW4013__601_1M__P21__shad__al31.png?impolicy=RB_Product_clone&width=720&bgc=%23ffffff", skus:[
+            { model:"Ray-Ban Meta Headliner", category:"Ray-Ban", img:"https://www.lensabl.com/cdn/shop/files/Screenshot2025-11-05at2.12.45PM.jpg?v=1770739702&width=1445", skus:[
                 { capacity:"N/A", version:"Gen 2", color:"Black", priceUsd:299, priceEur:277 }
             ]},
-            { model:"Ray-Ban Meta Skyler", category:"Ray-Ban", img:"https://images2.ray-ban.com//prod-onecp-record-files/pieyewear/7745da06-28bc-47fd-b975-b3a001671d5f/0RW4014__601_1M__P21__shad__al31.png?impolicy=RB_Product_clone&width=720&bgc=%23ffffff", skus:[
+            { model:"Ray-Ban Meta Skyler", category:"Ray-Ban", img:"https://images2.ray-ban.com/cdn-record-files-pi/3b7b1352-0af2-435c-abdb-b2ea00e36117/4db9bc1f-669d-4b89-abba-b2ea00e36402/0RW4014__601_71__P21__shad__qt.png", skus:[
                 { capacity:"N/A", version:"Gen 2", color:"Black", priceUsd:299, priceEur:277 }
             ]},
             // ==================== PS5 ====================
@@ -323,23 +321,23 @@
                 { capacity:"N/A", version:"Disc", color:"White", priceUsd:700, priceEur:648 }
             ]},
             // ==================== DJI ====================
-            { model:"DJI Mavic 3 Pro", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/9b1bb4e6929cb9c5d0ea22bf33eedffd%40small.png", skus:[
+            { model:"DJI Mavic 3 Pro", category:"DJI", img:"https://dronarbutiken.se/cdn/shop/files/2_5a142423-31a7-4e5a-b283-ee52ee39ca5d.jpg?v=1682428191&width=1946", skus:[
                 { capacity:"N/A", version:"RC", color:"Gray", priceUsd:800, priceEur:740 },
                 { capacity:"N/A", version:"RC Pro", color:"Gray", priceUsd:1000, priceEur:925 }
             ]},
-            { model:"DJI Mini 4 Pro", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/4ea419b081f38056785ae8665d473190%40small.png", skus:[
+            { model:"DJI Mini 4 Pro", category:"DJI", img:"https://dji-ars.pl/hpeciai/2f3c49a4f8c363dc0a45e23f3dc0db07/pol_pl_Dron-DJI-Mini-4-Pro-Fly-More-Combo-RC-2-34683_1.jpg", skus:[
                 { capacity:"N/A", version:"RC-N2", color:"Gray", priceUsd:300, priceEur:277 },
                 { capacity:"N/A", version:"RC 2", color:"Gray", priceUsd:400, priceEur:370 }
             ]},
-            { model:"DJI Mini 5 Pro", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/89bd715bc6795bc6f966bf4d18130e36%40small.png?format=webp", skus:[
+            { model:"DJI Mini 5 Pro", category:"DJI", img:"https://flytechsa.co.za/cdn/shop/files/DJI_Mini_5_PRO-unfolded_45_to_the_left_45_017677c5-440c-4bce-9a94-9197ecd88bb7.webp?v=1769677854&width=1445", skus:[
                 { capacity:"N/A", version:"RC-N3", color:"Gray", priceUsd:500, priceEur:462 },
                 { capacity:"N/A", version:"RC 3", color:"Gray", priceUsd:650, priceEur:601 }
             ]},
-            { model:"DJI Osmo Pocket 3", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/35d158a1f3d1a3a48ec4cf2220cfc426%40small.png", skus:[
+            { model:"DJI Osmo Pocket 3", category:"DJI", img:"https://www.fotokoch.de/bilddaten/bildzoom/dji-osmo-pocket-3-standard_65283_2.jpg", skus:[
                 { capacity:"N/A", version:"Standard", color:"Black", priceUsd:420, priceEur:388 },
                 { capacity:"N/A", version:"Creator Combo", color:"Black", priceUsd:530, priceEur:490 }
             ]},
-            { model:"DJI Osmo Pocket 4", category:"DJI", img:"https://se-cdn.djiits.com/tpc/uploads/spu/cover/5408da2c69b56fbd2d80fdca847ad92d%40small.png?format=webp", skus:[
+            { model:"DJI Osmo Pocket 4", category:"DJI", img:"https://excellentphoto.ca/cdn/shop/files/osmopocket4-2.png?v=1776357110&width=3840", skus:[
                 { capacity:"N/A", version:"Standard", color:"Black", priceUsd:520, priceEur:481 },
                 { capacity:"N/A", version:"All-in-One", color:"Black", priceUsd:650, priceEur:601 }
             ]},
@@ -352,20 +350,19 @@
                 { capacity:"N/A", version:"Standard", color:"Black", priceUsd:300, priceEur:278 }
             ]},
             // ==================== GPU ====================
-            { model:"RTX 5090", category:"GPU", img:"https://assets.nvidia.partners/images/5090_Front_.webp", skus:[{ capacity:"32GB", version:"Founders Edition", color:"Black", priceUsd:1200, priceEur:1111 }]},
-            { model:"RTX 5080", category:"GPU", img:"https://assets.nvidia.partners/images/png/5080-Front.png", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:800, priceEur:740 }]},
-            { model:"RTX 5070 Ti", category:"GPU", img:"https://assets.nvidia.partners/images/png/pny-rtx-5070-ti-slim-dual-fan-top.png", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:600, priceEur:555 }]},
-            { model:"RTX 5070", category:"GPU", img:"https://assets.nvidia.partners/images/png/5070-220x141.png", skus:[{ capacity:"12GB", version:"Founders Edition", color:"Black", priceUsd:450, priceEur:416 }]},
-            { model:"RTX 5060 Ti", category:"GPU", img:"https://assets.nvidia.partners/images/png/90YV0MH3-MVAA00.png", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:350, priceEur:324 }]},
-            { model:"RTX 5060", category:"GPU", img:"https://assets.nvidia.partners/images/png/3dlfm3-a-prime50608gboc.png", skus:[{ capacity:"8GB", version:"Founders Edition", color:"Black", priceUsd:250, priceEur:231 }]},
-            { model:"RTX 5050", category:"GPU", img:"https://assets.nvidia.partners/images/png/GeForce_RTX_5050_8G_VENTUS_2X_OC_boxcard.png", skus:[{ capacity:"8GB", version:"Founders Edition", color:"Black", priceUsd:180, priceEur:166 }]},
+            { model:"RTX 5090", category:"GPU", img:"https://neoxcomputers.co.uk/cdn/shop/files/up1_163aeeab-751c-432b-9391-c762fc59486d.webp?v=1774801967&width=1946", skus:[{ capacity:"32GB", version:"Founders Edition", color:"Black", priceUsd:1200, priceEur:1111 }]},
+            { model:"RTX 5080", category:"GPU", img:"https://www.officinadigitale.com/46762-thickbox_default/nvidia-geforce-rtx-5080-founders-edition.jpg", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:800, priceEur:740 }]},
+            { model:"RTX 5070 Ti", category:"GPU", img:"https://www.ordiplus.com/cdn/shop/files/PRIME-RTX5070TI-16G_9db6a8dd-b92e-4411-aa7a-97882061393a.jpg?v=1755614499&width=2400", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:600, priceEur:555 }]},
+            { model:"RTX 5070", category:"GPU", img:"https://cdn.atacadoconnect.com/produtos/1329087/vga-rtx-5070-12gb-gddr7-192bit-nvidia-founders-edition-gray-1329087-62958.webp", skus:[{ capacity:"12GB", version:"Founders Edition", color:"Black", priceUsd:450, priceEur:416 }]},
+            { model:"RTX 5060 Ti", category:"GPU", img:"https://www.sv-comp.com/image/cache/catalog/PNY/VCG5060T16DFXPB1/4-600x600.jpg", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:350, priceEur:324 }]},
+            { model:"RTX 5060", category:"GPU", img:"https://ic.jimms.fi/product/7/8/573771-ig800gg.jpg", skus:[{ capacity:"8GB", version:"Founders Edition", color:"Black", priceUsd:250, priceEur:231 }]},
+            { model:"RTX 5050", category:"GPU", img:"https://d2vfia6k6wrouk.cloudfront.net/productimages/ff12ae0e-7cc3-41e0-86a2-b30d00981d97/images/10-pny-rtx-5050-std-dual-fan-gr.png", skus:[{ capacity:"8GB", version:"Founders Edition", color:"Black", priceUsd:180, priceEur:166 }]},
             { model:"RTX 4090", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4090-product-gallery-full-d.jpg", skus:[{ capacity:"24GB", version:"Founders Edition", color:"Black", priceUsd:960, priceEur:889 }]},
             { model:"RTX 4080 Super", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4080-super-product-gallery-full-d.jpg", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:650, priceEur:601 }]},
             { model:"RTX 4070 Ti Super", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-ti-super-product-gallery-full-d.jpg", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:450, priceEur:416 }]},
             { model:"RTX 4070 Super", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-super-product-gallery-full-d.jpg", skus:[{ capacity:"12GB", version:"Founders Edition", color:"Black", priceUsd:350, priceEur:324 }]},
             { model:"RTX 4060 Ti", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-ti-product-gallery-full-d.jpg", skus:[{ capacity:"16GB", version:"Founders Edition", color:"Black", priceUsd:250, priceEur:231 }]},
             { model:"RTX 4060", category:"GPU", img:"https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-product-gallery-full-d.jpg", skus:[{ capacity:"8GB", version:"Founders Edition", color:"Black", priceUsd:180, priceEur:166 }]},
-            { model:"RTX 4050", category:"GPU", img:"", skus:[{ capacity:"6GB", version:"Founders Edition", color:"Black", priceUsd:140, priceEur:130 }]},
             { model:"RX 7900 XTX", category:"GPU", img:"https://www.amd.com/system/files/2022-11/amd-radeon-rx-7900xtx-gallery1-1260x709.png", skus:[{ capacity:"24GB", version:"Standard", color:"Black", priceUsd:700, priceEur:648 }]},
             { model:"RX 7900 XT", category:"GPU", img:"https://www.amd.com/system/files/2022-11/amd-radeon-rx-7900xt-gallery1-1260x709.png", skus:[{ capacity:"20GB", version:"Standard", color:"Black", priceUsd:600, priceEur:555 }]},
             { model:"RX 7800 XT", category:"GPU", img:"https://www.amd.com/system/files/2023-08/amd-radeon-rx-7800xt-gallery1-1260x709.png", skus:[{ capacity:"16GB", version:"Standard", color:"Black", priceUsd:400, priceEur:370 }]},
@@ -387,20 +384,62 @@
                 { capacity:"N/A", version:"Standard", color:"Yellow", priceUsd:240, priceEur:222 }
             ]},
             // ==================== Insta360 ====================
-            { model:"Insta360 X5", category:"Insta360", img:"https://cdn.shopify.com/s/files/1/0611/1956/9600/files/x5-main.png", skus:[
+            { model:"Insta360 X5", category:"Insta360", img:"https://carlos.gi/cdn/shop/files/Insta360X5Standard8K360DegreeActionCamera-SatinWhite07.jpg?v=1765819555&width=1445", skus:[
                 { capacity:"N/A", version:"Standard", color:"Black", priceUsd:295, priceEur:273 },
                 { capacity:"N/A", version:"All-in-One", color:"Black", priceUsd:380, priceEur:352 }
             ]},
-            { model:"Insta360 X4", category:"Insta360", img:"https://res.insta360.com/dynamic/store/0d86cfc9f88381d2898bfc40e003382e/2673_8fb459c1-a26c-485e-a0bb-3efde15357f2.png?x-oss-process=image%2Fauto-orient%2C1%2Fformat%2Cwebp", skus:[
+            { model:"Insta360 X4", category:"Insta360", img:"https://cdn.awsli.com.br/800x800/2549/2549769/produto/356710088/02-gpxx1ldilk.png", skus:[
                 { capacity:"N/A", version:"Standard", color:"Black", priceUsd:200, priceEur:185 }
             ]},
-            { model:"Insta360 GO 3S", category:"Insta360", img:"https://res.insta360.com/static/bfec02fe6555311656486b867b2bd386/%E9%80%8F%E6%98%8E02.png?x-oss-process=image%2Fauto-orient%2C1%2Fformat%2Cwebp", skus:[
+            { model:"Insta360 GO 3S", category:"Insta360", img:"https://www.wexphotovideo.com/globalassets/product-images/3175000/3175487.jpg", skus:[
                 { capacity:"64GB", version:"Standard", color:"Black", priceUsd:130, priceEur:120 },
                 { capacity:"128GB", version:"Standard", color:"White", priceUsd:160, priceEur:148 }
             ]},
-            { model:"Insta360 GO Ultra", category:"Insta360", img:"https://wassets.insta360.com/store/cbcfdf3f39ac413aaa78e35412c000aa/59712_38b1777c-1553-42c2-b3fe-941ce2f1a7dd.png?x-oss-process=image%2Fauto-orient%2C1%2Fformat%2Cwebp", skus:[
+            { model:"Insta360 GO Ultra", category:"Insta360", img:"https://i5.walmartimages.com/asr/4235960e-1e18-4654-b9d4-05935077576a.7d5b66f09a68c021a0973644bb288545.jpeg", skus:[
                 { capacity:"N/A", version:"Standard", color:"Black", priceUsd:175, priceEur:162 }
-            ]}
+            ]},
+
+            // ==================== 2025-2026 Recent Additions ====================
+            {"model":"MacBook Air 13\" M5","category":"MacBook","img":"https://media.ldlc.com/r1600/ld/products/00/06/32/59/LD0006325905.jpg","skus":[{"capacity":"16GB/512GB","version":"Standard","color":"Silver","priceUsd":550,"priceEur":509},{"capacity":"24GB/1TB","version":"Standard","color":"Midnight","priceUsd":680,"priceEur":629}]},
+            {"model":"MacBook Air 15\" M5","category":"MacBook","img":"https://media.ldlc.com/r1600/ld/products/00/06/32/59/LD0006325905.jpg","skus":[{"capacity":"16GB/512GB","version":"Standard","color":"Silver","priceUsd":650,"priceEur":601},{"capacity":"24GB/1TB","version":"Standard","color":"Sky Blue","priceUsd":780,"priceEur":722}]},
+            {"model":"iPad Pro 11\" M5","category":"iPad","img":"https://smartkoshk.com/cdn/shop/files/m7_2442aa2c-7509-49a8-8df3-85e720861e83.png?v=1776440217&width=1920","skus":[{"capacity":"256GB","version":"Wi-Fi","color":"Silver","priceUsd":500,"priceEur":462},{"capacity":"512GB","version":"Wi-Fi","color":"Space Black","priceUsd":580,"priceEur":536},{"capacity":"1TB","version":"Wi-Fi","color":"Space Black","priceUsd":680,"priceEur":629}]},
+            {"model":"iPad Pro 13\" M5","category":"iPad","img":"https://smartkoshk.com/cdn/shop/files/m7_2442aa2c-7509-49a8-8df3-85e720861e83.png?v=1776440217&width=1920","skus":[{"capacity":"256GB","version":"Wi-Fi","color":"Silver","priceUsd":650,"priceEur":601},{"capacity":"512GB","version":"Wi-Fi","color":"Space Black","priceUsd":750,"priceEur":694},{"capacity":"1TB","version":"Wi-Fi","color":"Space Black","priceUsd":850,"priceEur":786}]},
+            {"model":"iPad Air 11\" M4","category":"iPad","img":"https://icentre.hu/storage/files/images/products/11-ipad-air-m4-wi-fi-1-tb-csillagfeny_1.webp","skus":[{"capacity":"128GB","version":"Wi-Fi","color":"Starlight","priceUsd":300,"priceEur":278},{"capacity":"256GB","version":"Wi-Fi","color":"Blue","priceUsd":350,"priceEur":324},{"capacity":"512GB","version":"Wi-Fi","color":"Purple","priceUsd":430,"priceEur":398}]},
+            {"model":"iPad Air 13\" M4","category":"iPad","img":"https://icentre.hu/storage/files/images/products/11-ipad-air-m4-wi-fi-1-tb-csillagfeny_1.webp","skus":[{"capacity":"128GB","version":"Wi-Fi","color":"Starlight","priceUsd":400,"priceEur":370},{"capacity":"256GB","version":"Wi-Fi","color":"Blue","priceUsd":450,"priceEur":416},{"capacity":"512GB","version":"Wi-Fi","color":"Purple","priceUsd":540,"priceEur":500}]},
+            {"model":"AirPods 5","category":"AirPods","img":"https://estore.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/a/i/airpods_5.jpeg","skus":[{"capacity":"USB-C","version":"Standard","color":"White","priceUsd":110,"priceEur":102},{"capacity":"USB-C","version":"ANC","color":"White","priceUsd":135,"priceEur":125}]},
+            {"model":"Apple Watch Series 12","category":"Watch","img":"https://www.apple.com/newsroom/images/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/article/Apple-Watch-Series-12-2up-260909_big.jpg.large.jpg","skus":[{"capacity":"42mm","version":"GPS","color":"Dark Bronze","priceUsd":180,"priceEur":166},{"capacity":"46mm","version":"GPS","color":"Space Gray","priceUsd":210,"priceEur":194},{"capacity":"46mm","version":"GPS + Cellular","color":"Natural Titanium","priceUsd":250,"priceEur":231}]},
+            {"model":"Apple Watch Ultra 4","category":"Watch","img":"https://m.media-amazon.com/images/I/71lJ5Xqz8XL.jpg","skus":[{"capacity":"49mm","version":"GPS + Cellular","color":"Natural Titanium","priceUsd":360,"priceEur":333},{"capacity":"49mm","version":"GPS + Cellular","color":"Black Titanium","priceUsd":375,"priceEur":347}]},
+            {"model":"Apple Watch Series 11","category":"Watch","img":"https://ekb.hi-stores.ru/upload/iblock/8c0/hub8kg4xbf40kcud2hhhw5o6obb24yyu.jpg","skus":[{"capacity":"42mm","version":"GPS","color":"Silver","priceUsd":160,"priceEur":148},{"capacity":"46mm","version":"GPS","color":"Silver","priceUsd":190,"priceEur":176}]},
+            {"model":"Apple Watch Ultra 3","category":"Watch","img":"https://m.media-amazon.com/images/I/71lJ5Xqz8XL.jpg","skus":[{"capacity":"49mm","version":"GPS + Cellular","color":"Natural Titanium","priceUsd":320,"priceEur":296}]},
+            {"model":"Apple Watch SE 3","category":"Watch","img":"https://media.binglee.com.au/cdn-cgi/image/fit%3Dscale-down%2Cf%3Dauto%2Cw%3D1079/a/f/8/3/af83fb2f9cbedb515b33a422f4c08a78cbfce5f9_Apple_MEH54XA_Smart_Watches_Hero_1.jpg","skus":[{"capacity":"40mm","version":"GPS","color":"Starlight","priceUsd":110,"priceEur":102},{"capacity":"44mm","version":"GPS","color":"Starlight","priceUsd":130,"priceEur":120}]},
+            {"model":"Samsung Galaxy Watch8","category":"Watch","img":"https://qvc.scene7.com/is/image/QVC/u2/7/33/744733.001","skus":[{"capacity":"40mm","version":"Bluetooth","color":"Silver","priceUsd":130,"priceEur":120},{"capacity":"44mm","version":"Bluetooth","color":"Silver","priceUsd":150,"priceEur":139}]},
+            {"model":"Samsung Galaxy Watch8 Classic","category":"Watch","img":"https://qvc.scene7.com/is/image/QVC/u2/7/33/744733.001","skus":[{"capacity":"46mm","version":"Bluetooth","color":"Silver","priceUsd":180,"priceEur":166}]},
+            {"model":"Samsung Galaxy Watch Ultra 2025","category":"Watch","img":"https://media.hifi.lu/sys-master/products/9536294354974/3840x3840.51007321_03.webp","skus":[{"capacity":"47mm","version":"LTE","color":"Titanium White","priceUsd":260,"priceEur":240}]},
+            {"model":"Ray-Ban Meta Low Bridge Fit Headliner","category":"Ray-Ban","img":"https://images2.ray-ban.com/cdn-record-files-pi/d6395e96-8685-4d8d-97ca-b2ea00e2e613/d85b69ec-c9e7-4986-ad7e-b2ea00e2e980/0RW4013F__601_MF__P21__shad__qt.png?impolicy=RB_Product","skus":[{"capacity":"N/A","version":"Gen 2","color":"Black","priceUsd":230,"priceEur":213}]},
+            {"model":"Ray-Ban Meta Blayzer Optics","category":"Ray-Ban","img":"https://ph-files.imgix.net/957e52bb-4e77-4b85-9727-e29044de0695.jpeg?auto=format&fit=crop","skus":[{"capacity":"N/A","version":"Gen 2","color":"Matte Black","priceUsd":300,"priceEur":278},{"capacity":"N/A","version":"Gen 2","color":"Transparent Ice Grey","priceUsd":320,"priceEur":296}]},
+            {"model":"Ray-Ban Meta Scriber Optics","category":"Ray-Ban","img":"https://images2.ray-ban.com/cdn-record-files-pi/b7e60787-a55d-4897-9758-b40a0103fa93/468f44f6-b4e3-489e-9a8c-b40c008d9a4e/0RW7002__2000__P21__shad__qt.png?impolicy=HB_SocialMedia","skus":[{"capacity":"N/A","version":"Gen 2","color":"Shiny Black","priceUsd":300,"priceEur":278},{"capacity":"N/A","version":"Gen 2","color":"Havana","priceUsd":320,"priceEur":296}]},
+            {"model":"Meta Ray-Ban Display","category":"Ray-Ban","img":"https://www.journaldugeek.com/app/uploads/2025/09/meta-ray-ban-display-2.jpg","skus":[{"capacity":"N/A","version":"Display + Neural Band","color":"Black","priceUsd":520,"priceEur":481},{"capacity":"N/A","version":"Display + Neural Band","color":"Sand","priceUsd":540,"priceEur":500}]},
+            {"model":"Oakley Meta HSTN","category":"Oakley","img":"https://www.function18.com/cdn/shop/files/Oakley-Meta-HSTN-Sunglasses-0OW8002-04-1.jpg?v=1760452026","skus":[{"capacity":"N/A","version":"Standard","color":"Warm Grey / Prizm Ruby","priceUsd":250,"priceEur":231},{"capacity":"N/A","version":"Polarized","color":"Black / Prizm Black","priceUsd":280,"priceEur":259}]},
+            {"model":"Oakley Meta Vanguard","category":"Oakley","img":"https://www.365rider.com/99313/gafas-oakley-meta-vanguard-blanco.jpg","skus":[{"capacity":"N/A","version":"Standard","color":"White / Prizm Black","priceUsd":320,"priceEur":296},{"capacity":"N/A","version":"Transitions","color":"Black / Ember","priceUsd":350,"priceEur":324}]},
+            {"model":"DJI Mavic 4 Pro","category":"DJI","img":"https://www.tejar.pk/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/d/j/dji_mavic_4_pro_quadcopter_-_tejar_1.jpg","skus":[{"capacity":"64GB","version":"RC 2","color":"Gray","priceUsd":1200,"priceEur":1110},{"capacity":"64GB","version":"Fly More Combo","color":"Gray","priceUsd":1450,"priceEur":1341},{"capacity":"512GB","version":"Creator Combo + RC Pro 2","color":"Gray","priceUsd":1750,"priceEur":1619}]},
+            {"model":"DJI Air 3S","category":"DJI","img":"https://www.ebest.cl/media/wysiwyg/Imagen_de_WhatsApp_2024-10-14_a_las_14.18.06_6ecdd22c.jpg","skus":[{"capacity":"42GB","version":"RC-N3","color":"Gray","priceUsd":650,"priceEur":601},{"capacity":"42GB","version":"Fly More Combo + RC 2","color":"Gray","priceUsd":800,"priceEur":740}]},
+            {"model":"DJI Flip","category":"DJI","img":"https://www.hypop.com.au/cdn/shop/files/dji-flip-drone-body-only.jpg?v=1737361920&width=732","skus":[{"capacity":"2GB","version":"Standard","color":"White","priceUsd":300,"priceEur":278},{"capacity":"2GB","version":"Fly More Combo","color":"White","priceUsd":400,"priceEur":370}]},
+            {"model":"DJI Neo 2","category":"DJI","img":"https://www.komplettforetag.se/product-media/b2b/sv-se/1080/1331723_1.jpg","skus":[{"capacity":"49GB","version":"Standard","color":"Gray","priceUsd":220,"priceEur":204},{"capacity":"49GB","version":"Fly More Combo","color":"Gray","priceUsd":300,"priceEur":278}]},
+            {"model":"DJI Avata 2","category":"DJI","img":"https://www.fotokoch.de/bilddaten/bildzoom/dji-avata-2-standard_12614_4.jpg","skus":[{"capacity":"46GB","version":"Drone Only","color":"Gray","priceUsd":400,"priceEur":370},{"capacity":"46GB","version":"Fly More Combo","color":"Gray","priceUsd":600,"priceEur":555}]},
+            {"model":"DJI Osmo Action 6","category":"DJI","img":"https://www.propeller.sg/cdn/shop/files/OA6_1.jpg?v=1763442574&width=1445","skus":[{"capacity":"50GB","version":"Standard Combo","color":"Gray","priceUsd":250,"priceEur":231},{"capacity":"50GB","version":"Adventure Combo","color":"Gray","priceUsd":320,"priceEur":296}]},
+            {"model":"DJI Osmo Action 5 Pro","category":"DJI","img":"https://se-cdn.djiits.com/tpc/uploads/carousel/image/cc648b6a7f42a7b2d02c4fe0146fd5c3%40ultra.jpg","skus":[{"capacity":"47GB","version":"Standard Combo","color":"Black","priceUsd":220,"priceEur":204},{"capacity":"47GB","version":"Adventure Combo","color":"Black","priceUsd":280,"priceEur":259}]},
+            {"model":"DJI Osmo 360","category":"DJI","img":"https://cdn.awsli.com.br/600x700/2660/2660613/produto/367288870/img_4715-bu7dipcu1t.WEBP","skus":[{"capacity":"105GB","version":"Standard Combo","color":"Black","priceUsd":280,"priceEur":259},{"capacity":"105GB","version":"Adventure Combo","color":"Black","priceUsd":350,"priceEur":324}]},
+            {"model":"DJI Osmo Nano","category":"DJI","img":"https://www.syd.com.tr/shop/ae/82/myassets/products/339/dji-osmo-nano-128gb.png?revision=1760006506","skus":[{"capacity":"64GB","version":"Standard Combo","color":"Black","priceUsd":160,"priceEur":148},{"capacity":"128GB","version":"Standard Combo","color":"Black","priceUsd":190,"priceEur":176}]},
+            {"model":"DJI Osmo Pocket 4P","category":"DJI","img":"https://excellentphoto.ca/cdn/shop/files/osmopocket4-2.png?v=1776357110&width=3840","skus":[{"capacity":"103GB","version":"Standard","color":"Black","priceUsd":620,"priceEur":574},{"capacity":"103GB","version":"Creator Combo","color":"Black","priceUsd":760,"priceEur":703}]},
+            {"model":"Insta360 X6","category":"Insta360","img":"https://www.camaralia.com/62607-zoom_producto/insta360-x6-camara-360-8k-con-triple-chip-ia.jpg","skus":[{"capacity":"47GB","version":"Standard","color":"Midnight Black","priceUsd":380,"priceEur":352},{"capacity":"47GB","version":"Essentials Bundle","color":"Midnight Black","priceUsd":450,"priceEur":416}]},
+            {"model":"Insta360 Luna Ultra","category":"Insta360","img":"https://media.studio7thailand.com/238026/insta360-luna-ultra-creator-bundle-stellar-white-6942590201808-3-square_medium.jpg","skus":[{"capacity":"N/A","version":"Standard Bundle","color":"Stellar White","priceUsd":430,"priceEur":398},{"capacity":"N/A","version":"Creator Bundle","color":"Stellar White","priceUsd":520,"priceEur":481}]},
+            {"model":"Insta360 X4 Air","category":"Insta360","img":"https://metapod.com/cdn/shop/files/15_Back_e3f0d5f3-f05c-47e0-8c01-f08a0e315a1d.png?v=1761723430&width=1501","skus":[{"capacity":"N/A","version":"Standard","color":"Arctic White","priceUsd":220,"priceEur":204},{"capacity":"N/A","version":"Essentials Bundle","color":"Arctic White","priceUsd":260,"priceEur":240}]},
+            {"model":"Insta360 Ace Pro 2","category":"Insta360","img":"https://archisite.co.jp/wp-content/uploads/2024/10/AcePro2-White-07.jpg","skus":[{"capacity":"N/A","version":"Standard","color":"White","priceUsd":220,"priceEur":204},{"capacity":"N/A","version":"Dual Battery Bundle","color":"White","priceUsd":280,"priceEur":259}]},
+            {"model":"Insta360 Flow 2 Pro","category":"Insta360","img":"https://a.allegroimg.com/s720/29b25d/3543250c43b6a7619136a8310a25/Stabilizator-gimbal-Insta360-Flow-2-Pro-bily","skus":[{"capacity":"N/A","version":"Standard","color":"Summit White","priceUsd":110,"priceEur":102},{"capacity":"N/A","version":"Creator Bundle","color":"Summit White","priceUsd":145,"priceEur":134}]},
+            {"model":"Insta360 Link 2 Pro","category":"Insta360","img":"https://www.fotokoch.de/bilddaten/bildgrossplus/insta360-link-2-pro-graphite-black_69814.jpg","skus":[{"capacity":"N/A","version":"Standard","color":"Graphite Black","priceUsd":150,"priceEur":139}]},
+            {"model":"Insta360 Link 2C Pro","category":"Insta360","img":"https://www.fotokoch.de/bilddaten/bildgrossplus/insta360-link-2-pro-graphite-black_69814.jpg","skus":[{"capacity":"N/A","version":"Standard","color":"Graphite Black","priceUsd":130,"priceEur":120}]},
+            {"model":"Dyson Supersonic Nural","category":"Dyson","img":"https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/it_IT/515276-01.png?%24responsive%24=&fmt=png-alpha","skus":[{"capacity":"N/A","version":"Standard","color":"Ceramic Pink / Rose Gold","priceUsd":210,"priceEur":194}]},
+            {"model":"Dyson Airwrap i.d.","category":"Dyson","img":"https://rustans.com/cdn/shop/files/A_e8d603c2-a51c-42f4-95ef-61a3950bd1a6.jpg?v=1758165981&width=1400","skus":[{"capacity":"N/A","version":"Complete Long","color":"Ceramic Patina / Topaz","priceUsd":260,"priceEur":240}]}
         ];
 
         let currentLang = 'en';
@@ -425,12 +464,16 @@
         function convertPrice(usdPrice, targetCurrency) {
             return Math.round(usdPrice * (exchangeRates[targetCurrency] || 1));
         }
+        const CATEGORY_IMAGE_FALLBACKS = {"iPhone":"https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg","MacBook":"https://media.ldlc.com/r1600/ld/products/00/06/32/59/LD0006325905.jpg","iPad":"https://smartkoshk.com/cdn/shop/files/m7_2442aa2c-7509-49a8-8df3-85e720861e83.png?v=1776440217&width=1920","Watch":"https://www.apple.com/newsroom/images/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/article/Apple-Watch-Series-12-2up-260909_big.jpg.large.jpg","AirPods":"https://estore.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/a/i/airpods_5.jpeg","Ray-Ban":"https://media.visio-net.com/oscommerce/images/viewerxxl_new/ray-ban-meta-WAYFARER-RW4012-601S1Z-50_3.jpg","Oakley":"https://www.function18.com/cdn/shop/files/Oakley-Meta-HSTN-Sunglasses-0OW8002-04-1.jpg?v=1760452026","PS5":"https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-product-thumbnail-01-en-14sep23?$facebook$","DJI":"https://flytechsa.co.za/cdn/shop/files/DJI_Mini_5_PRO-unfolded_45_to_the_left_45_017677c5-440c-4bce-9a94-9197ecd88bb7.webp?v=1769677854&width=1445","Logitech":"https://resource.logitech.com/w_800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/gaming/g923/g923-gallery-1.png","Nintendo":"https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_500/ncom/en_US/switch/site-switch-2/switch-2-hero","GPU":"https://neoxcomputers.co.uk/cdn/shop/files/up1_163aeeab-751c-432b-9391-c762fc59486d.webp?v=1774801967&width=1946","Dyson":"https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/419138-01.png","Insta360":"https://www.camaralia.com/62607-zoom_producto/insta360-x6-camara-360-8k-con-triple-chip-ia.jpg"};
+
         function createImageHtml(product) {
-            const fallback = makePlaceholderSvg(product.model);
-            if (!product.img || String(product.img).trim() === '') {
-                return `<img src="${fallback}" alt="${product.model}" class="product-img" loading="lazy" decoding="async">`;
-            }
-            return `<img src="${product.img}" alt="${product.model}" class="product-img" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='${fallback}';">`;
+            const finalFallback = makePlaceholderSvg(product.model);
+            const categoryFallback = CATEGORY_IMAGE_FALLBACKS[product.category] || finalFallback;
+            const primary = (product.img && product.img.trim()) ? product.img : categoryFallback;
+            return `<img src="${primary}" alt="${product.model}" class="product-img" loading="lazy" decoding="async"
+                data-category-fallback="${categoryFallback.replace(/"/g,'&quot;')}"
+                data-final-fallback="${finalFallback.replace(/"/g,'&quot;')}"
+                onerror="if(this.dataset.fallbackStage!=='1'){this.dataset.fallbackStage='1';this.src=this.dataset.categoryFallback;}else{this.onerror=null;this.src=this.dataset.finalFallback;}">`;
         }
 
         function renderProducts() {
