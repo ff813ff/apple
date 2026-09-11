@@ -15,7 +15,10 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-E76V1Z9TX7');
+      gtag('config', 'G-E76V1Z9TX7', {
+        send_page_view: true,
+        cookie_flags: 'SameSite=None;Secure'
+      });
     </script>
     <style>
         :root { --bg-color:#f5f5f7; --card-bg:#ffffff; --text-main:#1d1d1f; --text-secondary:#86868b; --accent-blue:#0071e3; --whatsapp-green:#25D366; --whatsapp-hover:#1EBE54; --border-color:#d2d2d7; --price-tag-color:#ff3b30; }
@@ -818,9 +821,34 @@
             };
         }
 
-        function sendGaEvent(eventName, params) {
-            if (typeof gtag !== 'function') return;
-            gtag('event', eventName, params);
+        function sendGaEvent(eventName, params = {}) {
+            if (typeof window.gtag !== 'function') return;
+            const payload = {
+                ...params,
+                send_to: 'G-E76V1Z9TX7',
+                transport_type: 'beacon',
+                page_location: window.location.href,
+                page_title: document.title
+            };
+            window.gtag('event', eventName, payload);
+        }
+
+        function getGaItem(card) {
+            const sku = getSelectedSku(card);
+            const model = card.dataset.model || '';
+            const variantParts = [
+                sku.capacity && sku.capacity !== 'N/A' ? sku.capacity : '',
+                sku.version && sku.version !== 'Standard' ? sku.version : '',
+                sku.color || ''
+            ].filter(Boolean);
+            return {
+                item_id: model.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
+                item_name: model,
+                item_category: card.dataset.category || '',
+                item_variant: variantParts.join(' / '),
+                price: Number(sku.priceUsd || 0),
+                quantity: 1
+            };
         }
 
         function detectInteractionType(target) {
@@ -836,18 +864,36 @@
             if (inquiryBtn) {
                 const card = inquiryBtn.closest('.product-card');
                 if (card) {
+                    const productData = getAnalyticsProductData(card);
+                    const item = getGaItem(card);
                     sendGaEvent('whatsapp_inquiry', {
-                        ...getAnalyticsProductData(card),
+                        ...productData,
                         interaction_type: 'whatsapp',
                         link_url: inquiryBtn.href || ''
+                    });
+                    sendGaEvent('generate_lead', {
+                        currency: 'USD',
+                        value: Number(item.price || 0),
+                        product_name: item.item_name,
+                        product_category: item.item_category,
+                        product_variant: item.item_variant,
+                        lead_source: 'whatsapp_product'
                     });
                 }
             } else {
                 const productCard = e.target.closest('.product-card');
                 if (productCard) {
+                    const productData = getAnalyticsProductData(productCard);
+                    const item = getGaItem(productCard);
                     sendGaEvent('product_click', {
-                        ...getAnalyticsProductData(productCard),
+                        ...productData,
                         interaction_type: detectInteractionType(e.target)
+                    });
+                    sendGaEvent('select_item', {
+                        item_list_name: 'GlobalTech Catalog',
+                        currency: 'USD',
+                        value: Number(item.price || 0),
+                        items: [item]
                     });
                 }
             }
@@ -923,8 +969,20 @@
                     interaction_type: 'floating_whatsapp',
                     link_url: this.href || ''
                 });
+                sendGaEvent('generate_lead', {
+                    currency: 'USD',
+                    value: 0,
+                    product_name: 'General Catalog Inquiry',
+                    product_category: 'General',
+                    product_variant: '',
+                    lead_source: 'whatsapp_floating'
+                });
             }, { once: false });
             renderProducts();
+            sendGaEvent('catalog_ready', {
+                catalog_version: 'analytics-fixed-v1',
+                product_count: productsData.length
+            });
         }
         init();
     </script>
