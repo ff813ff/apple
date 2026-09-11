@@ -1,0 +1,1049 @@
+{
+  "version": 1,
+  "products": [
+    {
+      "model": "iPhone Duo",
+      "category": "iPhone",
+      "source": "https://www.apple.com/newsroom/images/2026/09/apple-unveils-iphone-duo/article/Apple-iPhone-Duo-colors-260909_big.jpg.large.jpg",
+      "slug": "iphone-duo",
+      "local": "assets/products/iphone-duo.webp",
+      "candidates": [
+        "https://www.apple.com/newsroom/images/2026/09/apple-unveils-iphone-duo/article/Apple-iPhone-Duo-colors-260909_big.jpg.large.jpg"
+      ]
+    },
+    {
+      "model": "iPhone 18 Pro Max",
+      "category": "iPhone",
+      "source": "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg",
+      "slug": "iphone-18-pro-max",
+      "local": "assets/products/iphone-18-pro-max.webp",
+      "candidates": [
+        "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg"
+      ]
+    },
+    {
+      "model": "iPhone 18 Pro",
+      "category": "iPhone",
+      "source": "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg",
+      "slug": "iphone-18-pro",
+      "local": "assets/products/iphone-18-pro.webp",
+      "candidates": [
+        "https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg"
+      ]
+    },
+    {
+      "model": "iPhone 17 Pro Max",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-max-finish-select-silver-202509?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-17-pro-max",
+      "local": "assets/products/iphone-17-pro-max.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-max-finish-select-silver-202509?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 17 Pro",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-finish-select-202509-6-3inch-silver?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-17-pro",
+      "local": "assets/products/iphone-17-pro.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-finish-select-202509-6-3inch-silver?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 17 Air",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-lightgold-202509?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-17-air",
+      "local": "assets/products/iphone-17-air.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-air-finish-select-lightgold-202509?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 17",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-finish-select-202509-mistblue?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-17",
+      "local": "assets/products/iphone-17.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-finish-select-202509-mistblue?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 16 Pro Max",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-16-pro-max",
+      "local": "assets/products/iphone-16-pro-max.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 16 Pro",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-16-pro",
+      "local": "assets/products/iphone-16-pro.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-3inch-deserttitanium?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 16 Plus",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-7inch-ultramarine?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-16-plus",
+      "local": "assets/products/iphone-16-plus.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-7inch-ultramarine?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 16",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-16",
+      "local": "assets/products/iphone-16.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-6-1inch-ultramarine?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 15 Pro Max",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-15-pro-max",
+      "local": "assets/products/iphone-15-pro-max.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 15 Pro",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-15-pro",
+      "local": "assets/products/iphone-15-pro.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "iPhone 15",
+      "category": "iPhone",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-blue?wid=800&hei=800&fmt=png-alpha",
+      "slug": "iphone-15",
+      "local": "assets/products/iphone-15.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-blue?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "MacBook Pro 16\" M4 Max",
+      "category": "MacBook",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202410?wid=800&hei=800&fmt=png-alpha",
+      "slug": "macbook-pro-16-m4-max",
+      "local": "assets/products/macbook-pro-16-m4-max.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202410?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "MacBook Pro 14\" M4 Pro",
+      "category": "MacBook",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=800&hei=800&fmt=png-alpha",
+      "slug": "macbook-pro-14-m4-pro",
+      "local": "assets/products/macbook-pro-14-m4-pro.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spaceblack-select-202410?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "MacBook Air 15\" M4",
+      "category": "MacBook",
+      "source": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png",
+      "slug": "macbook-air-15-m4",
+      "local": "assets/products/macbook-air-15-m4.webp",
+      "candidates": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png"
+      ]
+    },
+    {
+      "model": "MacBook Air 13\" M4",
+      "category": "MacBook",
+      "source": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png",
+      "slug": "macbook-air-13-m4",
+      "local": "assets/products/macbook-air-13-m4.webp",
+      "candidates": [
+        "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/mba-13inch-15inch.png"
+      ]
+    },
+    {
+      "model": "iPad Pro 13\" M4",
+      "category": "iPad",
+      "source": "https://www.imagineonline.store/cdn/shop/files/iPad_Pro_13_M4_WiFi_Silver_PDP_Image_Position_1b__en-IN.jpg?v=1759734105&width=823",
+      "slug": "ipad-pro-13-m4",
+      "local": "assets/products/ipad-pro-13-m4.webp",
+      "candidates": [
+        "https://www.imagineonline.store/cdn/shop/files/iPad_Pro_13_M4_WiFi_Silver_PDP_Image_Position_1b__en-IN.jpg?v=1759734105&width=823"
+      ]
+    },
+    {
+      "model": "iPad Pro 11\" M4",
+      "category": "iPad",
+      "source": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/i/p/ipadprom4-11-s-1_1_1.jpg",
+      "slug": "ipad-pro-11-m4",
+      "local": "assets/products/ipad-pro-11-m4.webp",
+      "candidates": [
+        "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/i/p/ipadprom4-11-s-1_1_1.jpg"
+      ]
+    },
+    {
+      "model": "iPad Air M2 11\"",
+      "category": "iPad",
+      "source": "https://cdn.shopify.com/s/files/1/0714/9839/9780/files/71YQ09IrbeL_957a404f-39f7-4736-865c-01b76185fc97.jpg?v=1748881113",
+      "slug": "ipad-air-m2-11",
+      "local": "assets/products/ipad-air-m2-11.webp",
+      "candidates": [
+        "https://cdn.shopify.com/s/files/1/0714/9839/9780/files/71YQ09IrbeL_957a404f-39f7-4736-865c-01b76185fc97.jpg?v=1748881113"
+      ]
+    },
+    {
+      "model": "iPad Mini 6",
+      "category": "iPad",
+      "source": "https://bizweb.dktcdn.net/100/014/900/products/8601a1ef-65ca-4b16-9b1f-95759f8d9fd4.png?v=1761778748733",
+      "slug": "ipad-mini-6",
+      "local": "assets/products/ipad-mini-6.webp",
+      "candidates": [
+        "https://bizweb.dktcdn.net/100/014/900/products/8601a1ef-65ca-4b16-9b1f-95759f8d9fd4.png?v=1761778748733"
+      ]
+    },
+    {
+      "model": "Watch Ultra 2",
+      "category": "Watch",
+      "source": "https://img.globaldata.pt/products/MREJ3PO-A.jpg",
+      "slug": "watch-ultra-2",
+      "local": "assets/products/watch-ultra-2.webp",
+      "candidates": [
+        "https://img.globaldata.pt/products/MREJ3PO-A.jpg"
+      ]
+    },
+    {
+      "model": "Watch Series 10",
+      "category": "Watch",
+      "source": "https://doto.com.mx/cdn/shop/files/9A23410A37D45E97FA7D59EC2CB5AB1C_79313b2e-44bf-4e40-aeb2-5c80f8210307_Apple-Watch-42mm-Jet-Black-Aluminum-Case.jpg?v=1775172111",
+      "slug": "watch-series-10",
+      "local": "assets/products/watch-series-10.webp",
+      "candidates": [
+        "https://doto.com.mx/cdn/shop/files/9A23410A37D45E97FA7D59EC2CB5AB1C_79313b2e-44bf-4e40-aeb2-5c80f8210307_Apple-Watch-42mm-Jet-Black-Aluminum-Case.jpg?v=1775172111"
+      ]
+    },
+    {
+      "model": "AirPods Pro 2",
+      "category": "AirPods",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=800&hei=800&fmt=png-alpha",
+      "slug": "airpods-pro-2",
+      "local": "assets/products/airpods-pro-2.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "AirPods Max",
+      "category": "AirPods",
+      "source": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-202409-midnight?wid=800&hei=800&fmt=png-alpha",
+      "slug": "airpods-max",
+      "local": "assets/products/airpods-max.webp",
+      "candidates": [
+        "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-202409-midnight?wid=800&hei=800&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "Ray-Ban Meta Wayfarer",
+      "category": "Ray-Ban",
+      "source": "https://media.visio-net.com/oscommerce/images/viewerxxl_new/ray-ban-meta-WAYFARER-RW4012-601S1Z-50_3.jpg",
+      "slug": "ray-ban-meta-wayfarer",
+      "local": "assets/products/ray-ban-meta-wayfarer.webp",
+      "candidates": [
+        "https://media.visio-net.com/oscommerce/images/viewerxxl_new/ray-ban-meta-WAYFARER-RW4012-601S1Z-50_3.jpg"
+      ]
+    },
+    {
+      "model": "Ray-Ban Meta Headliner",
+      "category": "Ray-Ban",
+      "source": "https://www.lensabl.com/cdn/shop/files/Screenshot2025-11-05at2.12.45PM.jpg?v=1770739702&width=1445",
+      "slug": "ray-ban-meta-headliner",
+      "local": "assets/products/ray-ban-meta-headliner.webp",
+      "candidates": [
+        "https://www.lensabl.com/cdn/shop/files/Screenshot2025-11-05at2.12.45PM.jpg?v=1770739702&width=1445"
+      ]
+    },
+    {
+      "model": "Ray-Ban Meta Skyler",
+      "category": "Ray-Ban",
+      "source": "https://images2.ray-ban.com/cdn-record-files-pi/3b7b1352-0af2-435c-abdb-b2ea00e36117/4db9bc1f-669d-4b89-abba-b2ea00e36402/0RW4014__601_71__P21__shad__qt.png",
+      "slug": "ray-ban-meta-skyler",
+      "local": "assets/products/ray-ban-meta-skyler.webp",
+      "candidates": [
+        "https://images2.ray-ban.com/cdn-record-files-pi/3b7b1352-0af2-435c-abdb-b2ea00e36117/4db9bc1f-669d-4b89-abba-b2ea00e36402/0RW4014__601_71__P21__shad__qt.png"
+      ]
+    },
+    {
+      "model": "PS5 Slim",
+      "category": "Console",
+      "source": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-product-thumbnail-01-en-14sep23?$facebook$",
+      "slug": "ps5-slim",
+      "local": "assets/products/ps5-slim.webp",
+      "candidates": [
+        "https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-product-thumbnail-01-en-14sep23?$facebook$"
+      ]
+    },
+    {
+      "model": "PS5 Pro",
+      "category": "Console",
+      "source": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-product-thumbnail-01-en-11sep24?$facebook$",
+      "slug": "ps5-pro",
+      "local": "assets/products/ps5-pro.webp",
+      "candidates": [
+        "https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-product-thumbnail-01-en-11sep24?$facebook$"
+      ]
+    },
+    {
+      "model": "DJI Mavic 3 Pro",
+      "category": "DJI",
+      "source": "https://dronarbutiken.se/cdn/shop/files/2_5a142423-31a7-4e5a-b283-ee52ee39ca5d.jpg?v=1682428191&width=1946",
+      "slug": "dji-mavic-3-pro",
+      "local": "assets/products/dji-mavic-3-pro.webp",
+      "candidates": [
+        "https://dronarbutiken.se/cdn/shop/files/2_5a142423-31a7-4e5a-b283-ee52ee39ca5d.jpg?v=1682428191&width=1946"
+      ]
+    },
+    {
+      "model": "DJI Mini 4 Pro",
+      "category": "DJI",
+      "source": "https://dji-ars.pl/hpeciai/2f3c49a4f8c363dc0a45e23f3dc0db07/pol_pl_Dron-DJI-Mini-4-Pro-Fly-More-Combo-RC-2-34683_1.jpg",
+      "slug": "dji-mini-4-pro",
+      "local": "assets/products/dji-mini-4-pro.webp",
+      "candidates": [
+        "https://dji-ars.pl/hpeciai/2f3c49a4f8c363dc0a45e23f3dc0db07/pol_pl_Dron-DJI-Mini-4-Pro-Fly-More-Combo-RC-2-34683_1.jpg"
+      ]
+    },
+    {
+      "model": "DJI Mini 5 Pro",
+      "category": "DJI",
+      "source": "https://flytechsa.co.za/cdn/shop/files/DJI_Mini_5_PRO-unfolded_45_to_the_left_45_017677c5-440c-4bce-9a94-9197ecd88bb7.webp?v=1769677854&width=1445",
+      "slug": "dji-mini-5-pro",
+      "local": "assets/products/dji-mini-5-pro.webp",
+      "candidates": [
+        "https://flytechsa.co.za/cdn/shop/files/DJI_Mini_5_PRO-unfolded_45_to_the_left_45_017677c5-440c-4bce-9a94-9197ecd88bb7.webp?v=1769677854&width=1445"
+      ]
+    },
+    {
+      "model": "DJI Osmo Pocket 3",
+      "category": "DJI",
+      "source": "https://www.fotokoch.de/bilddaten/bildzoom/dji-osmo-pocket-3-standard_65283_2.jpg",
+      "slug": "dji-osmo-pocket-3",
+      "local": "assets/products/dji-osmo-pocket-3.webp",
+      "candidates": [
+        "https://www.fotokoch.de/bilddaten/bildzoom/dji-osmo-pocket-3-standard_65283_2.jpg"
+      ]
+    },
+    {
+      "model": "DJI Osmo Pocket 4",
+      "category": "DJI",
+      "source": "https://excellentphoto.ca/cdn/shop/files/osmopocket4-2.png?v=1776357110&width=3840",
+      "slug": "dji-osmo-pocket-4",
+      "local": "assets/products/dji-osmo-pocket-4.webp",
+      "candidates": [
+        "https://excellentphoto.ca/cdn/shop/files/osmopocket4-2.png?v=1776357110&width=3840"
+      ]
+    },
+    {
+      "model": "Logitech G923",
+      "category": "Logitech",
+      "source": "",
+      "slug": "logitech-g923",
+      "local": "assets/products/logitech-g923.webp",
+      "candidates": []
+    },
+    {
+      "model": "Nintendo Switch 2",
+      "category": "Console",
+      "source": "",
+      "slug": "nintendo-switch-2",
+      "local": "assets/products/nintendo-switch-2.webp",
+      "candidates": []
+    },
+    {
+      "model": "Nintendo Switch",
+      "category": "Console",
+      "source": "",
+      "slug": "nintendo-switch",
+      "local": "assets/products/nintendo-switch.webp",
+      "candidates": []
+    },
+    {
+      "model": "RTX 5090",
+      "category": "GPU",
+      "source": "https://neoxcomputers.co.uk/cdn/shop/files/up1_163aeeab-751c-432b-9391-c762fc59486d.webp?v=1774801967&width=1946",
+      "slug": "rtx-5090",
+      "local": "assets/products/rtx-5090.webp",
+      "candidates": [
+        "https://neoxcomputers.co.uk/cdn/shop/files/up1_163aeeab-751c-432b-9391-c762fc59486d.webp?v=1774801967&width=1946"
+      ]
+    },
+    {
+      "model": "RTX 5080",
+      "category": "GPU",
+      "source": "https://www.officinadigitale.com/46762-thickbox_default/nvidia-geforce-rtx-5080-founders-edition.jpg",
+      "slug": "rtx-5080",
+      "local": "assets/products/rtx-5080.webp",
+      "candidates": [
+        "https://www.officinadigitale.com/46762-thickbox_default/nvidia-geforce-rtx-5080-founders-edition.jpg"
+      ]
+    },
+    {
+      "model": "RTX 5070 Ti",
+      "category": "GPU",
+      "source": "https://www.ordiplus.com/cdn/shop/files/PRIME-RTX5070TI-16G_9db6a8dd-b92e-4411-aa7a-97882061393a.jpg?v=1755614499&width=2400",
+      "slug": "rtx-5070-ti",
+      "local": "assets/products/rtx-5070-ti.webp",
+      "candidates": [
+        "https://www.ordiplus.com/cdn/shop/files/PRIME-RTX5070TI-16G_9db6a8dd-b92e-4411-aa7a-97882061393a.jpg?v=1755614499&width=2400"
+      ]
+    },
+    {
+      "model": "RTX 5070",
+      "category": "GPU",
+      "source": "https://cdn.atacadoconnect.com/produtos/1329087/vga-rtx-5070-12gb-gddr7-192bit-nvidia-founders-edition-gray-1329087-62958.webp",
+      "slug": "rtx-5070",
+      "local": "assets/products/rtx-5070.webp",
+      "candidates": [
+        "https://cdn.atacadoconnect.com/produtos/1329087/vga-rtx-5070-12gb-gddr7-192bit-nvidia-founders-edition-gray-1329087-62958.webp"
+      ]
+    },
+    {
+      "model": "RTX 5060 Ti",
+      "category": "GPU",
+      "source": "https://www.sv-comp.com/image/cache/catalog/PNY/VCG5060T16DFXPB1/4-600x600.jpg",
+      "slug": "rtx-5060-ti",
+      "local": "assets/products/rtx-5060-ti.webp",
+      "candidates": [
+        "https://www.sv-comp.com/image/cache/catalog/PNY/VCG5060T16DFXPB1/4-600x600.jpg"
+      ]
+    },
+    {
+      "model": "RTX 5060",
+      "category": "GPU",
+      "source": "https://ic.jimms.fi/product/7/8/573771-ig800gg.jpg",
+      "slug": "rtx-5060",
+      "local": "assets/products/rtx-5060.webp",
+      "candidates": [
+        "https://ic.jimms.fi/product/7/8/573771-ig800gg.jpg"
+      ]
+    },
+    {
+      "model": "RTX 5050",
+      "category": "GPU",
+      "source": "https://d2vfia6k6wrouk.cloudfront.net/productimages/ff12ae0e-7cc3-41e0-86a2-b30d00981d97/images/10-pny-rtx-5050-std-dual-fan-gr.png",
+      "slug": "rtx-5050",
+      "local": "assets/products/rtx-5050.webp",
+      "candidates": [
+        "https://d2vfia6k6wrouk.cloudfront.net/productimages/ff12ae0e-7cc3-41e0-86a2-b30d00981d97/images/10-pny-rtx-5050-std-dual-fan-gr.png"
+      ]
+    },
+    {
+      "model": "RTX 4090",
+      "category": "GPU",
+      "source": "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4090-product-gallery-full-d.jpg",
+      "slug": "rtx-4090",
+      "local": "assets/products/rtx-4090.webp",
+      "candidates": [
+        "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4090-product-gallery-full-d.jpg"
+      ]
+    },
+    {
+      "model": "RTX 4080 Super",
+      "category": "GPU",
+      "source": "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4080-super-product-gallery-full-d.jpg",
+      "slug": "rtx-4080-super",
+      "local": "assets/products/rtx-4080-super.webp",
+      "candidates": [
+        "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4080-super-product-gallery-full-d.jpg"
+      ]
+    },
+    {
+      "model": "RTX 4070 Ti Super",
+      "category": "GPU",
+      "source": "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-ti-super-product-gallery-full-d.jpg",
+      "slug": "rtx-4070-ti-super",
+      "local": "assets/products/rtx-4070-ti-super.webp",
+      "candidates": [
+        "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-ti-super-product-gallery-full-d.jpg"
+      ]
+    },
+    {
+      "model": "RTX 4070 Super",
+      "category": "GPU",
+      "source": "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-super-product-gallery-full-d.jpg",
+      "slug": "rtx-4070-super",
+      "local": "assets/products/rtx-4070-super.webp",
+      "candidates": [
+        "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-super-product-gallery-full-d.jpg"
+      ]
+    },
+    {
+      "model": "RTX 4060 Ti",
+      "category": "GPU",
+      "source": "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-ti-product-gallery-full-d.jpg",
+      "slug": "rtx-4060-ti",
+      "local": "assets/products/rtx-4060-ti.webp",
+      "candidates": [
+        "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-ti-product-gallery-full-d.jpg"
+      ]
+    },
+    {
+      "model": "RTX 4060",
+      "category": "GPU",
+      "source": "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-product-gallery-full-d.jpg",
+      "slug": "rtx-4060",
+      "local": "assets/products/rtx-4060.webp",
+      "candidates": [
+        "https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-product-gallery-full-d.jpg"
+      ]
+    },
+    {
+      "model": "RX 7900 XTX",
+      "category": "GPU",
+      "source": "https://www.amd.com/system/files/2022-11/amd-radeon-rx-7900xtx-gallery1-1260x709.png",
+      "slug": "rx-7900-xtx",
+      "local": "assets/products/rx-7900-xtx.webp",
+      "candidates": [
+        "https://www.amd.com/system/files/2022-11/amd-radeon-rx-7900xtx-gallery1-1260x709.png"
+      ]
+    },
+    {
+      "model": "RX 7900 XT",
+      "category": "GPU",
+      "source": "https://www.amd.com/system/files/2022-11/amd-radeon-rx-7900xt-gallery1-1260x709.png",
+      "slug": "rx-7900-xt",
+      "local": "assets/products/rx-7900-xt.webp",
+      "candidates": [
+        "https://www.amd.com/system/files/2022-11/amd-radeon-rx-7900xt-gallery1-1260x709.png"
+      ]
+    },
+    {
+      "model": "RX 7800 XT",
+      "category": "GPU",
+      "source": "https://www.amd.com/system/files/2023-08/amd-radeon-rx-7800xt-gallery1-1260x709.png",
+      "slug": "rx-7800-xt",
+      "local": "assets/products/rx-7800-xt.webp",
+      "candidates": [
+        "https://www.amd.com/system/files/2023-08/amd-radeon-rx-7800xt-gallery1-1260x709.png"
+      ]
+    },
+    {
+      "model": "RX 7700 XT",
+      "category": "GPU",
+      "source": "https://www.amd.com/system/files/2023-08/amd-radeon-rx-7700xt-gallery1-1260x709.png",
+      "slug": "rx-7700-xt",
+      "local": "assets/products/rx-7700-xt.webp",
+      "candidates": [
+        "https://www.amd.com/system/files/2023-08/amd-radeon-rx-7700xt-gallery1-1260x709.png"
+      ]
+    },
+    {
+      "model": "RX 7600",
+      "category": "GPU",
+      "source": "https://www.amd.com/system/files/2023-05/amd-radeon-rx-7600-gallery1-1260x709.png",
+      "slug": "rx-7600",
+      "local": "assets/products/rx-7600.webp",
+      "candidates": [
+        "https://www.amd.com/system/files/2023-05/amd-radeon-rx-7600-gallery1-1260x709.png"
+      ]
+    },
+    {
+      "model": "Dyson Supersonic HD08",
+      "category": "Dyson",
+      "source": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/369046-01.png",
+      "slug": "dyson-supersonic-hd08",
+      "local": "assets/products/dyson-supersonic-hd08.webp",
+      "candidates": [
+        "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/369046-01.png"
+      ]
+    },
+    {
+      "model": "Dyson Airwrap HS05",
+      "category": "Dyson",
+      "source": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/419138-01.png",
+      "slug": "dyson-airwrap-hs05",
+      "local": "assets/products/dyson-airwrap-hs05.webp",
+      "candidates": [
+        "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/419138-01.png"
+      ]
+    },
+    {
+      "model": "Dyson V15 Detect",
+      "category": "Dyson",
+      "source": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/391580-01.png",
+      "slug": "dyson-v15-detect",
+      "local": "assets/products/dyson-v15-detect.webp",
+      "candidates": [
+        "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/391580-01.png"
+      ]
+    },
+    {
+      "model": "Dyson V12 Detect Slim",
+      "category": "Dyson",
+      "source": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/391579-01.png",
+      "slug": "dyson-v12-detect-slim",
+      "local": "assets/products/dyson-v12-detect-slim.webp",
+      "candidates": [
+        "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/391579-01.png"
+      ]
+    },
+    {
+      "model": "Insta360 X5",
+      "category": "Insta360",
+      "source": "https://carlos.gi/cdn/shop/files/Insta360X5Standard8K360DegreeActionCamera-SatinWhite07.jpg?v=1765819555&width=1445",
+      "slug": "insta360-x5",
+      "local": "assets/products/insta360-x5.webp",
+      "candidates": [
+        "https://carlos.gi/cdn/shop/files/Insta360X5Standard8K360DegreeActionCamera-SatinWhite07.jpg?v=1765819555&width=1445"
+      ]
+    },
+    {
+      "model": "Insta360 X4",
+      "category": "Insta360",
+      "source": "https://cdn.awsli.com.br/800x800/2549/2549769/produto/356710088/02-gpxx1ldilk.png",
+      "slug": "insta360-x4",
+      "local": "assets/products/insta360-x4.webp",
+      "candidates": [
+        "https://cdn.awsli.com.br/800x800/2549/2549769/produto/356710088/02-gpxx1ldilk.png"
+      ]
+    },
+    {
+      "model": "Insta360 GO 3S",
+      "category": "Insta360",
+      "source": "https://www.wexphotovideo.com/globalassets/product-images/3175000/3175487.jpg",
+      "slug": "insta360-go-3s",
+      "local": "assets/products/insta360-go-3s.webp",
+      "candidates": [
+        "https://www.wexphotovideo.com/globalassets/product-images/3175000/3175487.jpg"
+      ]
+    },
+    {
+      "model": "Insta360 GO Ultra",
+      "category": "Insta360",
+      "source": "https://i5.walmartimages.com/asr/4235960e-1e18-4654-b9d4-05935077576a.7d5b66f09a68c021a0973644bb288545.jpeg",
+      "slug": "insta360-go-ultra",
+      "local": "assets/products/insta360-go-ultra.webp",
+      "candidates": [
+        "https://i5.walmartimages.com/asr/4235960e-1e18-4654-b9d4-05935077576a.7d5b66f09a68c021a0973644bb288545.jpeg"
+      ]
+    },
+    {
+      "model": "MacBook Air 13\" M5",
+      "category": "MacBook",
+      "source": "https://media.ldlc.com/r1600/ld/products/00/06/32/59/LD0006325905.jpg",
+      "slug": "macbook-air-13-m5",
+      "local": "assets/products/macbook-air-13-m5.webp",
+      "candidates": [
+        "https://media.ldlc.com/r1600/ld/products/00/06/32/59/LD0006325905.jpg"
+      ]
+    },
+    {
+      "model": "MacBook Air 15\" M5",
+      "category": "MacBook",
+      "source": "https://media.ldlc.com/r1600/ld/products/00/06/32/59/LD0006325905.jpg",
+      "slug": "macbook-air-15-m5",
+      "local": "assets/products/macbook-air-15-m5.webp",
+      "candidates": [
+        "https://media.ldlc.com/r1600/ld/products/00/06/32/59/LD0006325905.jpg"
+      ]
+    },
+    {
+      "model": "iPad Pro 11\" M5",
+      "category": "iPad",
+      "source": "https://smartkoshk.com/cdn/shop/files/m7_2442aa2c-7509-49a8-8df3-85e720861e83.png?v=1776440217&width=1920",
+      "slug": "ipad-pro-11-m5",
+      "local": "assets/products/ipad-pro-11-m5.webp",
+      "candidates": [
+        "https://smartkoshk.com/cdn/shop/files/m7_2442aa2c-7509-49a8-8df3-85e720861e83.png?v=1776440217&width=1920"
+      ]
+    },
+    {
+      "model": "iPad Pro 13\" M5",
+      "category": "iPad",
+      "source": "https://smartkoshk.com/cdn/shop/files/m7_2442aa2c-7509-49a8-8df3-85e720861e83.png?v=1776440217&width=1920",
+      "slug": "ipad-pro-13-m5",
+      "local": "assets/products/ipad-pro-13-m5.webp",
+      "candidates": [
+        "https://smartkoshk.com/cdn/shop/files/m7_2442aa2c-7509-49a8-8df3-85e720861e83.png?v=1776440217&width=1920"
+      ]
+    },
+    {
+      "model": "iPad Air 11\" M4",
+      "category": "iPad",
+      "source": "https://icentre.hu/storage/files/images/products/11-ipad-air-m4-wi-fi-1-tb-csillagfeny_1.webp",
+      "slug": "ipad-air-11-m4",
+      "local": "assets/products/ipad-air-11-m4.webp",
+      "candidates": [
+        "https://icentre.hu/storage/files/images/products/11-ipad-air-m4-wi-fi-1-tb-csillagfeny_1.webp"
+      ]
+    },
+    {
+      "model": "iPad Air 13\" M4",
+      "category": "iPad",
+      "source": "https://icentre.hu/storage/files/images/products/11-ipad-air-m4-wi-fi-1-tb-csillagfeny_1.webp",
+      "slug": "ipad-air-13-m4",
+      "local": "assets/products/ipad-air-13-m4.webp",
+      "candidates": [
+        "https://icentre.hu/storage/files/images/products/11-ipad-air-m4-wi-fi-1-tb-csillagfeny_1.webp"
+      ]
+    },
+    {
+      "model": "AirPods 5",
+      "category": "AirPods",
+      "source": "https://estore.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/a/i/airpods_5.jpeg",
+      "slug": "airpods-5",
+      "local": "assets/products/airpods-5.webp",
+      "candidates": [
+        "https://estore.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/a/i/airpods_5.jpeg"
+      ]
+    },
+    {
+      "model": "Apple Watch Series 12",
+      "category": "Watch",
+      "source": "https://www.apple.com/newsroom/images/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/article/Apple-Watch-Series-12-2up-260909_big.jpg.large.jpg",
+      "slug": "apple-watch-series-12",
+      "local": "assets/products/apple-watch-series-12.webp",
+      "candidates": [
+        "https://www.apple.com/newsroom/images/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/article/Apple-Watch-Series-12-2up-260909_big.jpg.large.jpg"
+      ]
+    },
+    {
+      "model": "Apple Watch Ultra 4",
+      "category": "Watch",
+      "source": "https://m.media-amazon.com/images/I/71lJ5Xqz8XL.jpg",
+      "slug": "apple-watch-ultra-4",
+      "local": "assets/products/apple-watch-ultra-4.webp",
+      "candidates": [
+        "https://m.media-amazon.com/images/I/71lJ5Xqz8XL.jpg"
+      ]
+    },
+    {
+      "model": "Apple Watch Series 11",
+      "category": "Watch",
+      "source": "https://ekb.hi-stores.ru/upload/iblock/8c0/hub8kg4xbf40kcud2hhhw5o6obb24yyu.jpg",
+      "slug": "apple-watch-series-11",
+      "local": "assets/products/apple-watch-series-11.webp",
+      "candidates": [
+        "https://ekb.hi-stores.ru/upload/iblock/8c0/hub8kg4xbf40kcud2hhhw5o6obb24yyu.jpg"
+      ]
+    },
+    {
+      "model": "Apple Watch Ultra 3",
+      "category": "Watch",
+      "source": "https://m.media-amazon.com/images/I/71lJ5Xqz8XL.jpg",
+      "slug": "apple-watch-ultra-3",
+      "local": "assets/products/apple-watch-ultra-3.webp",
+      "candidates": [
+        "https://m.media-amazon.com/images/I/71lJ5Xqz8XL.jpg"
+      ]
+    },
+    {
+      "model": "Apple Watch SE 3",
+      "category": "Watch",
+      "source": "https://media.binglee.com.au/cdn-cgi/image/fit%3Dscale-down%2Cf%3Dauto%2Cw%3D1079/a/f/8/3/af83fb2f9cbedb515b33a422f4c08a78cbfce5f9_Apple_MEH54XA_Smart_Watches_Hero_1.jpg",
+      "slug": "apple-watch-se-3",
+      "local": "assets/products/apple-watch-se-3.webp",
+      "candidates": [
+        "https://media.binglee.com.au/cdn-cgi/image/fit%3Dscale-down%2Cf%3Dauto%2Cw%3D1079/a/f/8/3/af83fb2f9cbedb515b33a422f4c08a78cbfce5f9_Apple_MEH54XA_Smart_Watches_Hero_1.jpg"
+      ]
+    },
+    {
+      "model": "Samsung Galaxy Watch8",
+      "category": "Watch",
+      "source": "https://qvc.scene7.com/is/image/QVC/u2/7/33/744733.001",
+      "slug": "samsung-galaxy-watch8",
+      "local": "assets/products/samsung-galaxy-watch8.webp",
+      "candidates": [
+        "https://qvc.scene7.com/is/image/QVC/u2/7/33/744733.001"
+      ]
+    },
+    {
+      "model": "Samsung Galaxy Watch8 Classic",
+      "category": "Watch",
+      "source": "https://qvc.scene7.com/is/image/QVC/u2/7/33/744733.001",
+      "slug": "samsung-galaxy-watch8-classic",
+      "local": "assets/products/samsung-galaxy-watch8-classic.webp",
+      "candidates": [
+        "https://qvc.scene7.com/is/image/QVC/u2/7/33/744733.001"
+      ]
+    },
+    {
+      "model": "Samsung Galaxy Watch Ultra 2025",
+      "category": "Watch",
+      "source": "https://media.hifi.lu/sys-master/products/9536294354974/3840x3840.51007321_03.webp",
+      "slug": "samsung-galaxy-watch-ultra-2025",
+      "local": "assets/products/samsung-galaxy-watch-ultra-2025.webp",
+      "candidates": [
+        "https://media.hifi.lu/sys-master/products/9536294354974/3840x3840.51007321_03.webp"
+      ]
+    },
+    {
+      "model": "Ray-Ban Meta Low Bridge Fit Headliner",
+      "category": "Ray-Ban",
+      "source": "https://images2.ray-ban.com/cdn-record-files-pi/d6395e96-8685-4d8d-97ca-b2ea00e2e613/d85b69ec-c9e7-4986-ad7e-b2ea00e2e980/0RW4013F__601_MF__P21__shad__qt.png?impolicy=RB_Product",
+      "slug": "ray-ban-meta-low-bridge-fit-headliner",
+      "local": "assets/products/ray-ban-meta-low-bridge-fit-headliner.webp",
+      "candidates": [
+        "https://images2.ray-ban.com/cdn-record-files-pi/d6395e96-8685-4d8d-97ca-b2ea00e2e613/d85b69ec-c9e7-4986-ad7e-b2ea00e2e980/0RW4013F__601_MF__P21__shad__qt.png?impolicy=RB_Product"
+      ]
+    },
+    {
+      "model": "Ray-Ban Meta Blayzer Optics",
+      "category": "Ray-Ban",
+      "source": "https://ph-files.imgix.net/957e52bb-4e77-4b85-9727-e29044de0695.jpeg?auto=format&fit=crop",
+      "slug": "ray-ban-meta-blayzer-optics",
+      "local": "assets/products/ray-ban-meta-blayzer-optics.webp",
+      "candidates": [
+        "https://ph-files.imgix.net/957e52bb-4e77-4b85-9727-e29044de0695.jpeg?auto=format&fit=crop"
+      ]
+    },
+    {
+      "model": "Ray-Ban Meta Scriber Optics",
+      "category": "Ray-Ban",
+      "source": "https://images2.ray-ban.com/cdn-record-files-pi/b7e60787-a55d-4897-9758-b40a0103fa93/468f44f6-b4e3-489e-9a8c-b40c008d9a4e/0RW7002__2000__P21__shad__qt.png?impolicy=HB_SocialMedia",
+      "slug": "ray-ban-meta-scriber-optics",
+      "local": "assets/products/ray-ban-meta-scriber-optics.webp",
+      "candidates": [
+        "https://images2.ray-ban.com/cdn-record-files-pi/b7e60787-a55d-4897-9758-b40a0103fa93/468f44f6-b4e3-489e-9a8c-b40c008d9a4e/0RW7002__2000__P21__shad__qt.png?impolicy=HB_SocialMedia"
+      ]
+    },
+    {
+      "model": "Meta Ray-Ban Display",
+      "category": "Ray-Ban",
+      "source": "https://www.journaldugeek.com/app/uploads/2025/09/meta-ray-ban-display-2.jpg",
+      "slug": "meta-ray-ban-display",
+      "local": "assets/products/meta-ray-ban-display.webp",
+      "candidates": [
+        "https://www.journaldugeek.com/app/uploads/2025/09/meta-ray-ban-display-2.jpg"
+      ]
+    },
+    {
+      "model": "Oakley Meta HSTN",
+      "category": "Oakley",
+      "source": "https://www.function18.com/cdn/shop/files/Oakley-Meta-HSTN-Sunglasses-0OW8002-04-1.jpg?v=1760452026",
+      "slug": "oakley-meta-hstn",
+      "local": "assets/products/oakley-meta-hstn.webp",
+      "candidates": [
+        "https://www.function18.com/cdn/shop/files/Oakley-Meta-HSTN-Sunglasses-0OW8002-04-1.jpg?v=1760452026"
+      ]
+    },
+    {
+      "model": "Oakley Meta Vanguard",
+      "category": "Oakley",
+      "source": "https://www.365rider.com/99313/gafas-oakley-meta-vanguard-blanco.jpg",
+      "slug": "oakley-meta-vanguard",
+      "local": "assets/products/oakley-meta-vanguard.webp",
+      "candidates": [
+        "https://www.365rider.com/99313/gafas-oakley-meta-vanguard-blanco.jpg"
+      ]
+    },
+    {
+      "model": "DJI Mavic 4 Pro",
+      "category": "DJI",
+      "source": "https://www.tejar.pk/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/d/j/dji_mavic_4_pro_quadcopter_-_tejar_1.jpg",
+      "slug": "dji-mavic-4-pro",
+      "local": "assets/products/dji-mavic-4-pro.webp",
+      "candidates": [
+        "https://www.tejar.pk/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/d/j/dji_mavic_4_pro_quadcopter_-_tejar_1.jpg"
+      ]
+    },
+    {
+      "model": "DJI Air 3S",
+      "category": "DJI",
+      "source": "https://www.ebest.cl/media/wysiwyg/Imagen_de_WhatsApp_2024-10-14_a_las_14.18.06_6ecdd22c.jpg",
+      "slug": "dji-air-3s",
+      "local": "assets/products/dji-air-3s.webp",
+      "candidates": [
+        "https://www.ebest.cl/media/wysiwyg/Imagen_de_WhatsApp_2024-10-14_a_las_14.18.06_6ecdd22c.jpg"
+      ]
+    },
+    {
+      "model": "DJI Flip",
+      "category": "DJI",
+      "source": "https://www.hypop.com.au/cdn/shop/files/dji-flip-drone-body-only.jpg?v=1737361920&width=732",
+      "slug": "dji-flip",
+      "local": "assets/products/dji-flip.webp",
+      "candidates": [
+        "https://www.hypop.com.au/cdn/shop/files/dji-flip-drone-body-only.jpg?v=1737361920&width=732"
+      ]
+    },
+    {
+      "model": "DJI Neo 2",
+      "category": "DJI",
+      "source": "https://www.komplettforetag.se/product-media/b2b/sv-se/1080/1331723_1.jpg",
+      "slug": "dji-neo-2",
+      "local": "assets/products/dji-neo-2.webp",
+      "candidates": [
+        "https://www.komplettforetag.se/product-media/b2b/sv-se/1080/1331723_1.jpg"
+      ]
+    },
+    {
+      "model": "DJI Avata 2",
+      "category": "DJI",
+      "source": "https://www.fotokoch.de/bilddaten/bildzoom/dji-avata-2-standard_12614_4.jpg",
+      "slug": "dji-avata-2",
+      "local": "assets/products/dji-avata-2.webp",
+      "candidates": [
+        "https://www.fotokoch.de/bilddaten/bildzoom/dji-avata-2-standard_12614_4.jpg"
+      ]
+    },
+    {
+      "model": "DJI Osmo Action 6",
+      "category": "DJI",
+      "source": "https://www.propeller.sg/cdn/shop/files/OA6_1.jpg?v=1763442574&width=1445",
+      "slug": "dji-osmo-action-6",
+      "local": "assets/products/dji-osmo-action-6.webp",
+      "candidates": [
+        "https://www.propeller.sg/cdn/shop/files/OA6_1.jpg?v=1763442574&width=1445"
+      ]
+    },
+    {
+      "model": "DJI Osmo Action 5 Pro",
+      "category": "DJI",
+      "source": "https://se-cdn.djiits.com/tpc/uploads/carousel/image/cc648b6a7f42a7b2d02c4fe0146fd5c3%40ultra.jpg",
+      "slug": "dji-osmo-action-5-pro",
+      "local": "assets/products/dji-osmo-action-5-pro.webp",
+      "candidates": [
+        "https://se-cdn.djiits.com/tpc/uploads/carousel/image/cc648b6a7f42a7b2d02c4fe0146fd5c3%40ultra.jpg"
+      ]
+    },
+    {
+      "model": "DJI Osmo 360",
+      "category": "DJI",
+      "source": "https://cdn.awsli.com.br/600x700/2660/2660613/produto/367288870/img_4715-bu7dipcu1t.WEBP",
+      "slug": "dji-osmo-360",
+      "local": "assets/products/dji-osmo-360.webp",
+      "candidates": [
+        "https://cdn.awsli.com.br/600x700/2660/2660613/produto/367288870/img_4715-bu7dipcu1t.WEBP"
+      ]
+    },
+    {
+      "model": "DJI Osmo Nano",
+      "category": "DJI",
+      "source": "https://www.syd.com.tr/shop/ae/82/myassets/products/339/dji-osmo-nano-128gb.png?revision=1760006506",
+      "slug": "dji-osmo-nano",
+      "local": "assets/products/dji-osmo-nano.webp",
+      "candidates": [
+        "https://www.syd.com.tr/shop/ae/82/myassets/products/339/dji-osmo-nano-128gb.png?revision=1760006506"
+      ]
+    },
+    {
+      "model": "DJI Osmo Pocket 4P",
+      "category": "DJI",
+      "source": "https://excellentphoto.ca/cdn/shop/files/osmopocket4-2.png?v=1776357110&width=3840",
+      "slug": "dji-osmo-pocket-4p",
+      "local": "assets/products/dji-osmo-pocket-4p.webp",
+      "candidates": [
+        "https://excellentphoto.ca/cdn/shop/files/osmopocket4-2.png?v=1776357110&width=3840"
+      ]
+    },
+    {
+      "model": "Insta360 X6",
+      "category": "Insta360",
+      "source": "https://www.camaralia.com/62607-zoom_producto/insta360-x6-camara-360-8k-con-triple-chip-ia.jpg",
+      "slug": "insta360-x6",
+      "local": "assets/products/insta360-x6.webp",
+      "candidates": [
+        "https://www.camaralia.com/62607-zoom_producto/insta360-x6-camara-360-8k-con-triple-chip-ia.jpg"
+      ]
+    },
+    {
+      "model": "Insta360 Luna Ultra",
+      "category": "Insta360",
+      "source": "https://media.studio7thailand.com/238026/insta360-luna-ultra-creator-bundle-stellar-white-6942590201808-3-square_medium.jpg",
+      "slug": "insta360-luna-ultra",
+      "local": "assets/products/insta360-luna-ultra.webp",
+      "candidates": [
+        "https://media.studio7thailand.com/238026/insta360-luna-ultra-creator-bundle-stellar-white-6942590201808-3-square_medium.jpg"
+      ]
+    },
+    {
+      "model": "Insta360 X4 Air",
+      "category": "Insta360",
+      "source": "https://metapod.com/cdn/shop/files/15_Back_e3f0d5f3-f05c-47e0-8c01-f08a0e315a1d.png?v=1761723430&width=1501",
+      "slug": "insta360-x4-air",
+      "local": "assets/products/insta360-x4-air.webp",
+      "candidates": [
+        "https://metapod.com/cdn/shop/files/15_Back_e3f0d5f3-f05c-47e0-8c01-f08a0e315a1d.png?v=1761723430&width=1501"
+      ]
+    },
+    {
+      "model": "Insta360 Ace Pro 2",
+      "category": "Insta360",
+      "source": "https://archisite.co.jp/wp-content/uploads/2024/10/AcePro2-White-07.jpg",
+      "slug": "insta360-ace-pro-2",
+      "local": "assets/products/insta360-ace-pro-2.webp",
+      "candidates": [
+        "https://archisite.co.jp/wp-content/uploads/2024/10/AcePro2-White-07.jpg"
+      ]
+    },
+    {
+      "model": "Insta360 Flow 2 Pro",
+      "category": "Insta360",
+      "source": "https://a.allegroimg.com/s720/29b25d/3543250c43b6a7619136a8310a25/Stabilizator-gimbal-Insta360-Flow-2-Pro-bily",
+      "slug": "insta360-flow-2-pro",
+      "local": "assets/products/insta360-flow-2-pro.webp",
+      "candidates": [
+        "https://a.allegroimg.com/s720/29b25d/3543250c43b6a7619136a8310a25/Stabilizator-gimbal-Insta360-Flow-2-Pro-bily"
+      ]
+    },
+    {
+      "model": "Insta360 Link 2 Pro",
+      "category": "Insta360",
+      "source": "https://www.fotokoch.de/bilddaten/bildgrossplus/insta360-link-2-pro-graphite-black_69814.jpg",
+      "slug": "insta360-link-2-pro",
+      "local": "assets/products/insta360-link-2-pro.webp",
+      "candidates": [
+        "https://www.fotokoch.de/bilddaten/bildgrossplus/insta360-link-2-pro-graphite-black_69814.jpg"
+      ]
+    },
+    {
+      "model": "Insta360 Link 2C Pro",
+      "category": "Insta360",
+      "source": "https://www.fotokoch.de/bilddaten/bildgrossplus/insta360-link-2-pro-graphite-black_69814.jpg",
+      "slug": "insta360-link-2c-pro",
+      "local": "assets/products/insta360-link-2c-pro.webp",
+      "candidates": [
+        "https://www.fotokoch.de/bilddaten/bildgrossplus/insta360-link-2-pro-graphite-black_69814.jpg"
+      ]
+    },
+    {
+      "model": "Dyson Supersonic Nural",
+      "category": "Dyson",
+      "source": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/it_IT/515276-01.png?%24responsive%24=&fmt=png-alpha",
+      "slug": "dyson-supersonic-nural",
+      "local": "assets/products/dyson-supersonic-nural.webp",
+      "candidates": [
+        "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/it_IT/515276-01.png?%24responsive%24=&fmt=png-alpha"
+      ]
+    },
+    {
+      "model": "Dyson Airwrap i.d.",
+      "category": "Dyson",
+      "source": "https://rustans.com/cdn/shop/files/A_e8d603c2-a51c-42f4-95ef-61a3950bd1a6.jpg?v=1758165981&width=1400",
+      "slug": "dyson-airwrap-i-d",
+      "local": "assets/products/dyson-airwrap-i-d.webp",
+      "candidates": [
+        "https://rustans.com/cdn/shop/files/A_e8d603c2-a51c-42f4-95ef-61a3950bd1a6.jpg?v=1758165981&width=1400"
+      ]
+    }
+  ]
+}

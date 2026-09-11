@@ -1,8 +1,8 @@
 /assets/products/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+
+/assets/image-sources.json
+  Cache-Control: public, max-age=300, s-maxage=300
 
 /index.html
-  Cache-Control: public, max-age=0, must-revalidate
-
-/
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: no-cache
