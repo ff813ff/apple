@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <title>GlobalTech Wholesale - 批发产品目录</title>
+    <title>GlobalTech Wholesale - Official B2B Catalog</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E76V1Z9TX7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -89,10 +89,9 @@
     <header>
         <div class="logo">Global<span>Tech</span> Wholesale</div>
         <div class="lang-switcher">
-            <button class="lang-btn active" data-lang="zh" onclick="changeLang('zh')">中文</button>
-            <button class="lang-btn" data-lang="en" onclick="changeLang('en')">EN</button>
-            <button class="lang-btn" data-lang="fr" onclick="changeLang('fr')">FR</button>
-            <button class="lang-btn" data-lang="es" onclick="changeLang('es')">ES</button>
+            <button class="lang-btn active" onclick="changeLang('en')">EN</button>
+            <button class="lang-btn" onclick="changeLang('fr')">FR</button>
+            <button class="lang-btn" onclick="changeLang('es')">ES</button>
         </div>
     </header>
 
@@ -107,12 +106,12 @@
     </div>
 
     <div class="banner">
-        <div class="banner-title" id="bannerTitle">批发 <span>B2B 产品目录</span></div>
-        <div class="banner-sub" id="bannerSub">优惠批发价 · 全球发货 · 1年质保</div>
+        <div class="banner-title" id="bannerTitle">Official <span>B2B Catalog</span></div>
+        <div class="banner-sub" id="bannerSub">Wholesale Factory Prices · Global Shipping · 1-Year Warranty</div>
     </div>
 
     <div class="filters" id="filterContainer">
-        <button class="filter-btn active" data-filter="all" id="filterAll">全部产品</button>
+        <button class="filter-btn active" data-filter="all" id="filterAll">All Products</button>
         <button class="filter-btn" data-filter="iPhone">iPhone</button>
         <button class="filter-btn" data-filter="MacBook">MacBook</button>
         <button class="filter-btn" data-filter="iPad">iPad</button>
@@ -131,18 +130,18 @@
     <div class="product-grid" id="productGrid"></div>
 
     <div class="terms">
-        <h3 id="termsTitle">商业条款与说明</h3>
-        <p><strong id="termsLabel1">价格条款：</strong> <span id="termsText1">FOB 深圳 / 香港（以最终订单确认为准）</span></p>
-        <p><strong id="termsLabel2">质保：</strong> <span id="termsText2">1年国际质保</span></p>
-        <p><strong id="termsLabel3">付款：</strong> <span id="termsText3">付款方式在订单确认时提供</span></p>
-        <p><strong id="termsLabel4">货币：</strong> <span id="termsText4">基准价格为美元，其他货币按实时汇率换算。</span></p>
-        <p style="margin-top:15px; font-size:11px; opacity:0.7;" id="termsNote">* 价格可能随市场和库存变化；大批量采购可进一步询价。</p>
+        <h3 id="termsTitle">Commercial Terms & Notes</h3>
+        <p><strong id="termsLabel1">Price Term:</strong> <span id="termsText1">FOB Shenzhen / Hong Kong (Depending on final agreement)</span></p>
+        <p><strong id="termsLabel2">Warranty:</strong> <span id="termsText2">1-Year International Warranty</span></p>
+        <p><strong id="termsLabel3">Payment:</strong> <span id="termsText3">Payment Methods Available Upon Order Confirmation</span></p>
+        <p><strong id="termsLabel4">Currency:</strong> <span id="termsText4">Prices in USD. Live exchange rates auto-applied.</span></p>
+        <p style="margin-top:15px; font-size:11px; opacity:0.7;" id="termsNote">* Prices are subject to change based on market availability. Bulk discounts available.</p>
     </div>
 
     <div class="float-wa">
         <a href="#" id="floatWaBtn" class="float-wa-btn" target="_blank">
             <svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 6.46 17.5 2 12.04 2ZM17.11 16.43C16.9 17.02 15.99 17.55 15.24 17.62C14.49 17.7 13.66 17.66 12.35 17.12C10.24 16.26 8.86 14.11 8.76 13.98C8.66 13.85 7.77 12.68 7.77 11.47C7.77 10.26 8.38 9.67 8.59 9.44C8.81 9.22 9.06 9.15 9.28 9.15C9.5 9.15 9.72 9.15 9.9 9.16C10.09 9.17 10.35 9.13 10.6 9.73C10.85 10.34 11.49 11.73 11.57 11.89C11.65 12.05 11.7 12.24 11.59 12.45C11.48 12.66 11.38 12.79 11.24 12.96C11.11 13.12 10.96 13.32 10.85 13.44C10.74 13.56 10.62 13.69 10.76 13.93C10.9 14.17 11.46 15.08 12.28 15.81C13.33 16.75 14.19 17.06 14.44 17.18C14.69 17.3 14.85 17.28 15.01 17.11C15.18 16.94 15.73 16.29 15.92 16.04C16.11 15.79 16.3 15.84 16.56 15.94C16.82 16.04 18.2 16.72 18.48 16.86C18.76 17 18.95 17.07 19.02 17.18C19.08 17.29 19.08 17.85 18.87 18.42C18.66 18.99 17.32 19.84 17.11 16.43Z" fill="white"/></svg>
-            <span id="floatWaText">WhatsApp 批发询价</span>
+            <span id="floatWaText">Chat on WhatsApp for Bulk Quote</span>
         </a>
     </div>
 
@@ -150,7 +149,6 @@
         const WHATSAPP_NUMBER = "85264851768";
 
         const translations = {
-            zh: { bannerTitle:'批发 <span>B2B 产品目录</span>', bannerSub:'优惠批发价 · 全球发货 · 1年质保', filterAll:'全部产品', floatWaText:'WhatsApp 批发询价', termsTitle:'商业条款与说明', termsLabel1:'价格条款：', termsText1:'FOB 深圳 / 香港（以最终订单确认为准）', termsLabel2:'质保：', termsText2:'1年国际质保', termsLabel3:'付款：', termsText3:'付款方式在订单确认时提供', termsLabel4:'货币：', termsText4:'基准价格为美元，其他货币按实时汇率换算。', termsNote:'* 价格可能随市场和库存变化；大批量采购可进一步询价。', inquire:'WhatsApp 询价', greeting:'您好，我想咨询贵司的批发产品目录和最新报价，请提供最低起订量、库存和发货信息，谢谢。', priceLabel:'批发优惠价' },
             en: { bannerTitle:'Official <span>B2B Catalog</span>', bannerSub:'Wholesale Factory Prices · Global Shipping · 1-Year Warranty', filterAll:'All Products', floatWaText:'Chat on WhatsApp for Bulk Quote', termsTitle:'Commercial Terms & Notes', termsLabel1:'Price Term:', termsText1:'FOB Shenzhen / Hong Kong (Depending on final agreement)', termsLabel2:'Warranty:', termsText2:'1-Year International Warranty', termsLabel3:'Payment:', termsText3:'Payment Methods Available Upon Order Confirmation', termsLabel4:'Currency:', termsText4:'Prices in USD. Live exchange rates auto-applied.', termsNote:'* Prices are subject to change based on market availability. Bulk discounts available.', inquire:'Inquire on WhatsApp', greeting:'Hi my friend, please send me your product catalog and price list.', priceLabel:'Wholesale Factory Price' },
             fr: { bannerTitle:'Catalogue <span>B2B Officiel</span>', bannerSub:'Prix d\'usine en gros · Livraison mondiale · Garantie 1 an', filterAll:'Tous les produits', floatWaText:'Discuter sur WhatsApp pour un devis', termsTitle:'Conditions Commerciales', termsLabel1:'Terme de prix :', termsText1:'FOB Shenzhen / Hong Kong (Selon accord final)', termsLabel2:'Garantie :', termsText2:'Garantie internationale de 1 an', termsLabel3:'Paiement :', termsText3:'Modes de paiement disponibles à la confirmation de la commande', termsLabel4:'Devise :', termsText4:'Prix en USD. Taux de change en direct appliqués automatiquement.', termsNote:'* Les prix sont susceptibles de changer. Remises sur gros volumes disponibles.', inquire:'Demander sur WhatsApp', greeting:'Bonjour mon ami, veuillez m\'envoyer votre catalogue de produits et votre liste de prix.', priceLabel:'Prix d\'usine en gros' },
             es: { bannerTitle:'Catálogo <span>B2B Oficial</span>', bannerSub:'Precios de fábrica al por mayor · Envío global · Garantía 1 año', filterAll:'Todos los productos', floatWaText:'Chatear por WhatsApp para cotización', termsTitle:'Términos Comerciales', termsLabel1:'Término de precio:', termsText1:'FOB Shenzhen / Hong Kong (Según acuerdo final)', termsLabel2:'Garantía:', termsText2:'Garantía internacional de 1 año', termsLabel3:'Pago:', termsText3:'Métodos de pago disponibles al confirmar el pedido', termsLabel4:'Moneda:', termsText4:'Precios en USD. Tipos de cambio en vivo aplicados automáticamente.', termsNote:'* Los precios están sujetos a cambios. Descuentos por volumen disponibles.', inquire:'Consultar por WhatsApp', greeting:'Hola amigo, por favor envíeme su catálogo de productos y lista de precios.', priceLabel:'Precio de fábrica al por mayor' }
@@ -675,7 +673,7 @@
         }
         applyRequestedPricingRules();
 
-        let currentLang = 'zh';
+        let currentLang = 'en';
         let currentCurrency = 'USD';
         let currentFilter = 'all';
         let exchangeRates = { USD:1, EUR:0.92, GBP:0.79, JPY:149.5, CNY:7.24, CAD:1.36, AUD:1.52 };
@@ -771,7 +769,7 @@
             grid.appendChild(fragment);
 
             document.querySelectorAll('.product-card').forEach(card => updateCardLink(card));
-            requestAnimationFrame(setupProductViewTracking);
+            requestAnimationFrame(setupCnQuickProductViews);
         }
 
         function getSelectedSku(card) {
@@ -806,26 +804,7 @@
             if (sku.version && sku.version !== "Standard") detail += ' ' + sku.version;
             if (sku.color) detail += ' ' + sku.color;
 
-            let message;
-            if (currentLang === 'zh') {
-                message = [
-                    '您好，我想咨询这个产品的批发报价：',
-                    '产品：' + modelName,
-                    sku.capacity && sku.capacity !== 'N/A' ? '规格：' + sku.capacity : '',
-                    sku.version && sku.version !== 'Standard' ? '版本：' + sku.version : '',
-                    sku.color ? '颜色：' + sku.color : '',
-                    '页面参考价：$' + Number(sku.priceUsd || 0).toLocaleString() + ' USD',
-                    '',
-                    '请问目前有库存吗？最低起订量是多少？大量采购还有优惠吗？谢谢。'
-                ].filter(Boolean).join('\n');
-            } else if (currentLang === 'fr') {
-                message = t.greeting + '\nProduit : ' + detail + '\nMerci de m’indiquer le stock, la quantité minimale et votre meilleur prix de gros.';
-            } else if (currentLang === 'es') {
-                message = t.greeting + '\nProducto: ' + detail + '\nIndíqueme por favor el stock, la cantidad mínima y su mejor precio mayorista.';
-            } else {
-                message = t.greeting + '\nProduct: ' + detail + '\nPlease let me know current stock, MOQ and your best wholesale price.';
-            }
-            const waMessage = encodeURIComponent(message);
+            const waMessage = encodeURIComponent(t.greeting + ' I am interested in ' + detail + '.');
             card.querySelector('.btn-inquire').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`;
         }
 
@@ -843,31 +822,39 @@
             };
         }
 
-        function getTrafficContext() {
-            const q = new URLSearchParams(window.location.search);
-            let platform = 'direct_or_unknown';
-            if (q.get('utm_source')) platform = q.get('utm_source');
-            else if (q.has('fbclid')) platform = 'facebook';
-            else if (q.has('gclid')) platform = 'google_ads';
-            else if (/facebook|instagram/i.test(document.referrer || '')) platform = 'meta_referral';
-            else if (/t\.co|twitter|x\.com/i.test(document.referrer || '')) platform = 'x_referral';
+        function analyticsSlug(value) {
+            return String(value || '')
+                .toLowerCase()
+                .trim()
+                .replace(/[^a-z0-9\u4e00-\u9fff]+/g, '-')
+                .replace(/^-+|-+$/g, '')
+                .slice(0, 100);
+        }
 
-            return {
-                catalog_language: currentLang || 'zh',
-                page_hostname: window.location.hostname,
-                page_path: window.location.pathname,
-                traffic_platform: platform,
-                utm_source: q.get('utm_source') || '',
-                utm_medium: q.get('utm_medium') || '',
-                utm_campaign: q.get('utm_campaign') || '',
-                has_fbclid: q.has('fbclid') ? 'yes' : 'no'
+        function sendChineseBehaviorView(kind, productName) {
+            if (typeof window.gtag !== 'function') return;
+
+            const labels = {
+                view: '产品浏览',
+                click: '产品点击',
+                whatsapp: 'WhatsApp询盘'
             };
+            const label = labels[kind] || '产品行为';
+            const slug = analyticsSlug(productName) || 'unknown-product';
+            const path = `/__analytics/${kind}/${slug}`;
+
+            window.gtag('event', 'page_view', {
+                send_to: 'G-E76V1Z9TX7',
+                transport_type: 'beacon',
+                page_title: `${label}｜${productName}`,
+                page_location: `${window.location.origin}${path}`,
+                page_path: path
+            });
         }
 
         function sendGaEvent(eventName, params = {}) {
             if (typeof window.gtag !== 'function') return;
             const payload = {
-                ...getTrafficContext(),
                 ...params,
                 send_to: 'G-E76V1Z9TX7',
                 transport_type: 'beacon',
@@ -895,39 +882,29 @@
             };
         }
 
-        const viewedProducts = new Set();
-        let productViewObserver = null;
+        const cnQuickViewedProducts = new Set();
+        let cnQuickObserver = null;
 
-        function setupProductViewTracking() {
+        function setupCnQuickProductViews() {
             if (!('IntersectionObserver' in window)) return;
-            if (productViewObserver) productViewObserver.disconnect();
+            if (cnQuickObserver) cnQuickObserver.disconnect();
 
-            productViewObserver = new IntersectionObserver((entries) => {
+            cnQuickObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (!entry.isIntersecting || entry.intersectionRatio < 0.55) return;
                     const card = entry.target;
                     const model = card.dataset.model || '';
-                    if (!model || viewedProducts.has(model)) {
-                        productViewObserver.unobserve(card);
+                    if (!model || cnQuickViewedProducts.has(model)) {
+                        cnQuickObserver.unobserve(card);
                         return;
                     }
-                    viewedProducts.add(model);
-                    const productData = getAnalyticsProductData(card);
-                    const item = getGaItem(card);
-                    sendGaEvent('product_view', {
-                        ...productData,
-                        interaction_type: 'visible_55_percent'
-                    });
-                    sendGaEvent('view_item', {
-                        currency: 'USD',
-                        value: Number(item.price || 0),
-                        items: [item]
-                    });
-                    productViewObserver.unobserve(card);
+                    cnQuickViewedProducts.add(model);
+                    sendChineseBehaviorView('view', model);
+                    cnQuickObserver.unobserve(card);
                 });
             }, { threshold: [0.55] });
 
-            document.querySelectorAll('.product-card').forEach(card => productViewObserver.observe(card));
+            document.querySelectorAll('.product-card').forEach(card => cnQuickObserver.observe(card));
         }
 
         function detectInteractionType(target) {
@@ -950,6 +927,7 @@
                         interaction_type: 'whatsapp',
                         link_url: inquiryBtn.href || ''
                     });
+                    sendChineseBehaviorView('whatsapp', productData.product_name || card.dataset.model || 'Unknown Product');
                     sendGaEvent('generate_lead', {
                         currency: 'USD',
                         value: Number(item.price || 0),
@@ -968,6 +946,7 @@
                         ...productData,
                         interaction_type: detectInteractionType(e.target)
                     });
+                    sendChineseBehaviorView('click', productData.product_name || productCard.dataset.model || 'Unknown Product');
                     sendGaEvent('select_item', {
                         item_list_name: 'GlobalTech Catalog',
                         currency: 'USD',
@@ -1001,9 +980,8 @@
 
         function changeLang(lang) {
             currentLang = lang;
-            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
-            const langCurrencyMap = { zh:'USD', en:'USD', fr:'EUR', es:'EUR' };
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent.trim() === lang.toUpperCase()));
+            const langCurrencyMap = { en:'USD', fr:'EUR', es:'EUR' };
             currentCurrency = langCurrencyMap[lang] || 'USD';
             document.querySelectorAll('.currency-btn').forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-currency') === currentCurrency));
             const t = translations[lang];
@@ -1021,10 +999,6 @@
             document.getElementById('termsLabel4').textContent = t.termsLabel4;
             document.getElementById('termsText4').textContent = t.termsText4;
             document.getElementById('termsNote').textContent = t.termsNote;
-            const generalWaText = lang === 'zh'
-                ? '您好，我想咨询批发产品目录和最新报价。请提供目前库存、最低起订量、批量优惠以及发货方式，谢谢。'
-                : t.greeting;
-            document.getElementById('floatWaBtn').href = `https://wa.me/${WHATSAPP_NUMBER}?text=` + encodeURIComponent(generalWaText);
             renderProducts();
         }
 
@@ -1039,11 +1013,7 @@
 
         async function init() {
             await fetchExchangeRates();
-            changeLang(currentLang);
-            const initialGeneralWaText = currentLang === 'zh'
-                ? '您好，我想咨询批发产品目录和最新报价。请提供目前库存、最低起订量、批量优惠以及发货方式，谢谢。'
-                : translations[currentLang].greeting;
-            document.getElementById('floatWaBtn').href = `https://wa.me/${WHATSAPP_NUMBER}?text=` + encodeURIComponent(initialGeneralWaText);
+            document.getElementById('floatWaBtn').href = `https://wa.me/${WHATSAPP_NUMBER}?text=` + encodeURIComponent(translations[currentLang].greeting);
             document.getElementById('floatWaBtn').addEventListener('click', function() {
                 sendGaEvent('whatsapp_inquiry', {
                     product_name: 'General Catalog Inquiry',
@@ -1068,9 +1038,8 @@
             }, { once: false });
             renderProducts();
             sendGaEvent('catalog_ready', {
-                catalog_version: 'cn-analytics-v2',
-                product_count: productsData.length,
-                default_language: currentLang
+                catalog_version: 'analytics-fixed-v1',
+                product_count: productsData.length
             });
         }
         init();
