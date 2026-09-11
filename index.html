@@ -1141,5 +1141,93 @@
     }, true);
 })();
 </script>
+
+<script>
+/* GA4 Sales Optimization Pack v2 */
+
+/* 1. 产品排名统计 */
+(function(){
+  const key='ga4_product_rank';
+  function saveProduct(name){
+    if(!name)return;
+    let data={};
+    try{data=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}
+    data[name]=(data[name]||0)+1;
+    localStorage.setItem(key,JSON.stringify(data));
+  }
+  window.addEventListener('click',function(e){
+    const card=e.target.closest('.product-card');
+    if(card){
+      saveProduct(card.dataset.model || card.dataset.name || card.innerText.slice(0,50));
+    }
+  });
+})();
+
+/* 2. WhatsApp 自动携带产品信息 */
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.btn-inquire');
+  if(!btn)return;
+  const card=btn.closest('.product-card');
+  if(!card)return;
+  const name=card.dataset.model || card.dataset.name || 'Product';
+  const price=card.dataset.price || '';
+  const msg=encodeURIComponent(
+    'Hello, I want quotation:\n\nProduct: '+name+
+    '\nPrice: '+price+' USD'
+  );
+  if(btn.href && btn.href.includes('wa.me')){
+    btn.href=btn.href.split('?')[0]+'?text='+msg;
+  }
+});
+
+/* 3. 分类点击统计 */
+document.addEventListener('click',function(e){
+ const el=e.target.closest('[data-category],.category,.filter-btn');
+ if(!el)return;
+ if(typeof gtag==='function'){
+  gtag('event','category_click',{
+    category_name:el.dataset.category || el.innerText.trim()
+  });
+ }
+});
+
+/* 4. 搜索统计 */
+document.addEventListener('input',function(e){
+ if(e.target.matches('input[type="search"],input[placeholder*="Search"],input[placeholder*="搜索"]')){
+   if(e.target.value.length>=3 && typeof gtag==='function'){
+    gtag('event','search_product',{
+      search_term:e.target.value
+    });
+   }
+ }
+});
+
+/* 5. 广告来源自动记录 */
+(function(){
+ const params=new URLSearchParams(location.search);
+ const source=params.get('utm_source')||'direct';
+ const campaign=params.get('utm_campaign')||'none';
+ if(typeof gtag==='function'){
+   gtag('event','traffic_source',{
+    source:source,
+    campaign:campaign
+   });
+ }
+})();
+
+/* 6. 页面性能监控 */
+window.addEventListener('load',function(){
+ setTimeout(function(){
+  if(performance.getEntriesByType){
+   const t=performance.getEntriesByType('navigation')[0];
+   if(t && typeof gtag==='function'){
+    gtag('event','page_speed',{
+      load_time:Math.round(t.loadEventEnd-t.startTime)
+    });
+   }
+  }
+ },1000);
+});
+</script>
 </body>
 </html>
