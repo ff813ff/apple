@@ -696,7 +696,39 @@
                 });
             });
         }
+
         applySelectedAppleExtra15();
+
+        // iPhone generation price positioning:
+        // Newer generation keeps premium pricing, older generations stay cheaper.
+        // iPhone 17 series: +50%
+        // iPhone 16 series: -40%
+        // iPhone 15 series: -50%
+        function applyIphoneGenerationPricing() {
+            productsData.forEach(product => {
+                if (product.category !== 'iPhone') return;
+
+                const name = product.model || '';
+                let multiplier = 1;
+
+                if (/iPhone 17/i.test(name)) {
+                    multiplier = 1.5;
+                } else if (/iPhone 16/i.test(name)) {
+                    multiplier = 0.6;
+                } else if (/iPhone 15/i.test(name)) {
+                    multiplier = 0.5;
+                }
+
+                if (multiplier !== 1) {
+                    product.skus.forEach(sku => {
+                        sku.priceUsd = Math.round(Number(sku.priceUsd || 0) * multiplier);
+                        sku.priceEur = Math.round(sku.priceUsd * 0.92);
+                    });
+                }
+            });
+        }
+        applyIphoneGenerationPricing();
+
 
         let currentLang = 'en';
         let currentCurrency = 'USD';
