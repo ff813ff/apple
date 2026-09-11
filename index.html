@@ -729,6 +729,28 @@
         }
         applyIphoneGenerationPricing();
 
+        // iPhone 18 series: set every listed SKU to 83% of Apple U.S. official retail price.
+        function applyIphone18Official83() {
+            const officialUsd = {
+                'iPhone Duo': { '256GB': 1999, '512GB': 2199, '1TB': 2599, '2TB': 3199 },
+                'iPhone 18 Pro Max': { '256GB': 1299, '512GB': 1499, '1TB': 1899, '2TB': 2499 },
+                'iPhone 18 Pro': { '256GB': 1199, '512GB': 1399, '1TB': 1799, '2TB': 2399 }
+            };
+
+            productsData.forEach(product => {
+                const priceMap = officialUsd[product.model];
+                if (!priceMap) return;
+
+                product.skus.forEach(sku => {
+                    const official = priceMap[sku.capacity];
+                    if (official == null) return;
+                    sku.priceUsd = Math.round(official * 0.83);
+                    sku.priceEur = Math.round(sku.priceUsd * 0.92);
+                });
+            });
+        }
+        applyIphone18Official83();
+
 
         let currentLang = 'en';
         let currentCurrency = 'USD';
