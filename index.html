@@ -760,6 +760,7 @@
                 const card = document.createElement('div');
                 card.className = 'product-card';
                 card.dataset.model = product.model;
+                card.dataset.category = product.category;
                 card.dataset.skus = JSON.stringify(product.skus);
 
                 card.innerHTML = `
@@ -819,7 +820,54 @@
             card.querySelector('.btn-inquire').href = `https://wa.me/${WHATSAPP_NUMBER}?text=${waMessage}`;
         }
 
+        function getAnalyticsProductData(card) {
+            const sku = getSelectedSku(card);
+            return {
+                product_name: card.dataset.model || '',
+                product_category: card.dataset.category || '',
+                product_capacity: (sku.capacity && sku.capacity !== 'N/A') ? sku.capacity : '',
+                product_version: (sku.version && sku.version !== 'Standard') ? sku.version : '',
+                product_color: sku.color || '',
+                product_price: Number(sku.priceUsd || 0),
+                currency: currentCurrency || 'USD',
+                value: Number(convertPrice(sku.priceUsd || 0, currentCurrency || 'USD'))
+            };
+        }
+
+        function sendGaEvent(eventName, params) {
+            if (typeof gtag !== 'function') return;
+            gtag('event', eventName, params);
+        }
+
+        function detectInteractionType(target) {
+            if (target.closest('.variant-btn')) return 'variant';
+            if (target.closest('.product-img') || target.closest('.img-box')) return 'image';
+            if (target.closest('.product-model')) return 'model';
+            if (target.closest('.product-price') || target.closest('.product-price-secondary')) return 'price';
+            return 'card';
+        }
+
         document.addEventListener('click', function(e) {
+            const inquiryBtn = e.target.closest('.btn-inquire');
+            if (inquiryBtn) {
+                const card = inquiryBtn.closest('.product-card');
+                if (card) {
+                    sendGaEvent('whatsapp_inquiry', {
+                        ...getAnalyticsProductData(card),
+                        interaction_type: 'whatsapp',
+                        link_url: inquiryBtn.href || ''
+                    });
+                }
+            } else {
+                const productCard = e.target.closest('.product-card');
+                if (productCard) {
+                    sendGaEvent('product_click', {
+                        ...getAnalyticsProductData(productCard),
+                        interaction_type: detectInteractionType(e.target)
+                    });
+                }
+            }
+
             const btn = e.target.closest('.variant-btn');
             if (btn && btn.closest('.product-card')) {
                 e.preventDefault();
@@ -878,6 +926,20 @@
         async function init() {
             await fetchExchangeRates();
             document.getElementById('floatWaBtn').href = `https://wa.me/${WHATSAPP_NUMBER}?text=` + encodeURIComponent(translations[currentLang].greeting);
+            document.getElementById('floatWaBtn').addEventListener('click', function() {
+                sendGaEvent('whatsapp_inquiry', {
+                    product_name: 'General Catalog Inquiry',
+                    product_category: 'General',
+                    product_capacity: '',
+                    product_version: '',
+                    product_color: '',
+                    product_price: 0,
+                    currency: currentCurrency || 'USD',
+                    value: 0,
+                    interaction_type: 'floating_whatsapp',
+                    link_url: this.href || ''
+                });
+            }, { once: false });
             renderProducts();
         }
         init();
