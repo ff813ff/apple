@@ -1,0 +1,636 @@
+{
+  "total": 105,
+  "local_present": 90,
+  "results": [
+    {
+      "model": "iPhone Duo",
+      "local": "assets/products/iphone-duo.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 18 Pro Max",
+      "local": "assets/products/iphone-18-pro-max.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 18 Pro",
+      "local": "assets/products/iphone-18-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 17 Pro Max",
+      "local": "assets/products/iphone-17-pro-max.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 17 Pro",
+      "local": "assets/products/iphone-17-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 17 Air",
+      "local": "assets/products/iphone-17-air.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 17",
+      "local": "assets/products/iphone-17.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 16 Pro Max",
+      "local": "assets/products/iphone-16-pro-max.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 16 Pro",
+      "local": "assets/products/iphone-16-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 16 Plus",
+      "local": "assets/products/iphone-16-plus.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 16",
+      "local": "assets/products/iphone-16.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 15 Pro Max",
+      "local": "assets/products/iphone-15-pro-max.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 15 Pro",
+      "local": "assets/products/iphone-15-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPhone 15",
+      "local": "assets/products/iphone-15.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "MacBook Pro 16\" M4 Max",
+      "local": "assets/products/macbook-pro-16-m4-max.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "MacBook Pro 14\" M4 Pro",
+      "local": "assets/products/macbook-pro-14-m4-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "MacBook Air 15\" M4",
+      "local": "assets/products/macbook-air-15-m4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "MacBook Air 13\" M4",
+      "local": "assets/products/macbook-air-13-m4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPad Pro 13\" M4",
+      "local": "assets/products/ipad-pro-13-m4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPad Pro 11\" M4",
+      "local": "assets/products/ipad-pro-11-m4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPad Air M2 11\"",
+      "local": "assets/products/ipad-air-m2-11.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPad Mini 6",
+      "local": "assets/products/ipad-mini-6.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Watch Ultra 2",
+      "local": "assets/products/watch-ultra-2.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Watch Series 10",
+      "local": "assets/products/watch-series-10.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "AirPods Pro 2",
+      "local": "assets/products/airpods-pro-2.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "AirPods Max",
+      "local": "assets/products/airpods-max.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Ray-Ban Meta Wayfarer",
+      "local": "assets/products/ray-ban-meta-wayfarer.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Ray-Ban Meta Headliner",
+      "local": "assets/products/ray-ban-meta-headliner.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Ray-Ban Meta Skyler",
+      "local": "assets/products/ray-ban-meta-skyler.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "PS5 Slim",
+      "local": "assets/products/ps5-slim.webp",
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://gmedia.playstation.com/is/image/SIEPDC/ps5-slim-product-thumbnail-01-en-14sep23?$facebook$"
+    },
+    {
+      "model": "PS5 Pro",
+      "local": "assets/products/ps5-pro.webp",
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-product-thumbnail-01-en-11sep24?$facebook$"
+    },
+    {
+      "model": "DJI Mavic 3 Pro",
+      "local": "assets/products/dji-mavic-3-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Mini 4 Pro",
+      "local": "assets/products/dji-mini-4-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Mini 5 Pro",
+      "local": "assets/products/dji-mini-5-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Osmo Pocket 3",
+      "local": "assets/products/dji-osmo-pocket-3.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Osmo Pocket 4",
+      "local": "assets/products/dji-osmo-pocket-4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Logitech G923",
+      "local": "assets/products/logitech-g923.webp",
+      "status": "kept-local",
+      "error": ""
+    },
+    {
+      "model": "Nintendo Switch 2",
+      "local": "assets/products/nintendo-switch-2.webp",
+      "status": "kept-local",
+      "error": ""
+    },
+    {
+      "model": "Nintendo Switch",
+      "local": "assets/products/nintendo-switch.webp",
+      "status": "kept-local",
+      "error": ""
+    },
+    {
+      "model": "RTX 5090",
+      "local": "assets/products/rtx-5090.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "RTX 5080",
+      "local": "assets/products/rtx-5080.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "RTX 5070 Ti",
+      "local": "assets/products/rtx-5070-ti.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "RTX 5070",
+      "local": "assets/products/rtx-5070.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "RTX 5060 Ti",
+      "local": "assets/products/rtx-5060-ti.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "RTX 5060",
+      "local": "assets/products/rtx-5060.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "RTX 5050",
+      "local": "assets/products/rtx-5050.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "RTX 4090",
+      "local": "assets/products/rtx-4090.webp",
+      "status": "missing",
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4090-product-gallery-full-d.jpg"
+    },
+    {
+      "model": "RTX 4080 Super",
+      "local": "assets/products/rtx-4080-super.webp",
+      "status": "missing",
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4080-super-product-gallery-full-d.jpg"
+    },
+    {
+      "model": "RTX 4070 Ti Super",
+      "local": "assets/products/rtx-4070-ti-super.webp",
+      "status": "missing",
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-ti-super-product-gallery-full-d.jpg"
+    },
+    {
+      "model": "RTX 4070 Super",
+      "local": "assets/products/rtx-4070-super.webp",
+      "status": "missing",
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4070-super-product-gallery-full-d.jpg"
+    },
+    {
+      "model": "RTX 4060 Ti",
+      "local": "assets/products/rtx-4060-ti.webp",
+      "status": "missing",
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-ti-product-gallery-full-d.jpg"
+    },
+    {
+      "model": "RTX 4060",
+      "local": "assets/products/rtx-4060.webp",
+      "status": "missing",
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://images.nvidia.com/aemdam/en-us/Solutions/geforce/ada/graphics-cards/geforce-rtx-4060-product-gallery-full-d.jpg"
+    },
+    {
+      "model": "RX 7900 XTX",
+      "local": "assets/products/rx-7900-xtx.webp",
+      "status": "missing",
+      "error": "ValueError: not an image: text/html"
+    },
+    {
+      "model": "RX 7900 XT",
+      "local": "assets/products/rx-7900-xt.webp",
+      "status": "missing",
+      "error": "ValueError: not an image: text/html"
+    },
+    {
+      "model": "RX 7800 XT",
+      "local": "assets/products/rx-7800-xt.webp",
+      "status": "missing",
+      "error": "ValueError: not an image: text/html"
+    },
+    {
+      "model": "RX 7700 XT",
+      "local": "assets/products/rx-7700-xt.webp",
+      "status": "missing",
+      "error": "ValueError: not an image: text/html"
+    },
+    {
+      "model": "RX 7600",
+      "local": "assets/products/rx-7600.webp",
+      "status": "missing",
+      "error": "ValueError: not an image: text/html"
+    },
+    {
+      "model": "Dyson Supersonic HD08",
+      "local": "assets/products/dyson-supersonic-hd08.webp",
+      "status": "missing",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/369046-01.png"
+    },
+    {
+      "model": "Dyson Airwrap HS05",
+      "local": "assets/products/dyson-airwrap-hs05.webp",
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/419138-01.png"
+    },
+    {
+      "model": "Dyson V15 Detect",
+      "local": "assets/products/dyson-v15-detect.webp",
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/391580-01.png"
+    },
+    {
+      "model": "Dyson V12 Detect Slim",
+      "local": "assets/products/dyson-v12-detect-slim.webp",
+      "status": "missing",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/391579-01.png"
+    },
+    {
+      "model": "Insta360 X5",
+      "local": "assets/products/insta360-x5.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 X4",
+      "local": "assets/products/insta360-x4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 GO 3S",
+      "local": "assets/products/insta360-go-3s.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 GO Ultra",
+      "local": "assets/products/insta360-go-ultra.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "MacBook Air 13\" M5",
+      "local": "assets/products/macbook-air-13-m5.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "MacBook Air 15\" M5",
+      "local": "assets/products/macbook-air-15-m5.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPad Pro 11\" M5",
+      "local": "assets/products/ipad-pro-11-m5.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPad Pro 13\" M5",
+      "local": "assets/products/ipad-pro-13-m5.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPad Air 11\" M4",
+      "local": "assets/products/ipad-air-11-m4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "iPad Air 13\" M4",
+      "local": "assets/products/ipad-air-13-m4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "AirPods 5",
+      "local": "assets/products/airpods-5.webp",
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://estore.ua/media/catalog/product/cache/8/image/650x650/9df78eab33525d08d6e5fb8d27136e95/a/i/airpods_5.jpeg"
+    },
+    {
+      "model": "Apple Watch Series 12",
+      "local": "assets/products/apple-watch-series-12.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Apple Watch Ultra 4",
+      "local": "assets/products/apple-watch-ultra-4.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Apple Watch Series 11",
+      "local": "assets/products/apple-watch-series-11.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Apple Watch Ultra 3",
+      "local": "assets/products/apple-watch-ultra-3.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Apple Watch SE 3",
+      "local": "assets/products/apple-watch-se-3.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Samsung Galaxy Watch8",
+      "local": "assets/products/samsung-galaxy-watch8.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Samsung Galaxy Watch8 Classic",
+      "local": "assets/products/samsung-galaxy-watch8-classic.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Samsung Galaxy Watch Ultra 2025",
+      "local": "assets/products/samsung-galaxy-watch-ultra-2025.webp",
+      "status": "missing",
+      "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://media.hifi.lu/sys-master/products/9536294354974/3840x3840.51007321_03.webp"
+    },
+    {
+      "model": "Ray-Ban Meta Low Bridge Fit Headliner",
+      "local": "assets/products/ray-ban-meta-low-bridge-fit-headliner.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Ray-Ban Meta Blayzer Optics",
+      "local": "assets/products/ray-ban-meta-blayzer-optics.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Ray-Ban Meta Scriber Optics",
+      "local": "assets/products/ray-ban-meta-scriber-optics.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Meta Ray-Ban Display",
+      "local": "assets/products/meta-ray-ban-display.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Oakley Meta HSTN",
+      "local": "assets/products/oakley-meta-hstn.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Oakley Meta Vanguard",
+      "local": "assets/products/oakley-meta-vanguard.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Mavic 4 Pro",
+      "local": "assets/products/dji-mavic-4-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Air 3S",
+      "local": "assets/products/dji-air-3s.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Flip",
+      "local": "assets/products/dji-flip.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Neo 2",
+      "local": "assets/products/dji-neo-2.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Avata 2",
+      "local": "assets/products/dji-avata-2.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Osmo Action 6",
+      "local": "assets/products/dji-osmo-action-6.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Osmo Action 5 Pro",
+      "local": "assets/products/dji-osmo-action-5-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Osmo 360",
+      "local": "assets/products/dji-osmo-360.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Osmo Nano",
+      "local": "assets/products/dji-osmo-nano.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "DJI Osmo Pocket 4P",
+      "local": "assets/products/dji-osmo-pocket-4p.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 X6",
+      "local": "assets/products/insta360-x6.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 Luna Ultra",
+      "local": "assets/products/insta360-luna-ultra.webp",
+      "status": "missing",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://media.studio7thailand.com/238026/insta360-luna-ultra-creator-bundle-stellar-white-6942590201808-3-square_medium.jpg"
+    },
+    {
+      "model": "Insta360 X4 Air",
+      "local": "assets/products/insta360-x4-air.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 Ace Pro 2",
+      "local": "assets/products/insta360-ace-pro-2.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 Flow 2 Pro",
+      "local": "assets/products/insta360-flow-2-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 Link 2 Pro",
+      "local": "assets/products/insta360-link-2-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Insta360 Link 2C Pro",
+      "local": "assets/products/insta360-link-2c-pro.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Dyson Supersonic Nural",
+      "local": "assets/products/dyson-supersonic-nural.webp",
+      "status": "downloaded",
+      "error": ""
+    },
+    {
+      "model": "Dyson Airwrap i.d.",
+      "local": "assets/products/dyson-airwrap-i-d.webp",
+      "status": "downloaded",
+      "error": ""
+    }
+  ]
+}
