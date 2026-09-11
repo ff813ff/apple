@@ -68,19 +68,11 @@
     
         .product-img, .product-card, .variant-btn, .filter-btn, .btn-inquire { -webkit-user-select:none; user-select:none; }
         .product-img { -webkit-user-drag:none; user-drag:none; pointer-events:none; }
-        .catalog-protected-badge {
-            position: fixed; right: 14px; bottom: 14px; z-index: 9998;
-            background: rgba(17,17,17,.82); color:#fff; border-radius: 999px;
-            font-size: 11px; padding: 8px 12px; box-shadow: 0 6px 20px rgba(0,0,0,.16);
-            backdrop-filter: blur(10px);
-        }
-        #guardOverlay {
-            position: fixed; inset: 0; z-index: 9999; display: none; align-items: center; justify-content: center;
-            background: rgba(255,255,255,.92); color:#111; font-size: 22px; font-weight: 700; text-align: center;
-            padding: 30px;
-        }
-        html.devtools-open #guardOverlay { display:flex; }
-        html.devtools-open body > *:not(#guardOverlay):not(.catalog-protected-badge) { filter: blur(8px) !important; pointer-events: none !important; }
+
+        /* Mobile / Facebook in-app browser safe */
+        html, body { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+        button, a { touch-action:manipulation; }
+        .product-img { -webkit-touch-callout:none; }
 
 </style>
 </head>
@@ -944,44 +936,33 @@
         }
         init();
     </script>
-    <div class="catalog-protected-badge">Protected Catalog</div>
-    <div id="guardOverlay">Protected Catalog<br><span style="font-size:14px;font-weight:500;color:#555;">Please close developer tools to continue browsing.</span></div>
-
 <script>
 (function(){
-    try { if (window.top !== window.self) { window.top.location = window.self.location.href; } } catch(e) {}
+    // Lightweight protection only: do not block mobile or in-app browsers.
+    const isEditable = (el) => el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
 
-    const allowTags = new Set(['INPUT','TEXTAREA']);
-    const isAllowed = (el) => el && (allowTags.has(el.tagName) || el.isContentEditable);
+    // Prevent saving/dragging product images via normal browser gestures.
+    document.addEventListener('dragstart', function(e){
+        if (e.target && e.target.tagName === 'IMG') e.preventDefault();
+    }, {capture:true});
 
-    document.addEventListener('contextmenu', function(e){ if (!isAllowed(e.target)) e.preventDefault(); }, {capture:true});
-    document.addEventListener('dragstart', function(e){ e.preventDefault(); }, {capture:true});
-    document.addEventListener('selectstart', function(e){ if (!isAllowed(e.target)) e.preventDefault(); }, {capture:true});
-    document.addEventListener('copy', function(e){ if (!isAllowed(e.target)) e.preventDefault(); }, {capture:true});
-    document.addEventListener('cut', function(e){ if (!isAllowed(e.target)) e.preventDefault(); }, {capture:true});
+    // Disable normal right-click menu on catalog content, but keep form controls usable.
+    document.addEventListener('contextmenu', function(e){
+        if (!isEditable(e.target)) e.preventDefault();
+    }, {capture:true});
 
+    // Desktop-only shortcut blocking. Does not run for touch/mobile browsing.
     document.addEventListener('keydown', function(e){
+        if (isEditable(e.target)) return;
         const key = (e.key || '').toLowerCase();
         const blocked = key === 'f12' ||
-            (e.ctrlKey && ['u','s','p','c'].includes(key)) ||
-            (e.ctrlKey && e.shiftKey && ['i','j','c','k'].includes(key));
-        if (blocked && !isAllowed(e.target)) {
+            (e.ctrlKey && ['u','s'].includes(key)) ||
+            (e.ctrlKey && e.shiftKey && ['i','j','c'].includes(key));
+        if (blocked) {
             e.preventDefault();
             e.stopPropagation();
-            return false;
         }
     }, true);
-
-    setInterval(function(){ try { console.clear(); } catch(e) {} }, 1200);
-
-    function detectDevtools(){
-        const threshold = 160;
-        const open = (window.outerWidth - window.innerWidth > threshold) || (window.outerHeight - window.innerHeight > threshold);
-        document.documentElement.classList.toggle('devtools-open', !!open);
-    }
-    window.addEventListener('resize', detectDevtools);
-    setInterval(detectDevtools, 1000);
-    detectDevtools();
 })();
 </script>
 </body>
