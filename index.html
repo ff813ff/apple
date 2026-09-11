@@ -269,21 +269,19 @@
         const productsData = [
             // ==================== iPhone 18 ====================
             { model:"iPhone Duo", category:"iPhone", img:"https://www.apple.com/newsroom/images/2026/09/apple-unveils-iphone-duo/article/Apple-iPhone-Duo-colors-260909_big.jpg.large.jpg", skus:[
-                { capacity:"256GB", version:"Standard", color:"Night Sky", priceUsd:1087, priceEur:1000 },
-                { capacity:"512GB", version:"Standard", color:"Star White", priceUsd:1196, priceEur:1100 },
-                { capacity:"1TB", version:"Standard", color:"Night Sky", priceUsd:1304, priceEur:1200 },
-                { capacity:"2TB", version:"Standard", color:"Star White", priceUsd:1413, priceEur:1300 }
+                { capacity:"256GB", version:"Standard", color:"Night Sky", priceUsd:578, priceEur:532 },
+                { capacity:"512GB", version:"Standard", color:"Star White", priceUsd:636, priceEur:585 },
+                { capacity:"1TB", version:"Standard", color:"Night Sky", priceUsd:751, priceEur:691 },
+                { capacity:"2TB", version:"Standard", color:"Star White", priceUsd:925, priceEur:851 }
             ]},
             { model:"iPhone 18 Pro Max", category:"iPhone", img:"https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg", skus:[
-                { capacity:"256GB", version:"Standard", color:"Desert Titanium", priceUsd:815, priceEur:750 },
-                { capacity:"512GB", version:"Standard", color:"Desert Titanium", priceUsd:924, priceEur:850 },
-                { capacity:"1TB", version:"Standard", color:"Desert Titanium", priceUsd:1033, priceEur:950 },
-                { capacity:"2TB", version:"Standard", color:"Desert Titanium", priceUsd:1141, priceEur:1050 }
+                { capacity:"256GB", version:"Standard", color:"Desert Titanium", priceUsd:376, priceEur:345 },
+                { capacity:"512GB", version:"Standard", color:"Desert Titanium", priceUsd:434, priceEur:399 },
+                { capacity:"1TB", version:"Standard", color:"Desert Titanium", priceUsd:549, priceEur:505 }
             ]},
             { model:"iPhone 18 Pro", category:"iPhone", img:"https://www.apple.com/newsroom/images/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/article/Apple-iPhone-18-Pro-color-lineup-260909_big.jpg.large.jpg", skus:[
-                { capacity:"256GB", version:"Standard", color:"Natural Titanium", priceUsd:739, priceEur:680 },
-                { capacity:"512GB", version:"Standard", color:"Natural Titanium", priceUsd:848, priceEur:780 },
-                { capacity:"1TB", version:"Standard", color:"Natural Titanium", priceUsd:957, priceEur:880 }
+                { capacity:"256GB", version:"Standard", color:"Natural Titanium", priceUsd:347, priceEur:320 },
+                { capacity:"512GB", version:"Standard", color:"Natural Titanium", priceUsd:405, priceEur:372 }
             ]},
             // ==================== iPhone 17 ====================
             { model:"iPhone 17 Pro Max", category:"iPhone", img:appleCdn("iphone-17-pro-max-finish-select-silver-202509"), skus:[
@@ -730,6 +728,28 @@
             });
         }
         applyIphoneGenerationPricing();
+
+        // iPhone 18 series: set every listed SKU to 83% of Apple U.S. official retail price.
+        function applyIphone18Official83() {
+            const officialUsd = {
+                'iPhone Duo': { '256GB': 1999, '512GB': 2199, '1TB': 2599, '2TB': 3199 },
+                'iPhone 18 Pro Max': { '256GB': 1299, '512GB': 1499, '1TB': 1899, '2TB': 2499 },
+                'iPhone 18 Pro': { '256GB': 1199, '512GB': 1399, '1TB': 1799, '2TB': 2399 }
+            };
+
+            productsData.forEach(product => {
+                const priceMap = officialUsd[product.model];
+                if (!priceMap) return;
+
+                product.skus.forEach(sku => {
+                    const official = priceMap[sku.capacity];
+                    if (official == null) return;
+                    sku.priceUsd = Math.round(official * 0.83);
+                    sku.priceEur = Math.round(sku.priceUsd * 0.92);
+                });
+            });
+        }
+        applyIphone18Official83();
 
 
         let currentLang = 'en';
