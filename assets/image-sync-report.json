@@ -209,8 +209,8 @@
     {
       "model": "DJI Osmo Pocket 3",
       "local": "assets/products/dji-osmo-pocket-3.webp",
-      "status": "downloaded",
-      "error": ""
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.fotokoch.de/bilddaten/bildzoom/dji-osmo-pocket-3-standard_65283_2.jpg"
     },
     {
       "model": "DJI Osmo Pocket 4",
@@ -545,8 +545,8 @@
     {
       "model": "DJI Avata 2",
       "local": "assets/products/dji-avata-2.webp",
-      "status": "downloaded",
-      "error": ""
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.fotokoch.de/bilddaten/bildzoom/dji-avata-2-standard_12614_4.jpg"
     },
     {
       "model": "DJI Osmo Action 6",
@@ -611,14 +611,14 @@
     {
       "model": "Insta360 Link 2 Pro",
       "local": "assets/products/insta360-link-2-pro.webp",
-      "status": "downloaded",
-      "error": ""
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.fotokoch.de/bilddaten/bildgrossplus/insta360-link-2-pro-graphite-black_69814.jpg"
     },
     {
       "model": "Insta360 Link 2C Pro",
       "local": "assets/products/insta360-link-2c-pro.webp",
-      "status": "downloaded",
-      "error": ""
+      "status": "kept-local-after-fetch-failure",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.fotokoch.de/bilddaten/bildgrossplus/insta360-link-2-pro-graphite-black_69814.jpg"
     },
     {
       "model": "Dyson Supersonic Nural",
