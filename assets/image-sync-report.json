@@ -245,8 +245,8 @@
     {
       "model": "RTX 5080",
       "local": "assets/products/rtx-5080.webp",
-      "status": "kept-local-after-fetch-failure",
-      "error": "ConnectionError: HTTPSConnectionPool(host='www.officinadigitale.com', port=443): Max retries exceeded with url: /46762-thickbox_default/nvidia-geforce-rtx-5080-founders-edition.jpg (Caused by NewConnectionError(\"HTTPSConnection(host='www.officinadigitale.com', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
+      "status": "downloaded",
+      "error": ""
     },
     {
       "model": "RTX 5070 Ti",
